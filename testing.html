@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Hero Section</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Parallax section container */
+    .parallax {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Parallax background */
+    .parallax::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 150%; /* Extra height for a noticeable parallax effect */
+      background-image: url('https://images.unsplash.com/photo-1731360433657-bf7be6d169a6?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: translateY(0);
+      transition: transform 0.1s ease-out;
+      z-index: -1;
+    }
+
+    /* Hero content */
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 1;
+    }
+
+    .content h1 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parallax">
+    <div class="content">
+      <h1>Mangal</h1>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for parallax effect
+    window.addEventListener('scroll', function () {
+      const scrollPosition = window.scrollY;
+      const parallaxBg = document.querySelector('.parallax::before');
+      
+      document.querySelector('.parallax').style.setProperty('--scrollY', `${scrollPosition * 0.5}px`)
+    });
+  </script>
+
+</body>
+</html>
