@@ -174,6 +174,20 @@ observer.observe(section); // Observe the section
 
 // --------------------------------------------------------------
 
+function showContent(buttonNumber, buttonElement) {
+  // Hide all content
+  document.querySelectorAll('#content > div').forEach(div => div.style.display = 'none');
+  // Show the selected content
+  document.getElementById(`content${buttonNumber}`).style.display = 'block';
+
+  // Remove 'active' class from all buttons
+  document.querySelectorAll('button').forEach(button => button.classList.remove('active'));
+  // Add 'active' class to the clicked button
+  buttonElement.classList.add('active');
+}
+
+// --------------------------------------------------------------
+
 const dots = document.querySelectorAll('.dot');
 const slideContainer = document.getElementById('slideContainer');
 

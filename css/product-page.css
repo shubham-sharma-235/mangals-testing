@@ -1,0 +1,205 @@
+.product-hero-section{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../images/slit-coil-img.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.product-hero-section h1{
+    font-size: 5vw;
+    color: #fff;
+}
+.product-hero-section p{
+    color: #fff;
+    font-size: 1.2vw;
+}
+.parallax {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-product-left{
+    display: flex;
+    flex-direction: row;
+}
+.about-product-left img{
+    border-top-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+}
+.product-ribbon{
+    position: relative;
+    background-color: #00f382;
+    height: 14rem;
+    width: 1.2rem;
+}
+.about-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.2rem 0;
+}
+.about-product .about-inner-div{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 2rem;
+}
+.about-product-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.about-product-right h2{
+    font-size: 3.8rem;
+}
+.about-product-right p{ 
+    width: 30%;
+}
+.about-product p{
+    width: 80%;
+    padding: 12px 4px;
+}
+.product-page-quote-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    padding: 14px 24px;
+    background-color: #00f382;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    cursor: pointer;
+    width: 80%;
+    margin-top: 2rem;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.2rem;
+    box-shadow: rgb(0, 243, 130) 0px 10px 20px -11px;
+}
+
+.product-features{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://web-objects.markforged.com/craft/3d_printers_detail/metal-x/metal-x_value-pillars_background_1440x829.jpg');
+    background-size: 100%;
+    color: #fff;
+}
+.product-features div{
+    width: 26%;
+    padding: 1rem;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin: 2rem;
+    border-top: 2px solid #484c4f;
+}
+.product-features div h3{
+    font-size: 1.4rem;
+}
+.product-features div p{
+    font-size: 1.2rem;
+    color: #bababa;
+}
+
+
+
+.product-description{
+    height: 96vh;
+    background-color: #090e11;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 4rem 0;
+    color: #fff;
+}
+
+
+.product-description button {
+    border: none;
+    background: none;
+    padding: 10px 20px;
+    font-size: 26px;
+    margin: 1rem;
+    cursor: pointer;
+    color: #acabab;
+    font-weight: 100;
+    transition: all ease-in-out .2s;
+}
+.product-description button:hover{
+    transition: all ease-in .2s;
+    color: #00f382;
+}
+
+.product-description .active {
+    transition: all ease-in .2s;
+    border-bottom: 1px solid #00f382cf; /* Highlight with a blue border */
+    color: #fff;
+    font-weight: 300;
+}
+.product-specs-contaeiner{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding-top: 2rem;
+}
+.product-specs-contaeiner img{
+    height: 22rem;
+    margin: 0 4rem;
+}
+.product-specs-contaeiner span{
+    color: #666666;
+    font-size: .9rem;
+    padding: 20px 0;
+}
+.product-specs-contaeiner h3{
+    border-bottom: 1px solid #404040;
+    font-size: 1.6rem;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    margin-bottom: .6rem;
+}
+
+.product-specs-contaeiner-2 h3{
+    width: 40vw;
+}
+.product-specs-contaeiner-3{
+    display: flex;
+    flex-direction: column;
+}
+.product-specs-contaeiner-3 p{
+    color: #7e7c7c;
+}
+.product-specs-contaeiner-3 div{
+    width: 40vw;
+}
+
+
+.product-section{
+    background-color: #fff!important;
+}
+.product-head span{
+    color: #000;
+}
+.product-head h2{
+    color: #000;
+}
+
+

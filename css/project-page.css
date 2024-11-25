@@ -1,0 +1,62 @@
+.project-hero{
+    background-image: url('https://www.mangals.com/wp-content/uploads/2023/05/EPC-Projects_main_1.jpg');
+    height: 55vh;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.project-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    margin-top: 10rem;
+}
+.project-heading h1{
+    font-size: 8vw;
+    text-transform: uppercase;
+
+    -webkit-text-stroke-width: 2px;
+    letter-spacing: 1px;
+    -webkit-text-stroke-color: #0000004b;
+    color: #fff;
+    font-family: "Manrope Alt", Sans-serif;
+}
+/* .project-heading h2{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 3vw;
+} */
+ 
+.project-about-head{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    padding: 4vw 4vw;
+}
+.project-about-head h2{
+    font-size: 2.2vw;
+}
+
+
+
+.project-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    margin: 2rem;
+    padding: 4rem;
+    background-image: url('https://www.mangals.com/wp-content/uploads/2024/06/20.png');
+    height: 80vh;
+}
+.project-info h2{
+    font-size: 3rem;
+    color: #fff;
+}
+.project-info-content{
+    background-color: #ffffffea;
+    padding: 2rem;
+    width: 100%;
+}

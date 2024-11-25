@@ -288,3 +288,108 @@
                </div>
             </div>                     
         </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .product-display {
+          display: flex;
+          width: 80%;
+          height: 100%;
+      }
+      
+      .product-buttons {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          color: #fff;
+          padding: 20px;
+          box-sizing: border-box;
+      }
+      
+      .product-buttons .product-btn {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: none;
+          padding: 14px 30px;
+          background-color: #121C22;
+          border: 1px solid #ccc;
+          border-top-left-radius: 1.4rem;
+          border-bottom-right-radius: 1.4rem;
+          border-bottom-left-radius: .3rem;
+          border-top-right-radius: .3rem;
+          cursor: pointer;
+          width: 80%;
+          margin-top: 2rem;
+          font-weight: 600;
+          color: #fff;
+          font-size: 1.2rem;
+      
+          position: relative;
+          transition: background 0.3s, border 0.3s;
+      }
+      
+      .product-buttons .product-btn:hover {
+          background: #777;
+      }
+      
+      .product-buttons .product-btn.active-btn {
+          border-color: #4caf4f88; /* Green border */
+          box-shadow: rgb(0, 243, 130) 0px 10px 20px -20px;
+      
+      }
+      
+      .product-buttons .product-btn.active-btn::before {
+          content: '';
+          position: absolute;
+          left: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 12px;
+          height: 12px;
+          background-color: #4caf50; /* Green dot */
+          border-radius: 50%;
+      }
+      
+      .product-containers {
+          flex: 3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          padding: 20px;
+          box-sizing: border-box;
+      }
+      
+      .product-container {
+          display: none;
+          position: absolute;
+          background: #f9f9f9;
+          padding: 20px;
+          width: 90%;
+          height: 80%;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          text-align: center;
+      }
+      
+      .product-container.active {
+          display: block;
+      }
+      
