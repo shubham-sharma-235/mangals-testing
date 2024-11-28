@@ -105,31 +105,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector("nav");
+  const logo = document.getElementById("logo");
   let lastScrollY = window.scrollY;
-  const scrollThreshold = 100; // Threshold for showing the navbar
+  const scrollThreshold = 100; // Threshold for hiding/showing navbar
+  const colorChangeThreshold = window.innerHeight * 0.9; // 90% of viewport height
 
   // Show the navbar with animation on page load
   setTimeout(() => {
     nav.classList.add("show");
   }, 100);
 
-  // Navbar visibility on scroll
+  // Navbar visibility, background color, and logo change on scroll
   window.addEventListener("scroll", () => {
     const currentScrollY = window.scrollY;
 
+    // Hide/show navbar based on scroll direction
     if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold) {
-      // Hide navbar on scroll down after crossing the threshold
       nav.classList.add("hide");
       nav.classList.remove("show");
     } else if (currentScrollY < lastScrollY) {
-      // Show navbar on scroll up
       nav.classList.add("show");
       nav.classList.remove("hide");
     }
 
+    // Change navbar background color and logo after scrolling 90vh
+    if (currentScrollY > colorChangeThreshold) {
+      nav.classList.add("scrolled");
+      logo.src = "./logo/mangal-logo-without-bg.png"; // Change to scrolled logo
+    } else {
+      nav.classList.remove("scrolled");
+      logo.src = "./logo/logo-white.svg"; // Change back to default logo
+    }
+    
     lastScrollY = currentScrollY;
   });
 });
+
+
 
 
 // Function to animate numbers
