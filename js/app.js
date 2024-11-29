@@ -1,4 +1,4 @@
-// --------------------------------------------------------------
+// -----------------------------------------------------------------------
 
 const container = document.querySelector('.testimonial-container');
 const leftBtn = document.querySelector('.left-btn');
@@ -36,7 +36,7 @@ rightBtn.addEventListener('click', () => {
 // Initialize progress bar on page load
 updateProgressBar();
 
-// --------------------------------------------------------------
+// -----------------------------------------------------------------------
 
 const faqs = document.querySelectorAll('.faq');
 
@@ -53,7 +53,7 @@ faqs.forEach((faq) => {
   });
 });
 
-// --------------------------------------------------------
+// -----------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll(".slider-bg");
@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// -----------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector("nav");
@@ -141,8 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
+// -----------------------------------------------------------------------
 
 // Function to animate numbers
 function animateNumbers() {
@@ -184,7 +184,7 @@ const section = document.querySelector('.about-section-left');
 observer.observe(section); // Observe the section
 
 
-// --------------------------------------------------------------
+// -----------------------------------------------------------------------
 
 function showContent(buttonNumber, buttonElement) {
   // Hide all content
@@ -198,7 +198,7 @@ function showContent(buttonNumber, buttonElement) {
   buttonElement.classList.add('active');
 }
 
-// --------------------------------------------------------------
+// -----------------------------------------------------------------------
 
 const dots = document.querySelectorAll('.dot');
 const slideContainer = document.getElementById('slideContainer');
@@ -219,5 +219,6 @@ dots.forEach(dot => {
   });
 });
 
+// -----------------------------------------------------------------------
 
 
