@@ -1,82 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parallax Hero Section</title>
-  <style>
-    /* General reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .project-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .project-info {
+          width: 90%;
+          margin-bottom: 20px;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          background-color: #f9f9f9;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-content {
+          display: none; /* Hidden initially */
+        }
+        .project-info div img{
+            height: 14rem;
+        }
+        .project-cards {
+          display: grid;
+          grid-template-columns: repeat(8, 1fr);
+          gap: 10px;
+          /* width: 60%; */
+        }
+        
+        .project-card {
+          padding: 15px;
+          text-align: center;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          cursor: pointer;
+          background-color: #eaeaea;
+          transition: background-color 0.3s ease, transform 0.2s ease;
 
-    body, html {
-      height: 100%;
-      font-family: Arial, sans-serif;
-      overflow-x: hidden;
-    }
+          height: 8rem;
+          width: 8rem;
+        }
 
-    /* Parallax section container */
-    .parallax {
-      position: relative;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    /* Parallax background */
-    .parallax::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 150%; /* Extra height for a noticeable parallax effect */
-      background-image: url('https://images.unsplash.com/photo-1731360433657-bf7be6d169a6?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image URL */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      transform: translateY(0);
-      transition: transform 0.1s ease-out;
-      z-index: -1;
-    }
-
-    /* Hero content */
-    .content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white;
-      z-index: 1;
-    }
-
-    .content h1 {
-      font-size: 4rem;
-      text-transform: uppercase;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    }
-  </style>
+        .project-card img{
+            height: 8rem;
+            width: 8rem;
+        }
+        
+        .project-card:hover {
+          background-color: #d1d1d1;
+          transform: translateY(-3px);
+        }
+        
+    </style>
 </head>
 <body>
-
-  <div class="parallax">
-    <div class="content">
-      <h1>Mangal</h1>
-    </div>
-  </div>
-
-  <script>
-    // JavaScript for parallax effect
-    window.addEventListener('scroll', function () {
-      const scrollPosition = window.scrollY;
-      const parallaxBg = document.querySelector('.parallax::before');
+    <div class="project-container">
+        <div id="project-info" class="project-info">
+          <h2>Default Title</h2>
+          <p>This is the default content. Click a project card below to change this content.</p>
+        </div>
       
-      document.querySelector('.parallax').style.setProperty('--scrollY', `${scrollPosition * 0.5}px`)
-    });
-  </script>
+        <!-- Hidden content for each project card -->
+        <div class="project-content" id="content-1">
+          <div>
+            <img src="./images/product-one-ing.svg" alt="">
+          </div>
+          <div>
 
+          </div>
+        </div>
+        <div class="project-content" id="content-2">
+          <h2>Project 2</h2>
+          <p>This is the detailed content for Project 2.</p>
+        </div>
+        <div class="project-content" id="content-3">
+          <h2>Project 3</h2>
+          <p>This is the detailed content for Project 3.</p>
+        </div>
+        <div class="project-content" id="content-4">
+          <h2>Project 4</h2>
+          <p>This is the detailed content for Project 4.</p>
+        </div>
+        <div class="project-content" id="content-5">
+          <h2>Project 5</h2>
+          <p>This is the detailed content for Project 5.</p>
+        </div>
+        <div class="project-content" id="content-6">
+          <h2>Project 6</h2>
+          <p>This is the detailed content for Project 6.</p>
+        </div>
+        <div class="project-content" id="content-7">
+          <h2>Project 7</h2>
+          <p>This is the detailed content for Project 7.</p>
+        </div>
+        <div class="project-content" id="content-8">
+          <h2>Project 8</h2>
+          <p>This is the detailed content for Project 8.</p>
+        </div>
+      
+        <!-- Bottom cards -->
+        <div class="project-cards">
+          <div class="project-card" data-content="content-1">
+            <div>
+                <img src="./images/product-one-ing.svg" alt="">
+            </div>
+          </div>
+          <div class="project-card" data-content="content-2">
+            <div>
+                <img src="./images/product-three.svg" alt="">
+            </div>
+          </div>
+          <div class="project-card" data-content="content-3">
+            <div>
+                <img src="./images/product-five.svg" alt="">
+            </div>
+          </div>
+          <div class="project-card" data-content="content-4">
+            <div>
+                <img src="./images/product-six.svg" alt="">
+            </div>
+          </div>
+          <div class="project-card" data-content="content-5">
+            <div>
+                <img src="./images/product-one-ing.svg" alt="">
+            </div>
+          </div>
+          <div class="project-card" data-content="content-6">
+            <div>
+                <img src="./images/product-one-ing.svg" alt="">
+            </div>
+          </div>
+          <div class="project-card" data-content="content-7">
+            <div>
+                <img src="./images/product-one-ing.svg" alt="">
+            </div>
+          </div>
+          <div class="project-card" data-content="content-8">
+            <div>
+                <img src="./images/product-one-ing.svg" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+      
+      
+    <script>
+     document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const contentId = card.getAttribute('data-content');
+    const contentDiv = document.getElementById(contentId);
+
+    // Get the project-info container
+    const projectInfo = document.getElementById('project-info');
+
+    // Replace content of project-info with the selected content
+    projectInfo.innerHTML = contentDiv.innerHTML;
+  });
+});
+
+// Initialize the project-info with the first content (content-1)
+window.onload = () => {
+  const firstContent = document.getElementById('content-1').innerHTML;
+  const projectInfo = document.getElementById('project-info');
+  projectInfo.innerHTML = firstContent;
+};
+
+
+    </script>
 </body>
 </html>

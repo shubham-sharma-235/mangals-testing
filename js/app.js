@@ -1,82 +1,34 @@
 // -----------------------------------------------------------------------
 
-const container = document.querySelector('.testimonial-container');
-const leftBtn = document.querySelector('.left-btn');
-const rightBtn = document.querySelector('.right-btn');
-const progressBar = document.querySelector('.progress-bar');
-
-// Update progress bar based on scroll position
-function updateProgressBar() {
-  const scrollWidth = container.scrollWidth - container.clientWidth;
-  const scrollLeft = container.scrollLeft;
-  const progress = (scrollLeft / scrollWidth) * 100;
-  progressBar.style.width = `${progress}%`;
-  
-  // Check if the user has scrolled to the end
-  if (scrollLeft >= scrollWidth - 1) {
-    // Smoothly scroll back to the first testimonial
-    setTimeout(() => {
-      container.scrollTo({ left: 0, behavior: 'smooth' });
-    }, 2500); // Small delay for a better user experience
-  }
-}
-
-// Scroll event to update progress bar and check scroll end
-container.addEventListener('scroll', updateProgressBar);
-
-// Left and right button functionality
-leftBtn.addEventListener('click', () => {
-  container.scrollBy({ left: -container.offsetWidth / 3, behavior: 'smooth' });
-});
-
-rightBtn.addEventListener('click', () => {
-  container.scrollBy({ left: container.offsetWidth / 3, behavior: 'smooth' });
-});
-
-// Initialize progress bar on page load
-updateProgressBar();
-
-// -----------------------------------------------------------------------
-
-const faqs = document.querySelectorAll('.faq');
-
-faqs.forEach((faq) => {
-  faq.querySelector('.faq-question').addEventListener('click', () => {
-    // Close all FAQs except the clicked one
-    faqs.forEach((item) => {
-      if (item !== faq) {
-        item.classList.remove('open');
-      }
-    });
-    // Toggle the clicked FAQ
-    faq.classList.toggle('open');
-  });
-});
-
-// -----------------------------------------------------------------------
-
 document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll(".slider-bg");
+  const contentItems = document.querySelectorAll(".content-item");
   const progressBars = document.querySelectorAll(".timeline-progress");
   const navbar = document.getElementById("navbar");
 
   let currentIndex = 0;
   let lastScrollY = window.scrollY;
 
-  // Add active class to the first image after a delay to trigger animation
+  // Initialize first slide
   setTimeout(() => {
     images[currentIndex].classList.add("active");
+    contentItems[currentIndex].classList.add("active");
     progressBars[currentIndex].style.transition = "width 3s linear";
     progressBars[currentIndex].style.width = "100%";
-  }, 100); // Slight delay to ensure animation works
+  }, 100);
 
-  function changeBackground() {
+  function changeSlide() {
+    // Deactivate current slide
     images[currentIndex].classList.remove("active");
+    contentItems[currentIndex].classList.remove("active");
     progressBars[currentIndex].style.width = "0%";
 
+    // Move to the next slide
     currentIndex = (currentIndex + 1) % images.length;
 
+    // Activate next slide
     images[currentIndex].classList.add("active");
+    contentItems[currentIndex].classList.add("active");
     progressBars[currentIndex].style.transition = "none";
     progressBars[currentIndex].style.width = "0%";
 
@@ -86,21 +38,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 50);
   }
 
-  setInterval(changeBackground, 3000); // Change image every 3 seconds
+  setInterval(changeSlide, 3000);
 
-  // Navbar hide/show on scroll with animation
+  // Navbar hide/show on scroll
   window.addEventListener("scroll", () => {
     const currentScrollY = window.scrollY;
 
     if (currentScrollY > lastScrollY) {
-      navbar.classList.add("hidden"); // Hide navbar
+      navbar.classList.add("hidden");
     } else {
-      navbar.classList.remove("hidden"); // Show navbar
+      navbar.classList.remove("hidden");
     }
 
     lastScrollY = currentScrollY;
   });
 });
+
+
 
 // -----------------------------------------------------------------------
 
@@ -141,6 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
     lastScrollY = currentScrollY;
   });
 });
+
+
 
 // -----------------------------------------------------------------------
 
@@ -221,4 +177,42 @@ dots.forEach(dot => {
 
 // -----------------------------------------------------------------------
 
+// -----------------------------------------------------------------------
 
+const container = document.querySelector('.testimonial-container');
+const leftBtn = document.querySelector('.left-btn');
+const rightBtn = document.querySelector('.right-btn');
+const progressBar = document.querySelector('.progress-bar');
+
+// Update progress bar based on scroll position
+function updateProgressBar() {
+  const scrollWidth = container.scrollWidth - container.clientWidth;
+  const scrollLeft = container.scrollLeft;
+  const progress = (scrollLeft / scrollWidth) * 100;
+  progressBar.style.width = `${progress}%`;
+  
+  // Check if the user has scrolled to the end
+  if (scrollLeft >= scrollWidth - 1) {
+    // Smoothly scroll back to the first testimonial
+    setTimeout(() => {
+      container.scrollTo({ left: 0, behavior: 'smooth' });
+    }, 2500); // Small delay for a better user experience
+  }
+}
+
+// Scroll event to update progress bar and check scroll end
+container.addEventListener('scroll', updateProgressBar);
+
+// Left and right button functionality
+leftBtn.addEventListener('click', () => {
+  container.scrollBy({ left: -container.offsetWidth / 3, behavior: 'smooth' });
+});
+
+rightBtn.addEventListener('click', () => {
+  container.scrollBy({ left: container.offsetWidth / 3, behavior: 'smooth' });
+});
+
+// Initialize progress bar on page load
+updateProgressBar();
+
+// -----------------------------------------------------------------------
