@@ -13,7 +13,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div class="main">
+    <!-- <div class="preloader">
+        <div class="loading-wrapper">
+          <div class="leaf"></div>
+          <div class="leaf"></div>
+          <div class="leaf"></div>
+          <div class="leaf"></div>
+        </div>
+    </div> -->
+    <div class="main" id="main">
          <div class="navbar" id="navbar">
             <nav class="navbar-container">
                 <div class="nav-icon-container nav-logo-container">
@@ -21,8 +29,8 @@
                   <img class="logo" id="logo" src="./logo/logo-white.svg" alt="Logo">
                 </div>
                 <ul class="nav-menu-container">
-                  <li><a class="main-menu-link active" href="#home">Home</a></li>
-                  <li><a class="main-menu-link" href="#about">About</a></li>
+                  <li><a class="main-menu-link active" href="./index.html">Home</a></li>
+                  <li><a class="main-menu-link" href="./about-mangal.html">About</a></li>
                   <li>
                     <a class="main-menu-link" href="#products">Our Products</a>
                     <div class="dropdown">
@@ -31,22 +39,25 @@
                       <a href="#products-sub3">CRGO Cut Lamination</a>
                       <a href="#products-sub4">CRGO Core Coil Assembly</a>
                       <a href="#products-sub5">Amorphous Core</a>
+                      <a href="#products-sub6">Immersed Circuit Breaker</a>
+                      <a href="#products-sub7">Wound Cores</a>
+                      <a href="#products-sub8">Toroidal Cores</a>
                     </div>
                   </li>
                   <li>
                     <a class="main-menu-link" href="#projects">Epic Projects</a>
                     <div class="dropdown">
-                      <a href="#projects-sub1">Project Sub 1</a>
-                      <a href="#projects-sub2">Project Sub 2</a>
-                      <a href="#projects-sub3">Project Sub 3</a>
+                      <a href="#projects-sub1">Pratapgarh Circle</a>
+                      <a href="#projects-sub2">Farrukhabad Substation</a>
+                      <a href="#projects-sub3">Dataganj Substation</a>
                     </div>
                   </li>
                   <li>
                     <a class="main-menu-link" href="#beyond">Beyond Business</a>
                     <div class="dropdown">
-                      <a href="#beyond-sub1">Beyond Sub 1</a>
-                      <a href="#beyond-sub2">Beyond Sub 2</a>
-                      <a href="#beyond-sub3">Beyond Sub 3</a>
+                      <a href="#beyond-sub1">CSR</a>
+                      <a href="#beyond-sub2">Gallery</a>
+                      <a href="#beyond-sub3">Career</a>
                     </div>
                   </li>
                 </ul>
@@ -160,9 +171,10 @@
                             <img src="./images/01.png" alt="">
                         </div>
                         
-                        <!-- <p class="certificate-btn">View Certificate</p> -->
                     </div>
+                    <p class="certificate-btn">View Certificate</p>
                 </div>
+
                 <div
                     data-aos="fade-up" 
                     data-aos-delay="50"
@@ -185,7 +197,9 @@
                             <img src="./images/02.png" alt="">
                         </div>
                     </div>
+                    <p class="certificate-btn certificate-btn-odd">View Certificate</p>
                 </div>
+
                 <div
                 data-aos="fade-up" 
                 data-aos-delay="50"
@@ -208,7 +222,9 @@
                         <img src="./images/03.png" alt="">
                     </div>
                   </div>
+                  <p class="certificate-btn">View Certificate</p>
                 </div>
+
                 <div
                 data-aos="fade-up" 
                 data-aos-delay="50"
@@ -231,6 +247,7 @@
                         <img src="./images/04.png" alt="">
                     </div>
                   </div>
+                  <p class="certificate-btn certificate-btn-odd">View Certificate</p>
                 </div>
             </div>
         </div>
@@ -291,10 +308,10 @@
                     Make energy accessible
                 </h2>
 
-                <p data-aos="fade-up" data-aos-duration="300">
+                <p data-aos="fade" data-aos-duration="400">
                     Established in 1990, MEIL is an ISO 9001:2015 certified leader in manufacturing CRGO products and manufacturing transformers. We are approved by Power Grid Corporation of India Limited for 400 kV Class Projects.
                 </p>
-                <p data-aos="fade-up" data-aos-duration="300">
+                <p data-aos="fade" data-aos-duration="400">
                     We are processors of CRGO Slit Coils, Cut Laminations, Wound Core & Windings, Amorphous Core, CRGO Core Assembly & CRGO Core Coil Assembly, serving around the world electrical industry with unparalleled expertise and innovation.
                 </p>
 
@@ -316,7 +333,7 @@
                 </button>
                 <!-- <h3 class="stroke-font"  data-aos="fade-up" data-aos-offset="10">Since 1990</h3> -->
             </div>
-            <div class="what-we-do-right" data-aos="fade-up" data-aos-duration="1200">
+            <div class="what-we-do-right" data-aos="fade" data-aos-duration="1200">
                 <!-- <div class="what-we-do-play-div"><i class='bx bx-right-arrow'></i></div>
                 <img src="https://8ded8880.rocketcdn.me/themes/industrium/wp-content/uploads/elementor/thumbs/renewable-energy-solar-panels-wind-turbines-green-grass-blue-sky-pyrxmo3yni6oe9jmbja9d6as6orfxbh1q66vlr2vey.jpg" alt=""> -->
 
@@ -329,13 +346,13 @@
                       <h3 class="stroke-font" data-target="2300">0</h3>
                       <h4>Happy Clients</h4>
                     </div> -->
-                    <img class="what-we-do-leaf-one" src="https://www.mangals.com/wp-content/uploads/2024/06/faq-image-1.jpg" alt="">
+                    <img class="what-we-do-leaf-one animate" src="https://www.mangals.com/wp-content/uploads/2024/06/faq-image-1.jpg" alt="">
 
-                    <img  class="what-we-do-leaf-two" src="https://cdn.pixabay.com/photo/2017/02/03/18/05/factory-2035768_1280.jpg" alt="">
+                    <img  class="what-we-do-leaf-two animate" src="https://cdn.pixabay.com/photo/2017/02/03/18/05/factory-2035768_1280.jpg" alt="">
 
-                    <img class="what-we-do-leaf-four" src="https://cdn.pixabay.com/photo/2017/02/03/18/05/factory-2035768_1280.jpg" alt="">
+                    <img class="what-we-do-leaf-four animate" src="https://cdn.pixabay.com/photo/2017/02/03/18/05/factory-2035768_1280.jpg" alt="">
 
-                    <img class="what-we-do-leaf-three" src="https://cdn.pixabay.com/photo/2017/02/03/18/05/factory-2035768_1280.jpg" alt="">
+                    <img class="what-we-do-leaf-three animate" src="https://cdn.pixabay.com/photo/2017/02/03/18/05/factory-2035768_1280.jpg" alt="">
                 </div>
 
 
@@ -402,7 +419,10 @@
                     <p>
                         RGO Cut Lamination is a product used <br> to manufacture transformer cores
                     </p>
-                    <button>Explore</button>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <button>Enquiry</button>
+                    </div>
                 </div>
                 <div class="product-card"  data-aos="fade-up" data-aos-duration="600">
                     <div class="product-card-two-img product-card-bg">
@@ -412,7 +432,10 @@
                     <p>
                         RGO Cut Lamination is a product used <br> to manufacture transformer cores
                     </p>
-                    <button>Explore</button>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <button>Enquiry</button>
+                    </div>
                 </div>
                 <div class="product-card"  data-aos="fade-up" data-aos-duration="800">
                     <div class="product-card-three-img product-card-bg">
@@ -422,7 +445,10 @@
                     <p>
                         RGO Cut Lamination is a product used <br> to manufacture transformer cores
                     </p>
-                    <button>Explore</button>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <button>Enquiry</button>
+                    </div>
                 </div>
                 <div class="product-card"  data-aos="fade-up" data-aos-duration="1000">
                     <div class="product-card-four-img product-card-bg">
@@ -432,12 +458,15 @@
                     <p>
                         RGO Cut Lamination is a product used <br> to manufacture transformer cores
                     </p>
-                    <button>Explore</button>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <button>Enquiry</button>
+                    </div>
                 </div>
 
 
 
-                <div class="product-card">
+                <div class="product-card" data-aos="fade-up" data-aos-duration="400">
                     <div class="product-card-one-img product-card-bg">
                         <img src="./images/product-one-ing.svg" alt="">
                     </div>
@@ -445,9 +474,12 @@
                     <p>
                         RGO Cut Lamination is a product used <br> to manufacture transformer cores
                     </p>
-                    <button>Explore</button>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <button>Enquiry</button>
+                    </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card"  data-aos="fade-up" data-aos-duration="600">
                     <div class="product-card-two-img product-card-bg">
                         <img src="./images/product-three.svg" alt="">
                     </div>
@@ -455,9 +487,12 @@
                     <p>
                         RGO Cut Lamination is a product used <br> to manufacture transformer cores
                     </p>
-                    <button>Explore</button>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <button>Enquiry</button>
+                    </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card"  data-aos="fade-up" data-aos-duration="800">
                     <div class="product-card-three-img product-card-bg">
                         <img src="./images/product-five.svg" alt="">
                     </div>
@@ -465,9 +500,12 @@
                     <p>
                         RGO Cut Lamination is a product used <br> to manufacture transformer cores
                     </p>
-                    <button>Explore</button>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <button>Enquiry</button>
+                    </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card"  data-aos="fade-up" data-aos-duration="1000">
                     <div class="product-card-four-img product-card-bg">
                         <img src="./images/product-six.svg" alt="">
                     </div>
@@ -475,7 +513,10 @@
                     <p>
                         RGO Cut Lamination is a product used <br> to manufacture transformer cores
                     </p>
-                    <button>Explore</button>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <button>Enquiry</button>
+                    </div>
                 </div>
                 <!-- <div class="product-card">
                     <img src="./images/product-three.svg" alt="">
@@ -534,78 +575,7 @@
 
         <!-- ------------------------------------------------------------- -->
         
-        <div class="process-section">
-
-            <div id="process" class="steps-section">
-                <div class="steps-heading" data-aos="fade" data-aos-duration="1000">
-                    <span>. Process</span>
-                    <h1>
-                        Check Out <br> How Our Process Works
-                    </h1>
-                    <p>
-                        Discover the seamless journey from concept to completion with Urbis. Our streamlined process ensures meticulous planning and execution, guaranteeing quality at every step.
-                    </p>
-                </div>
-                <div class="steps-container">
-                    <div class="card-stack-section">
-                        <div class="card-stack-right">
-                            <div class="card-container-2">
-                                <div class="stack-card card-1" data-aos="fade">
-                                    <div>
-                                        <h2>01</h2>
-                                    </div>
-                                    <div>
-                                        <h3>Planning</h3>
-                                        <p>
-                                            We begin with detailed planning, including site analysis, architectural design, and budget estimation, ensuring a solid foundation for your project.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="stack-card card-2">
-                                    <div>
-                                        <h2>02</h2>
-                                    </div>
-                                    <div>
-                                        <h3>Estimating</h3>
-                                        <p>
-                                            Accurate cost estimation ensures transparency and budget alignment, setting the stage for a successful project.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="stack-card card-3">
-                                    <div>
-                                        <h2>03</h2>
-                                    </div>
-                                    <div>
-                                        <h3>Building</h3>
-                                        <p>
-                                            Our skilled team brings the project to life, adhering to the highest quality standards and ensuring timely completion.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="stack-card card-4">
-                                    <div>
-                                        <h2>04</h2>
-                                    </div>
-                                    <div>
-                                        <h3>Finished</h3>
-                                        <p>
-                                            Once completed, we carry out a thorough inspection to ensure everything meets our quality standards and deliver the home ready for you to move into.
-                                        </p>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </div>
-
+        
         <!-- ------------------------------------------------------------- -->
 
         <div class="bts-section">
@@ -658,33 +628,55 @@
             <div class="scroll-container">
                 <div class="fade-effect fade-left"></div>
                 <div class="scroll-content">
-                    <div class="scroll-item">Logo 1</div>
-                    <div class="scroll-item">Logo 2</div>
-                    <div class="scroll-item">Logo 3</div>
-                    <div class="scroll-item">Logo 4</div>
-                    <div class="scroll-item">Logo 5</div>
-                    <div class="scroll-item">Logo 6</div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/adani-renewables-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/bhel-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/bureau-of-indian-standards-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/aptransco-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/gem-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/iso-9001-2015-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/ntpc-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/powergrid-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/rdso-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/renew-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/zed-silver-logo.png" alt=""></div>
+
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/adani-renewables-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/bhel-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/bureau-of-indian-standards-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/aptransco-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/gem-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/iso-9001-2015-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/ntpc-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/powergrid-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/rdso-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/renew-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/zed-silver-logo.png" alt=""></div>
+
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/adani-renewables-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/bhel-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/bureau-of-indian-standards-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/aptransco-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/gem-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/iso-9001-2015-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/ntpc-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/powergrid-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/rdso-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/renew-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/zed-silver-logo.png" alt=""></div>
+
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/adani-renewables-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/bhel-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/bureau-of-indian-standards-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/aptransco-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/gem-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/iso-9001-2015-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/ntpc-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/powergrid-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/rdso-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/renew-logo.png" alt=""></div>
+                    <div class="scroll-item"><img src="./images/quality-approval-logos/zed-silver-logo.png" alt=""></div>
                     
-                    <div class="scroll-item">Logo 1</div>
-                    <div class="scroll-item">Logo 2</div>
-                    <div class="scroll-item">Logo 3</div>
-                    <div class="scroll-item">Logo 4</div>
-                    <div class="scroll-item">Logo 5</div>
-                    <div class="scroll-item">Logo 6</div>
-
-                    <div class="scroll-item">Logo 1</div>
-                    <div class="scroll-item">Logo 2</div>
-                    <div class="scroll-item">Logo 3</div>
-                    <div class="scroll-item">Logo 4</div>
-                    <div class="scroll-item">Logo 5</div>
-                    <div class="scroll-item">Logo 6</div>
-
-                    <div class="scroll-item">Logo 1</div>
-                    <div class="scroll-item">Logo 2</div>
-                    <div class="scroll-item">Logo 3</div>
-                    <div class="scroll-item">Logo 4</div>
-                    <div class="scroll-item">Logo 5</div>
-                    <div class="scroll-item">Logo 6</div>
+                    
                 </div>
                 <div class="fade-effect fade-right"></div>
             </div>
@@ -749,7 +741,7 @@
                     <path d="M1636.84 1050.88C1635.78 1048.65 1633.9 1046.9 1631.59 1046.01C1628.48 1044.95 1625.75 1039.17 1624.97 1037.03L1624.7 1036.32H1620.75C1619.1 1034.31 1617.12 1032.6 1614.88 1031.28C1613.91 1030.82 1612.85 1030.59 1611.77 1030.6C1609.72 1030.68 1607.71 1031.12 1605.81 1031.91C1605.16 1031.91 1603.01 1032.18 1600.75 1032.18C1599.48 1032.21 1598.21 1032.11 1596.96 1031.91C1596.63 1031.88 1596.29 1031.88 1595.96 1031.91C1593.57 1031.91 1592.86 1033.68 1592.08 1035.01C1592.08 1035.23 1591.86 1035.45 1591.74 1035.69C1591.77 1033.55 1592.23 1031.44 1593.11 1029.48C1597.11 1023.02 1600.93 1013.95 1596.46 1007.74C1595.56 1006.28 1594.97 1004.65 1594.73 1002.95C1594.49 1001.25 1594.6 999.515 1595.06 997.861C1595.45 996.669 1595.56 995.406 1595.39 994.164C1595.23 992.923 1594.79 991.734 1594.1 990.686C1593.64 990.138 1593.14 989.619 1592.61 989.133C1591.28 988.101 1590.21 986.776 1589.49 985.261C1588.76 983.747 1588.39 982.084 1588.42 980.404H1629.67V962.886C1629.67 962.202 1632.77 960.649 1634.51 959.779C1637.77 958.133 1640.72 956.673 1640.72 954.996V927.848C1644.57 927.848 1656.47 928.127 1664.98 928.127C1674.52 928.127 1674.86 927.91 1675.33 927.599C1675.79 927.289 1676.35 926.885 1676.07 914.336C1677.87 915.392 1691.45 924.338 1710.24 936.825H1694.71L1704.71 1031.41L1707.82 1034.67C1708.15 1037.29 1707.84 1039.96 1706.92 1042.43C1700.07 1042.94 1693.21 1043.09 1686.35 1042.87C1676.48 1042.87 1666.91 1042.87 1666.91 1042.87H1666.54L1666.22 1043.03C1664.38 1043.96 1662.38 1044.55 1660.32 1044.76C1659.27 1044.71 1658.23 1044.53 1657.22 1044.24C1656.31 1043.96 1655.37 1043.79 1654.42 1043.74C1653.98 1043.7 1653.53 1043.77 1653.13 1043.96C1652.73 1044.14 1652.38 1044.43 1652.12 1044.8C1651.89 1045.16 1651.7 1045.56 1651.56 1045.98C1651.42 1046.42 1651.2 1046.83 1650.91 1047.19C1650.91 1047.19 1650.26 1047.19 1648.52 1045.57C1647.35 1044.29 1645.75 1043.48 1644.02 1043.3C1641.69 1043.3 1640.26 1045.32 1640.26 1048.59C1640.38 1050.2 1638.46 1050.73 1636.84 1050.88Z" fill="#5AB947" fill-opacity="0.6" stroke="white" stroke-width="2.32964" stroke-miterlimit="10"/>
                     <path d="M1691.29 1100.55C1691.07 1100.55 1691.01 1100.55 1690.92 1100.55C1690.82 1100.55 1688.59 1097.2 1686.16 1097.2C1685.57 1097.2 1684.98 1097.38 1684.49 1097.73C1684.01 1098.07 1683.63 1098.56 1683.43 1099.12C1683.15 1099.74 1682.84 1099.99 1682.72 1099.99C1682.3 1099.86 1681.91 1099.65 1681.57 1099.36C1681.24 1099.08 1680.96 1098.74 1680.76 1098.35C1680.37 1097.56 1680.15 1096.7 1680.11 1095.83C1679.89 1094.09 1679.61 1091.92 1677.19 1091.92C1677.19 1091.92 1677 1091.92 1676.97 1091.64C1676.91 1091.34 1676.94 1091.04 1677.06 1090.76C1677.18 1090.49 1677.39 1090.26 1677.65 1090.11C1677.92 1090.04 1678.16 1089.89 1678.34 1089.68C1678.52 1089.47 1678.64 1089.21 1678.68 1088.93C1678.9 1088.03 1678 1087.35 1676.85 1086.45C1675.7 1085.55 1674.64 1084.74 1674.64 1084.09C1674.64 1082.01 1671.91 1075.86 1669.73 1075.3H1669.36C1668.21 1075.3 1667.19 1076.17 1665.23 1078C1664.32 1079.01 1663.27 1079.88 1662.12 1080.61C1661.57 1080.41 1661.03 1080.18 1660.51 1079.93C1659.38 1079.26 1658.12 1078.84 1656.81 1078.71C1656.19 1078.72 1655.59 1078.91 1655.08 1079.26C1654.58 1079.61 1654.18 1080.1 1653.95 1080.67C1653.9 1080.85 1653.8 1081.01 1653.67 1081.14C1653.44 1080.99 1653.19 1080.86 1652.93 1080.76C1652.22 1080.39 1651.43 1080.17 1650.63 1080.14C1650.18 1080.14 1649.73 1080.24 1649.33 1080.44C1648.93 1080.64 1648.57 1080.93 1648.3 1081.29C1647.91 1080.59 1647.62 1079.84 1647.43 1079.06C1647.43 1077.94 1647.68 1072.1 1647.43 1070.54C1646.01 1067.74 1644.03 1065.26 1641.62 1063.25C1640.54 1061.48 1640.08 1059.4 1640.32 1057.34V1057.06L1638.3 1053.96C1638.3 1053.74 1638.11 1053.31 1637.89 1052.75C1641 1052.31 1643.05 1050.73 1643.05 1048.46C1643.05 1046.19 1643.7 1045.2 1644.29 1045.2C1644.88 1045.2 1645.35 1045.2 1646.93 1046.78C1648.03 1048.06 1649.57 1048.89 1651.25 1049.08C1653.15 1049.08 1653.8 1047.5 1654.36 1046.47C1654.46 1046.18 1654.59 1045.9 1654.73 1045.63C1655.48 1045.7 1656.22 1045.85 1656.94 1046.07C1658.15 1046.41 1659.4 1046.61 1660.66 1046.66C1663.06 1046.48 1665.4 1045.83 1667.56 1044.76C1669.36 1044.76 1677.9 1044.76 1686.69 1044.76C1707.16 1044.76 1708.06 1044.3 1708.62 1044.02C1710.8 1042.93 1710.8 1037.34 1710.61 1034.14V1033.8L1707.32 1030.47L1697.32 938.936H1713.1C1742.91 958.846 1775.22 980.776 1776.96 982.422C1779.42 985.296 1781.58 988.419 1783.39 991.741L1783.67 992.269H1784.35C1788.27 992.778 1792.07 993.977 1795.56 995.81C1800.13 998.45 1800.19 1006 1800.16 1006.06V1007.4L1801.75 1007.05L1809.08 1005.44C1809.32 1022.9 1809.08 1030.29 1808.58 1031.59C1807.66 1032.87 1807.02 1034.32 1806.68 1035.85C1806.38 1037.07 1805.89 1038.24 1805.26 1039.33C1804.98 1039.64 1804.67 1040.04 1804.32 1040.51C1803.87 1041.35 1803.21 1042.08 1802.42 1042.62C1801.63 1043.16 1800.71 1043.5 1799.76 1043.61C1797.52 1043.73 1795.29 1043.99 1793.08 1044.39C1790.41 1044.85 1787.71 1045.14 1785 1045.26C1784.55 1045.3 1784.09 1045.3 1783.64 1045.26C1783.19 1045.21 1782.75 1045.21 1782.3 1045.26C1779.93 1045.41 1777.65 1046.22 1775.72 1047.59C1775.33 1047.84 1774.93 1048.06 1774.5 1048.24C1772.71 1048.6 1770.87 1048.75 1769.04 1048.68C1766.94 1048.86 1764.82 1048.6 1762.83 1047.9C1762.25 1047.33 1761.49 1047.01 1760.68 1047C1759.1 1047 1757.58 1048.12 1755.31 1049.8L1753.35 1051.19C1751.66 1052.26 1749.77 1052.94 1747.79 1053.21C1745.99 1053.58 1743.94 1053.99 1743.94 1055.73C1743.95 1055.92 1743.92 1056.11 1743.85 1056.28C1743.78 1056.46 1743.67 1056.62 1743.53 1056.74C1743.39 1056.87 1743.22 1056.97 1743.04 1057.02C1742.86 1057.08 1742.67 1057.09 1742.48 1057.06C1742.19 1057.1 1741.9 1057.1 1741.61 1057.06C1740.8 1056.8 1739.95 1056.64 1739.09 1056.6C1738.09 1056.63 1737.14 1057.03 1736.4 1057.7C1735.66 1058.38 1735.18 1059.3 1735.06 1060.29C1734.75 1061.44 1734.19 1061.6 1733.35 1061.91C1732.5 1062.04 1731.73 1062.46 1731.16 1063.1C1730.59 1063.74 1730.27 1064.56 1730.24 1065.42C1730.24 1066.29 1729.93 1066.44 1729.93 1066.48C1728.82 1066.12 1727.78 1065.59 1726.82 1064.92L1725.8 1064.33C1725.4 1064.11 1724.95 1064 1724.49 1063.99C1721.7 1063.99 1720.77 1068.65 1720.49 1072.66C1719.04 1074.67 1717.9 1076.89 1717.1 1079.24C1716.26 1081.6 1714.37 1081.88 1711.76 1082.01C1710.97 1082.01 1710.19 1082.12 1709.43 1082.35C1707.72 1083.03 1708.31 1084.86 1708.87 1086.6C1709.24 1087.69 1709.74 1089.15 1709.43 1089.71C1708.39 1092.13 1707.47 1094.61 1706.7 1097.13C1705.71 1097.16 1704.75 1097.47 1703.93 1098.03C1703.41 1098.42 1702.85 1098.76 1702.25 1099.03C1702.2 1098.57 1702.2 1098.12 1702.25 1097.66C1702.31 1097.28 1702.28 1096.9 1702.15 1096.53C1702.03 1096.17 1701.82 1095.84 1701.54 1095.58C1700.9 1095.06 1700.09 1094.79 1699.27 1094.83C1698.26 1094.8 1697.27 1095.08 1696.42 1095.64C1695.57 1096.2 1694.92 1097 1694.55 1097.94C1694.29 1098.63 1693.85 1099.23 1693.27 1099.69C1692.7 1100.15 1692.02 1100.44 1691.29 1100.55Z" fill="#5AB947" fill-opacity="0.6" stroke="white" stroke-width="2.32964" stroke-miterlimit="10"/>
                     <path d="M1719.98 1105.74C1718.03 1105.74 1714.64 1102.45 1713.77 1101.05C1712.59 1099.39 1710.93 1098.13 1709.02 1097.42C1709.75 1095.01 1710.62 1092.64 1711.63 1090.33C1712.02 1088.86 1711.86 1087.29 1711.16 1085.92C1710.92 1085.29 1710.75 1084.63 1710.63 1083.97H1711.75C1713.3 1084.15 1714.88 1083.85 1716.24 1083.09C1717.61 1082.33 1718.7 1081.16 1719.36 1079.74C1720.08 1077.53 1721.12 1075.43 1722.47 1073.53L1722.69 1073.28V1073C1722.7 1070.6 1723.24 1068.24 1724.27 1066.08L1725.08 1066.57C1726.47 1067.57 1728.08 1068.21 1729.77 1068.44C1730.73 1068.44 1732.35 1068.06 1732.53 1065.55C1732.53 1064.21 1733.06 1064.09 1733.99 1063.78C1734.74 1063.59 1735.43 1063.2 1735.97 1062.65C1736.52 1062.1 1736.91 1061.42 1737.1 1060.67C1737.66 1058.59 1738.4 1058.59 1738.71 1058.59C1739.29 1058.64 1739.85 1058.75 1740.39 1058.93C1740.95 1059.09 1741.52 1059.17 1742.1 1059.18C1742.59 1059.24 1743.08 1059.19 1743.54 1059.05C1744.01 1058.9 1744.44 1058.67 1744.81 1058.35C1745.18 1058.03 1745.48 1057.64 1745.7 1057.2C1745.91 1056.76 1746.03 1056.28 1746.05 1055.79C1746.68 1055.54 1747.33 1055.37 1748 1055.27C1750.35 1054.92 1752.59 1054.08 1754.59 1052.81L1756.58 1051.38C1757.67 1050.41 1758.93 1049.64 1760.3 1049.12C1760.3 1049.12 1760.3 1049.12 1760.52 1049.12C1762.37 1050.27 1764.56 1050.78 1766.73 1050.58C1766.2 1054.95 1766.73 1055.67 1767.45 1056.1C1767.82 1056.69 1768.11 1057.33 1768.32 1058C1768.78 1059.56 1769.64 1060.97 1770.8 1062.1L1771.24 1062.41C1772.85 1063.62 1775.27 1065.52 1775.27 1066.94C1775.27 1068.37 1775.27 1071.95 1778.38 1071.95C1778.76 1072.32 1779.09 1072.74 1779.37 1073.19C1779.99 1074.22 1780.9 1075.05 1781.98 1075.58C1782.43 1075.75 1782.9 1075.84 1783.38 1075.83C1784.45 1075.77 1785.5 1075.54 1786.49 1075.15H1786.74C1786.74 1075.55 1786.74 1076.11 1786.74 1076.51C1786.74 1078.97 1786.74 1079.99 1787.48 1080.55L1787.85 1080.86H1788.51C1789.65 1081.02 1790.72 1081.49 1791.61 1082.23C1791.8 1083.16 1791.61 1083.38 1790.62 1083.94C1790.01 1084.34 1789.45 1084.82 1788.97 1085.36C1786.59 1086.46 1783.98 1086.94 1781.36 1086.76C1779.71 1087.03 1778.21 1087.91 1777.17 1089.22C1776.55 1089.89 1775.83 1090.46 1775.03 1090.89C1774.81 1090.93 1774.59 1090.93 1774.37 1090.89C1772.91 1090.79 1771.45 1090.56 1770.02 1090.21C1768.72 1089.91 1767.41 1089.69 1766.08 1089.53H1765.65C1764.83 1089.55 1764.03 1089.82 1763.36 1090.29C1762.69 1090.77 1762.18 1091.43 1761.89 1092.2C1756.31 1091.09 1750.64 1090.58 1744.96 1090.68C1735.64 1090.68 1734.96 1091.7 1734.61 1092.26C1733.71 1093.6 1734.33 1095.96 1735.42 1099.44C1735.86 1100.65 1736.15 1101.91 1736.29 1103.19C1736.27 1103.61 1736.1 1104 1735.83 1104.31C1735.83 1104.31 1735.58 1104.13 1735.11 1103.66C1733.57 1102.49 1731.64 1101.93 1729.71 1102.11C1726.44 1101.95 1723.25 1103.06 1720.79 1105.21C1720.6 1105.49 1720.31 1105.68 1719.98 1105.74Z" fill="#5AB947" fill-opacity="0.6" stroke="white" stroke-width="2.32964" stroke-miterlimit="10"/>
-                    <path d="M1802.24 1081.42C1801.69 1081.37 1801.16 1081.22 1800.66 1080.98C1799.95 1080.67 1799.85 1080.27 1799.73 1079.24C1799.73 1078.47 1799.47 1077.72 1798.99 1077.11C1798.51 1076.51 1797.84 1076.09 1797.09 1075.92C1796.62 1075.79 1796.14 1075.71 1795.66 1075.7C1794.67 1075.69 1793.71 1076.07 1792.99 1076.76C1792.25 1077.53 1791.78 1078.52 1791.65 1079.58C1790.97 1079.27 1790.25 1079.04 1789.51 1078.9C1789.51 1078.31 1789.51 1077.19 1789.51 1076.48C1789.51 1074.71 1789.51 1073.99 1789.2 1073.53C1789.03 1073.3 1788.81 1073.12 1788.56 1072.99C1788.3 1072.87 1788.02 1072.81 1787.74 1072.81C1787.07 1072.86 1786.4 1073.02 1785.78 1073.28C1785.09 1073.56 1784.35 1073.74 1783.61 1073.81H1783.23C1782.63 1073.39 1782.13 1072.85 1781.74 1072.22C1781 1071.17 1780.16 1069.99 1778.64 1069.99C1778.64 1069.99 1778.02 1069.99 1778.02 1066.88C1778.02 1064.49 1775.22 1062.38 1773.17 1060.85L1772.77 1060.51C1771.93 1059.63 1771.31 1058.57 1770.97 1057.41C1770.66 1056.36 1770.12 1055.4 1769.38 1054.61C1769.14 1053.31 1769.14 1051.97 1769.38 1050.66C1771.47 1050.71 1773.55 1050.5 1775.59 1050.04C1776.13 1049.8 1776.65 1049.52 1777.15 1049.21C1778.66 1048.13 1780.42 1047.46 1782.27 1047.28C1782.55 1047.25 1782.83 1047.25 1783.11 1047.28C1783.73 1047.32 1784.35 1047.32 1784.97 1047.28C1787.84 1047.16 1790.69 1046.85 1793.52 1046.35C1795.57 1045.96 1797.64 1045.71 1799.73 1045.6C1801.09 1045.53 1802.42 1045.11 1803.59 1044.4C1804.75 1043.68 1805.72 1042.69 1806.41 1041.5C1806.64 1041.16 1806.9 1040.84 1807.18 1040.54C1808.08 1039.27 1808.72 1037.83 1809.08 1036.31C1809.37 1035.1 1809.84 1033.94 1810.48 1032.87C1811.07 1032.4 1811.9 1031.75 1811.53 1004.91H1811.97C1815.69 1004.17 1827.81 999.848 1828.31 999.661H1828.52L1847.78 983.975L1892.11 956.02C1894.09 956.02 1902.76 956.361 1906.3 958.753C1908.75 960.407 1910.86 962.516 1912.51 964.965L1913.17 965.99L1920.75 961.859C1920.99 966.27 1921.27 972.172 1921.27 973.538C1921.52 975.062 1922.21 976.479 1923.26 977.608C1924.67 979.114 1925.5 981.075 1925.59 983.137C1925.46 984.671 1925.92 986.197 1926.9 987.392C1927.32 987.892 1927.6 988.497 1927.7 989.143C1927.8 989.789 1927.73 990.45 1927.49 991.057C1926.34 994.775 1925.7 998.631 1925.59 1002.52C1925.59 1019.6 1925.09 1026.9 1924.63 1028.05C1922.61 1029.82 1908.66 1043.96 1907.73 1049.8C1907.55 1051.19 1907.13 1052.55 1906.49 1053.8C1905.68 1055.39 1905.35 1057.18 1905.53 1058.96V1061.29H1904.84C1903.23 1062.07 1901.86 1063.29 1900.9 1064.8C1899.98 1066.17 1898.79 1067.32 1897.39 1068.18C1897.04 1068.23 1896.68 1068.23 1896.33 1068.18C1894.14 1067.94 1892.02 1067.23 1890.12 1066.1H1889.78C1888.29 1065.58 1886.72 1065.38 1885.15 1065.51H1880.92H1877.48C1876.99 1065.55 1876.5 1065.55 1876.02 1065.51H1875.55C1873.22 1065.88 1871.1 1067.09 1869.59 1068.9C1868.93 1069.56 1868.2 1070.16 1867.41 1070.67C1866.29 1071.14 1865.08 1071.33 1863.87 1071.23C1862.03 1071.25 1860.19 1071.03 1858.4 1070.58C1857.39 1070.08 1856.42 1069.5 1855.52 1068.84C1853.92 1067.47 1851.99 1066.54 1849.92 1066.13C1846.65 1066.24 1843.44 1067.16 1840.61 1068.81C1840.46 1068.91 1840.29 1068.98 1840.11 1069.02C1839.55 1069.02 1838.59 1067.03 1838.15 1066.2C1837.7 1065.23 1837.15 1064.31 1836.51 1063.46C1835.85 1062.86 1835.07 1062.39 1834.23 1062.1C1833.38 1061.82 1832.49 1061.71 1831.6 1061.79C1830.34 1061.9 1829.09 1061.57 1828.06 1060.85C1827.76 1060.56 1827.41 1060.33 1827.03 1060.18C1826.65 1060.02 1826.23 1059.95 1825.82 1059.95C1824.54 1060.08 1823.35 1060.7 1822.53 1061.69C1822.16 1062.03 1821.44 1062.72 1821.16 1062.72L1820.14 1062.56C1818.31 1062.2 1816.46 1061.99 1814.61 1061.94C1813.16 1061.81 1811.7 1062.2 1810.51 1063.03C1809.19 1064.74 1808.46 1066.83 1808.43 1068.99C1808.36 1069.86 1808.19 1070.72 1807.9 1071.54C1807.9 1071.54 1803.05 1076.69 1803.05 1079.61C1803.15 1080.92 1802.93 1081.42 1802.24 1081.42Z" fill="#5AB947" fill-opacity="0.6" stroke="white" stroke-width="2.32964" stroke-miterlimit="10"/>
+                    <path d="M1802.24 1081.42C1801.69 1081.37 1801.16p 1081.22 1800.66 1080.98C1799.95 1080.67 1799.85 1080.27 1799.73 1079.24C1799.73 1078.47 1799.47 1077.72 1798.99 1077.11C1798.51 1076.51 1797.84 1076.09 1797.09 1075.92C1796.62 1075.79 1796.14 1075.71 1795.66 1075.7C1794.67 1075.69 1793.71 1076.07 1792.99 1076.76C1792.25 1077.53 1791.78 1078.52 1791.65 1079.58C1790.97 1079.27 1790.25 1079.04 1789.51 1078.9C1789.51 1078.31 1789.51 1077.19 1789.51 1076.48C1789.51 1074.71 1789.51 1073.99 1789.2 1073.53C1789.03 1073.3 1788.81 1073.12 1788.56 1072.99C1788.3 1072.87 1788.02 1072.81 1787.74 1072.81C1787.07 1072.86 1786.4 1073.02 1785.78 1073.28C1785.09 1073.56 1784.35 1073.74 1783.61 1073.81H1783.23C1782.63 1073.39 1782.13 1072.85 1781.74 1072.22C1781 1071.17 1780.16 1069.99 1778.64 1069.99C1778.64 1069.99 1778.02 1069.99 1778.02 1066.88C1778.02 1064.49 1775.22 1062.38 1773.17 1060.85L1772.77 1060.51C1771.93 1059.63 1771.31 1058.57 1770.97 1057.41C1770.66 1056.36 1770.12 1055.4 1769.38 1054.61C1769.14 1053.31 1769.14 1051.97 1769.38 1050.66C1771.47 1050.71 1773.55 1050.5 1775.59 1050.04C1776.13 1049.8 1776.65 1049.52 1777.15 1049.21C1778.66 1048.13 1780.42 1047.46 1782.27 1047.28C1782.55 1047.25 1782.83 1047.25 1783.11 1047.28C1783.73 1047.32 1784.35 1047.32 1784.97 1047.28C1787.84 1047.16 1790.69 1046.85 1793.52 1046.35C1795.57 1045.96 1797.64 1045.71 1799.73 1045.6C1801.09 1045.53 1802.42 1045.11 1803.59 1044.4C1804.75 1043.68 1805.72 1042.69 1806.41 1041.5C1806.64 1041.16 1806.9 1040.84 1807.18 1040.54C1808.08 1039.27 1808.72 1037.83 1809.08 1036.31C1809.37 1035.1 1809.84 1033.94 1810.48 1032.87C1811.07 1032.4 1811.9 1031.75 1811.53 1004.91H1811.97C1815.69 1004.17 1827.81 999.848 1828.31 999.661H1828.52L1847.78 983.975L1892.11 956.02C1894.09 956.02 1902.76 956.361 1906.3 958.753C1908.75 960.407 1910.86 962.516 1912.51 964.965L1913.17 965.99L1920.75 961.859C1920.99 966.27 1921.27 972.172 1921.27 973.538C1921.52 975.062 1922.21 976.479 1923.26 977.608C1924.67 979.114 1925.5 981.075 1925.59 983.137C1925.46 984.671 1925.92 986.197 1926.9 987.392C1927.32 987.892 1927.6 988.497 1927.7 989.143C1927.8 989.789 1927.73 990.45 1927.49 991.057C1926.34 994.775 1925.7 998.631 1925.59 1002.52C1925.59 1019.6 1925.09 1026.9 1924.63 1028.05C1922.61 1029.82 1908.66 1043.96 1907.73 1049.8C1907.55 1051.19 1907.13 1052.55 1906.49 1053.8C1905.68 1055.39 1905.35 1057.18 1905.53 1058.96V1061.29H1904.84C1903.23 1062.07 1901.86 1063.29 1900.9 1064.8C1899.98 1066.17 1898.79 1067.32 1897.39 1068.18C1897.04 1068.23 1896.68 1068.23 1896.33 1068.18C1894.14 1067.94 1892.02 1067.23 1890.12 1066.1H1889.78C1888.29 1065.58 1886.72 1065.38 1885.15 1065.51H1880.92H1877.48C1876.99 1065.55 1876.5 1065.55 1876.02 1065.51H1875.55C1873.22 1065.88 1871.1 1067.09 1869.59 1068.9C1868.93 1069.56 1868.2 1070.16 1867.41 1070.67C1866.29 1071.14 1865.08 1071.33 1863.87 1071.23C1862.03 1071.25 1860.19 1071.03 1858.4 1070.58C1857.39 1070.08 1856.42 1069.5 1855.52 1068.84C1853.92 1067.47 1851.99 1066.54 1849.92 1066.13C1846.65 1066.24 1843.44 1067.16 1840.61 1068.81C1840.46 1068.91 1840.29 1068.98 1840.11 1069.02C1839.55 1069.02 1838.59 1067.03 1838.15 1066.2C1837.7 1065.23 1837.15 1064.31 1836.51 1063.46C1835.85 1062.86 1835.07 1062.39 1834.23 1062.1C1833.38 1061.82 1832.49 1061.71 1831.6 1061.79C1830.34 1061.9 1829.09 1061.57 1828.06 1060.85C1827.76 1060.56 1827.41 1060.33 1827.03 1060.18C1826.65 1060.02 1826.23 1059.95 1825.82 1059.95C1824.54 1060.08 1823.35 1060.7 1822.53 1061.69C1822.16 1062.03 1821.44 1062.72 1821.16 1062.72L1820.14 1062.56C1818.31 1062.2 1816.46 1061.99 1814.61 1061.94C1813.16 1061.81 1811.7 1062.2 1810.51 1063.03C1809.19 1064.74 1808.46 1066.83 1808.43 1068.99C1808.36 1069.86 1808.19 1070.72 1807.9 1071.54C1807.9 1071.54 1803.05 1076.69 1803.05 1079.61C1803.15 1080.92 1802.93 1081.42 1802.24 1081.42Z" fill="#5AB947" fill-opacity="0.6" stroke="white" stroke-width="2.32964" stroke-miterlimit="10"/>
                     <path d="M1929.04 1129C1928.82 1129.01 1928.6 1128.95 1928.42 1128.82C1926.63 1126.35 1925.38 1123.53 1924.75 1120.55C1923.7 1117.8 1921.77 1115.47 1919.25 1113.94C1918.17 1113.1 1917.05 1112.23 1915.84 1111.11C1912.98 1108.47 1913.29 1106.86 1913.54 1105.46C1913.57 1105.08 1913.57 1104.69 1913.54 1104.31C1914.87 1103.99 1916.24 1103.85 1917.61 1103.91C1918.97 1103.91 1920.31 1103.91 1921.15 1103.91H1922.67C1924.16 1103.91 1926.68 1103.69 1927.24 1102.32C1927.24 1102.07 1927.58 1101.2 1926.34 1100.43C1923.82 1096.85 1922.49 1092.59 1922.52 1088.22C1922.64 1086.12 1922.38 1084.01 1921.74 1082.01C1921.38 1081.01 1921.21 1079.96 1921.24 1078.9C1920.99 1075.23 1919.39 1071.79 1916.74 1069.24C1915.91 1068.41 1914.8 1067.9 1913.63 1067.81C1912.48 1067.81 1912.11 1067.28 1911.33 1065.85C1910.98 1065.11 1910.51 1064.43 1909.94 1063.84C1909.59 1063.46 1909.34 1063.12 1909.1 1062.84C1908.79 1062.43 1908.44 1062.05 1908.04 1061.72C1908.04 1060.7 1908.04 1059.74 1908.04 1058.87C1907.86 1057.36 1908.13 1055.84 1908.82 1054.49C1909.55 1053.08 1910.02 1051.55 1910.21 1049.98C1911.08 1044.7 1925.37 1030.23 1926.49 1029.39C1927.11 1028.92 1928.14 1028.15 1928.14 1002.52C1928.24 998.769 1928.85 995.05 1929.94 991.461C1930.26 990.606 1930.35 989.682 1930.19 988.782C1930.04 987.882 1929.65 987.038 1929.07 986.336C1928.36 985.461 1928.02 984.35 1928.11 983.23C1928.03 980.758 1927.09 978.392 1925.43 976.551C1924.64 975.671 1924.08 974.602 1923.82 973.445C1923.82 972.016 1923.51 966.053 1923.23 960.43L1931.27 956.02L2009.8 998.854V1027.18C2010.2 1030.58 2009.98 1034.02 2009.15 1037.34L2008.68 1037.49C2005.95 1038.36 1999.36 1040.41 1999.36 1044.08C1999.36 1047.75 1998.59 1049.17 1996.5 1049.61C1994.42 1050.04 1993.99 1052.25 1993.8 1054.18C1993.62 1056.72 1993.31 1057.28 1992.28 1057.28C1991.83 1057.23 1991.37 1057.28 1990.94 1057.43C1990.52 1057.57 1990.12 1057.81 1989.8 1058.12C1988.96 1059.11 1989.52 1060.42 1990.17 1061.79C1990.82 1063.15 1991.44 1064.64 1990.63 1065.45C1989.82 1066.12 1989.24 1067.03 1988.99 1068.06C1988.74 1069.08 1988.82 1070.16 1989.24 1071.13C1989.63 1071.73 1990.18 1072.22 1990.83 1072.54C1991.47 1072.86 1992.18 1073.01 1992.9 1072.97C1993.31 1072.97 1993.43 1072.97 1993.46 1072.97C1994.02 1073.43 1993.86 1075.27 1993.74 1076.85C1993.74 1077.75 1993.74 1078.68 1993.74 1079.61C1993.96 1081.09 1994.52 1082.49 1995.39 1083.7C1996.26 1084.91 1997.41 1085.9 1998.74 1086.57L1997.84 1089.68C1997.26 1089.4 1996.62 1089.26 1995.98 1089.27C1992.85 1089.66 1989.95 1091.12 1987.78 1093.41C1987.29 1093.85 1986.9 1094.39 1986.62 1094.98C1986.34 1095.58 1986.19 1096.23 1986.16 1096.89C1986.18 1097.16 1986.13 1097.44 1986.04 1097.7C1985.94 1097.97 1985.79 1098.2 1985.6 1098.41C1985.29 1098.75 1984.76 1099.21 1984.11 1099.8C1980.98 1102.71 1978.04 1105.83 1975.32 1109.12C1973.95 1110.93 1971.47 1111.3 1968.15 1111.3H1965.04C1963.56 1111.18 1962.08 1111.43 1960.72 1112.01C1958.42 1113.29 1959.23 1115.12 1959.7 1116.24C1960.16 1117.35 1960.16 1117.51 1959.94 1117.76C1957.64 1119.26 1955.22 1120.57 1952.71 1121.7L1950.91 1122.57C1949.89 1122.88 1948.85 1123.06 1947.8 1123.13C1944.69 1123.57 1940.66 1124.1 1938.95 1126.24L1938.64 1126.55C1938.22 1126.38 1937.82 1126.17 1937.46 1125.9C1936.65 1125.28 1935.68 1124.9 1934.66 1124.81C1934.15 1124.82 1933.65 1124.96 1933.2 1125.22C1932.76 1125.47 1932.38 1125.84 1932.11 1126.27C1931.09 1128.35 1929.81 1129 1929.04 1129Z" fill="#5AB947" fill-opacity="0.6" stroke="white" stroke-width="2.32964" stroke-miterlimit="10"/>
                     <path d="M2112.18 972.083C2109.85 972.083 2107.67 969.443 2107.64 969.443L2107.3 968.977H2093.6C2092.39 967.765 2090.8 966.999 2089.1 966.803C2088.46 966.789 2087.83 966.973 2087.29 967.331L2083.94 969.598H2021.82V889.427C2021.76 887.025 2021.48 884.633 2020.98 882.283C2020.33 878.929 2019.86 876.506 2021.6 874.394C2022.29 873.569 2022.75 872.58 2022.94 871.524C2023.13 870.468 2023.04 869.38 2022.69 868.368C2022.02 865.968 2022.15 863.418 2023.06 861.099L2023.43 860.043C2028.23 861.856 2033.3 862.853 2038.43 862.994C2044.38 863.666 2050.19 865.27 2055.64 867.746L2057.16 868.368C2059.27 869.243 2061.53 869.717 2063.81 869.765C2065.09 869.874 2066.37 869.667 2067.54 869.163C2068.72 868.659 2069.75 867.874 2070.55 866.877C2071.64 865.23 2079.65 862.963 2086.08 862.963C2087.62 862.884 2089.15 863.117 2090.59 863.646C2093.8 865.602 2097.43 866.753 2101.18 867.001C2102.38 867.008 2103.58 866.862 2104.75 866.566C2105.44 866.373 2106.15 866.279 2106.86 866.286C2108.45 866.355 2110.02 866.605 2111.55 867.032C2112.57 867.306 2113.61 867.473 2114.66 867.529C2115.32 867.567 2115.97 867.369 2116.49 866.97L2122.98 883.122L2121.56 887.067L2121.31 888.837C2120.44 889.241 2120.1 890.639 2119.29 894.087C2118.7 896.603 2117.15 903.405 2115.75 903.685C2114.35 903.964 2109.54 897.628 2106.43 890.484L2105.31 887.812C2101.15 877.748 2100.03 876.226 2098.42 876.226H2098.01H2097.73C2097.5 876.297 2097.29 876.421 2097.12 876.588C2096.95 876.756 2096.82 876.961 2096.74 877.189C2095.68 879.674 2097.45 890.639 2101.89 897.007C2103.57 899.398 2105 901.014 2106.06 902.318C2108.08 904.679 2108.91 905.642 2108.82 908.158C2108.95 910.479 2109.9 912.68 2111.49 914.37C2112.67 915.621 2113.45 917.185 2113.76 918.874C2114.83 922.494 2116.52 925.899 2118.76 928.938C2121.26 932.563 2123.35 936.46 2124.97 940.555C2125.67 942.886 2126.8 945.066 2128.3 946.985C2128.92 947.615 2129.38 948.391 2129.63 949.243C2129.88 950.094 2129.91 950.994 2129.73 951.862C2129.54 953.233 2129.54 954.622 2129.73 955.993L2129.2 956.77C2127.33 959.441 2127.27 959.441 2126.74 959.441H2125.16C2122.86 959.441 2122.05 961.46 2121.49 963.23C2120.69 965.467 2120.03 966.896 2118.39 966.896C2117.24 966.811 2116.1 967.127 2115.16 967.79C2114.22 968.453 2113.54 969.421 2113.23 970.53C2112.7 971.928 2112.52 972.083 2112.18 972.083Z" fill="#015897" class="egypt" stroke="white" stroke-width="2.32964" stroke-miterlimit="10"/>
                     <path d="M1881.78 1248.87C1879.75 1247.18 1878.12 1245.06 1877 1242.66C1875.92 1240.44 1874.44 1238.43 1872.65 1236.73C1866.84 1231.04 1865.48 1229.33 1865.35 1227.66C1864.82 1225.99 1863.89 1224.48 1862.65 1223.24C1861.62 1222 1859.79 1219.64 1859.95 1218.99C1861.25 1218.24 1862.34 1217.17 1863.12 1215.88C1863.91 1214.59 1864.35 1213.13 1864.42 1211.63C1864.42 1210.88 1865.13 1210.54 1867.03 1209.98C1868.43 1209.58 1870.79 1208.86 1870.14 1206.88C1869.51 1205.72 1868.62 1204.72 1867.53 1203.99C1866.94 1203.52 1865.97 1202.74 1865.91 1202.43C1866.52 1201.88 1867.07 1201.25 1867.53 1200.57C1870.63 1200.1 1871.35 1200.04 1871.53 1200.04C1874.14 1200.04 1885.36 1199.39 1885.82 1199.39H1886.85V1198.55C1887.41 1194.24 1887.58 1189.88 1887.34 1185.54L1888.15 1185.32C1889.52 1185.32 1895.89 1185.72 1902.13 1185.94C1901.76 1189.05 1901.17 1194.3 1901.17 1195.82C1901.15 1196.07 1901.2 1196.31 1901.3 1196.54C1901.4 1196.77 1901.56 1196.97 1901.76 1197.12C1902.18 1197.45 1902.71 1197.61 1903.25 1197.59C1904.31 1197.51 1905.35 1197.29 1906.35 1196.94C1907.63 1196.46 1908.97 1196.17 1910.33 1196.07C1910.9 1196.03 1911.46 1196.2 1911.91 1196.53C1912.49 1196.93 1912.95 1197.47 1913.24 1198.1C1913.54 1198.74 1913.66 1199.44 1913.59 1200.13C1913.43 1200.86 1913.1 1201.54 1912.63 1202.12C1912.15 1202.69 1911.54 1203.14 1910.86 1203.43C1910.15 1203.72 1909.54 1204.2 1909.1 1204.82C1908.66 1205.44 1908.39 1206.18 1908.34 1206.94C1908.46 1208.32 1908.92 1209.66 1909.68 1210.82C1910.45 1211.98 1911.49 1212.93 1912.72 1213.58C1914.96 1214.92 1914.9 1217.72 1914.8 1221.57C1914.8 1222.28 1914.8 1223.06 1914.8 1223.83C1914.8 1227.66 1914.8 1234.77 1912.53 1235.23C1912.29 1235.26 1912.04 1235.26 1911.79 1235.23C1910.87 1235.17 1909.96 1234.93 1909.12 1234.55C1908.15 1234.08 1907.09 1233.8 1906.01 1233.74C1905.61 1233.68 1905.2 1233.68 1904.8 1233.74C1904.17 1232.97 1903.68 1232.1 1903.34 1231.17C1902.41 1229.18 1901.45 1227.16 1899.33 1227.16C1897.22 1227.16 1896.6 1229.08 1896.23 1230.64C1895.85 1232.19 1895.54 1233.03 1894.89 1233.03H1892.81C1891.88 1232.92 1890.93 1232.99 1890.02 1233.25C1889.11 1233.5 1888.27 1233.94 1887.53 1234.52C1887.07 1235.15 1886.79 1235.9 1886.73 1236.68C1886.68 1237.46 1886.85 1238.24 1887.22 1238.93C1887.47 1239.52 1887.68 1240.11 1887.87 1240.64C1888.71 1242.81 1889.61 1245.05 1889.02 1245.7C1888.46 1246.04 1887.81 1246.19 1887.16 1246.11C1886.11 1246.13 1885.08 1246.39 1884.15 1246.87C1883.22 1247.34 1882.41 1248.03 1881.78 1248.87Z" fill="#5AB947" fill-opacity="0.6" stroke="white" stroke-width="2.32964" stroke-miterlimit="10"/>
@@ -911,7 +903,47 @@
             </div>
         </div>
 
-        
+        <!-- ------------------------------------------------------------- -->
+
+        <div class="impact-section">
+            <div class="special-head map-head" data-aos="fade" data-aos-duration="1000">
+                <div>
+                    <span>. Impact</span>
+                    <h2>
+                        Our<br> Impact
+                    </h2>
+                </div>
+                <div>
+                    <p>
+                        
+                    </p>
+                    <p>
+                        With revenue of Rs. 1000 crore, we are growing fast. But besides our strong <br>
+                        financial performance and energy-efficient solutions, we are consciously <br>
+                        contributing our share in shaping a sustainable ecosystem that continues <br>
+                        to flourish over generations. <br>
+                    </p>
+                </div>
+            </div>
+            <div class="impact-container">
+                <div class="impact-left impact-box">
+                    <div class="impact-content">
+                        <h2>Environment</h2>
+                        <p>
+                            We are beyond the conventional power transmission industry and ensure our actions positively impact environmental restoration. We advocate and implement significant dust-free infrastructural developments for a greener and healthier ecosystem.
+                        </p>
+                    </div>
+                </div>
+                <div class="impact-right impact-box">
+                    <div class="impact-content">
+                        <h2>Empowerment</h2>
+                        <p>
+                            Doing good is our way of creating meaningful change and giving back to the world. We nurture talent, empowering individuals to achieve their full potential. By celebrating achievements, we inspire progress and shared success. Together, we cultivate a culture of growth, collaboration, and transformation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- ------------------------------------------------------------- -->
 
@@ -1015,10 +1047,10 @@
 
         <!-- ------------------------------------------------------------- -->
 
-        <div class="above-footer-heading">
+        <!-- <div class="above-footer-heading">
             <h1>Mangals</h1>
             <span>Mangals</span>
-        </div>
+        </div> -->
 
         <!-- ------------------------------------------------------------- -->
 
@@ -1295,6 +1327,42 @@
             }
         }
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+              return;
+            }
+            entry.target.classList.remove('in-view');
+          });
+        });
+        
+        const allAnimatedElements = document.querySelectorAll('.animate');
+        
+        allAnimatedElements.forEach((element) => observer.observe(element));
+        
+        }); 
+    </script>
+    
+    <!-- <script>
+        // Wait for the entire page to load
+        window.addEventListener("load", () => {
+          // Hide the preloader
+          const preloader = document.querySelector(".preloader");
+          preloader.classList.add("hidden");
+    
+          // Show the main
+          const main = document.getElementById("main");
+          main.style.display = "block";
+    
+          // Re-enable scrolling
+          document.body.style.overflow = "auto";
+        });
+    </script> -->
     <script src="./js/app.js"></script>
 </body>
 </html>

@@ -760,8 +760,441 @@ transition: width 0.3s ease;
 
   <!-- ================================================================================================== -->
 
+
+  <div class="process-section">
+
+    <div id="process" class="steps-section">
+        <div class="steps-heading" data-aos="fade" data-aos-duration="1000">
+            <span>. Process</span>
+            <h1>
+                Check Out <br> How Our Process Works
+            </h1>
+            <p>
+                Discover the seamless journey from concept to completion with Urbis. Our streamlined process ensures meticulous planning and execution, guaranteeing quality at every step.
+            </p>
+        </div>
+        <div class="steps-container">
+            <div class="card-stack-section">
+                <div class="card-stack-right">
+                    <div class="card-container-2">
+                        <div class="stack-card card-1" data-aos="fade">
+                            <div>
+                                <h2>01</h2>
+                            </div>
+                            <div>
+                                <h3>Planning</h3>
+                                <p>
+                                    We begin with detailed planning, including site analysis, architectural design, and budget estimation, ensuring a solid foundation for your project.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="stack-card card-2">
+                            <div>
+                                <h2>02</h2>
+                            </div>
+                            <div>
+                                <h3>Estimating</h3>
+                                <p>
+                                    Accurate cost estimation ensures transparency and budget alignment, setting the stage for a successful project.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="stack-card card-3">
+                            <div>
+                                <h2>03</h2>
+                            </div>
+                            <div>
+                                <h3>Building</h3>
+                                <p>
+                                    Our skilled team brings the project to life, adhering to the highest quality standards and ensuring timely completion.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="stack-card card-4">
+                            <div>
+                                <h2>04</h2>
+                            </div>
+                            <div>
+                                <h3>Finished</h3>
+                                <p>
+                                    Once completed, we carry out a thorough inspection to ensure everything meets our quality standards and deliver the home ready for you to move into.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+  
+.steps-heading{
+  position: sticky;
+  top: 14px;
+  margin-left: 1rem;
+  padding: 2.2vw;
+  font-family: var(--heading-font);
+}
+.steps-section{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin-bottom: 4rem!important;
+  width: 100%;
+  padding-left: 1rem;
+  padding: 4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 10px -100px inset, rgba(0, 0, 0, 0.129) 0px 18px 36px -18px inset;
+}
+.steps-section span{
+  font-weight: 100;
+  color: #3a3a3a;
+  font-size: 18px;
+  font-family: var(--montserrat-semi-bold);
+}
+
+@media(max-width:500px){
+  /* ----------------------------- */
+  .steps-section{
+      flex-direction: column!important;
+  }
+  .card-container-2 .stack-card {
+      margin: 14px 0;
+      height: 300px;
+      width: 260px;
+      background-color: #1C2531;
+      margin-top: 30px;
+      position: sticky;
+      top: 280px;
+      border-radius: 2px;
+  }
+  .contact-section{
+      margin-top: 4rem;
+  }
+}
+.steps-heading h1 {
+  width: auto;
+  font-size: 2vw;
+  padding: 14px 0;
+}
+.steps-heading h1::after{
+  content: '';
+  background-color: #ccdeeacf;
+  height: 3.4rem;
+  width: 3.4rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  position: absolute;
+  left: 20px;
+  top: 55px;
+  z-index: -1;
+}
+.steps-heading p{
+  font-size: 1vw;
+  font-family: var(--montserrat-medium);
+}
+.steps-section{
+  margin-top: 2rem;
+  padding-top: 2rem;
+  height: 300vh;
+}
+.card-stack-section{
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 230px;
+  margin-left: 12rem;
+}
+.card-stack-left{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.card-stack-left span{
+  color: var(--span-color);
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.card-stack-left h2{
+  font-size: 40px;
+}
+
+.card-container-2 .stack-card{
+  margin: 14px 0;
+  height: 34vw;
+  width: 34vw;
+  background-color: #fff;
+  /* background: linear-gradient(#181818,#00f382 ); */
+  margin-top: 30px;
+  position: sticky;
+  top: 90px;
+  border-radius: 2px;
+  border: 1px solid #999;
+  color: #000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+/* .card-container .card-1{
+  position: sticky;
+  top: 2rem;
+} */
+
+.card-container-2 .card-1{
+  z-index: 1;
+}
+.card-container-2 .card-2{
+  z-index: 2;
+}
+.card-container-2 .card-3{
+  z-index: 3;
+}
+.card-container-2 .card-4{
+  z-index: 4;
+}
+.card-container-2 .card-5{
+  z-index: 5;
+}
+
+.work-heading{
+  width: 50%;
+  padding: 1rem;
+}
+.work-heading h1{
+  font-size: 4.5rem;
+  color: #fff;
+}
+.work-heading h1 span{
+  color: #00f382;
+}
+.steps-heading h1 p{
+  font-size: 1vw;
+  color: #333;
+  margin-top: 1.2rem;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+
+@media(max-width:1440px){
+  /* .card-container .stack-card{
+      margin: 14px 0;
+      margin-right: 2rem;
+      height: 540px;
+      width: 460px;
+  } */
+  /* .work-heading h1 {
+      font-size: 3.6rem;
+  } */
+  /* .steps-heading h1 p{
+      font-size: 1rem;
+  } */
+  .heading-style-display {
+      font-size: 5.6em;
+  }
+  .steps-section{
+      margin-top: 2rem;
+      padding-top: 2rem;
+      height: 290vh;
+  }
+}
+@media(max-width:1300px){
+  .steps-section{
+      margin-top: 2rem;
+      padding-top: 2rem;
+      height: 250vh;
+  }
+}
+@media(max-width:1050px){
+  .heading-style-display {
+      font-size: 5em;
+  }
+}
+
+@media(max-width:796px){
+  .work-heading {
+      width: 90%;
+      padding: 1rem;
+  }
+  .work-heading h1{
+      font-size: 1.2rem;
+  }
+  .steps-heading h1 p{
+      margin-top: 1rem;
+      font-size: 1rem;
+  }
+
+  /* .card-container .stack-card{
+      margin: 14px 0;
+      margin-right: 2rem;
+      height: 200px;
+      width: 260px;
+  } */
+  .card-container-2 .stack-card{
+      margin: 14px 0;
+      height: 450px;
+      width: 360px;
+  }
+  .card-stack-section {
+      padding-bottom: 10px;
+  }
+  .card-stack-section {
+      flex-direction: column;
+      margin-left: 1rem;
+  }
+  .steps-section {
+      height: 280vh;
+  }
+  .heading-style-display {
+      font-size: 11vw;
+  }
+}
+@media(max-width:660px){
+
+  .card-container-2 .stack-card{
+      margin: 14px 0;
+      margin-right: 2rem;
+      height: 460px;
+      width: 90vw;
+  }
+  .steps-section {
+      height: 295vh;
+      margin-bottom: 36rem!important;
+  }
+  .steps-heading{
+      margin-left: 0;
+  }
+  .steps-heading h1 p{
+      font-size: 3.2vw!important;
+      display: block;
+      width: 100%;
+  }
+  .card-container-2 .stack-card {
+      top: 265px!important;
+  }
+  .card-container-2 .stack-card{
+      margin: 14px 0;
+      height: 450px;
+      width: 85vw;
+  }
+  /* .steps-section{
+      width: 70vw;
+  } */
+  .who_section{
+      margin-bottom: 0;
+  }
+}
+
+.text-field w-input{
+  color: #000!important;
+}
+
+.card-container-2 .stack-card{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 2rem;
+
+  /* border-width: 5px 3px 3px 5px;
+  border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+  transform: rotate(2deg); */
+}
+.card-container-2 .stack-card h2{
+  font-size: 4.4rem;
+  font-family: var(--heading-font);
+}
+.card-container-2 .stack-card h3{
+  font-size: 2rem;
+  margin-bottom: 16px;
+  font-family: var(--heading-font);
+}
+.card-container-2 .stack-card p{
+  font-size: 1.1vw;
+  font-family: var(--montserrat-medium);
+}
+
+.card-container-2-2 .stack-card img{
+  height: 6vw;
+  margin-bottom:1rem;
+}
+.card-container-2-2 .stack-card h3,.card-container-2-2 .stack-card h4{
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.card-container-2-2 .stack-card p{
+  font-size: 1.2vw;
+}
+
+.card-4 .card-box img{
+  height: 4.5rem;
+}
+.card-box div{
+  margin: 1rem 0;
+}
+.card-box div h5{
+  color: #fff;
+}
+
+
+@media(max-width:540px){
+  .card-container-2 .stack-card img{
+      height: 4rem;
+  }
+  .card-container-2 .stack-card h3,.card-container-2 .stack-card h4{
+      margin-bottom: .6rem;
+  }
+
+  .card-container-2 .stack-card img{
+      height: 5rem;
+  }
+  .card-container-2 .stack-card h3,.card-container-2 .stack-card h4{
+      margin-bottom: 1rem;
+      color: #fff;
+      font-size: 1.6rem;
+  }
+
+  .card-container-2 .stack-card p{
+      font-size: .8rem;
+  }
+
+  .card-4 .card-box img{
+      height: 4.5rem;
+  }
+  .card-box div{
+      margin: 1rem 0;
+  }
+  .card-box div h5{
+      color: #fff;
+  }
+  .card-container-2 .stack-card{
+      padding: 1.8rem .8rem;
+  }
+}
+
   <!-- ================================================================================================== -->
-   
+  <div>
+    <img class="impact-leaf-one" src="https://www.mangals.com/wp-content/uploads/2024/06/faq-image-1.jpg" alt="">
+
+     <img  class="impact-leaf-two" src="https://cdn.pixabay.com/photo/2017/02/03/18/05/factory-2035768_1280.jpg" alt=""> 
+</div>
+
+ <div>
+    <img class="impact-leaf-four" src="https://cdn.pixabay.com/photo/2017/02/03/18/05/factory-2035768_1280.jpg" alt="">
+
+    <img class="impact-leaf-three" src="https://cdn.pixabay.com/photo/2017/02/03/18/05/factory-2035768_1280.jpg" alt="">
+</div>
   <!-- ================================================================================================== -->
 
 
