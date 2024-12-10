@@ -1,62 +1,67 @@
-.project-hero{
-    background-image: url('https://www.mangals.com/wp-content/uploads/2023/05/EPC-Projects_main_1.jpg');
-    height: 55vh;
-    width: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.project-heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem 0;
-    margin-top: 10rem;
+@font-face{
+    font-family: 'azonix';
+    src: url('../fonts/azonix.otf');
 }
-.project-heading h1{
-    font-size: 8vw;
-    text-transform: uppercase;
+@font-face{
+    font-family: 'montserrat-bold';
+    src: url('../fonts/montserrat-bold.ttf');
+}
+@font-face{
+    font-family: 'montserrat-medium';
+    src: url('../fonts/montserrat-medium.ttf');
+}
+@font-face{
+    font-family: 'montserrat-semiBold';
+    src: url('../fonts/montserrat-semi-bold.ttf');
+}
+:root{
+    --montserrat-medium: 'montserrat-medium';
+    --montserrat-bold: 'montserrat-bold';
+    --montserrat-semi-bold: 'montserrat-semiBold';
+    --heading-font: 'azonix';
 
-    -webkit-text-stroke-width: 2px;
-    letter-spacing: 1px;
-    -webkit-text-stroke-color: #0000004b;
-    color: #fff;
-    font-family: "Manrope Alt", Sans-serif;
+    --primary-color: #5AB947;
+    --secondary-color: #015998;
 }
-/* .project-heading h2{
-    position: relative;
-    text-transform: uppercase;
-    font-size: 3vw;
-} */
- 
-.project-about-head{
+
+/* --------------------------------------- */
+
+.project-main{
     display: flex;
     flex-direction: row;
-    align-items: start;
-    justify-content: space-between;
-    padding: 4vw 4vw;
+    margin: 2rem 6rem;
 }
-.project-about-head h2{
-    font-size: 2.2vw;
-}
-
-
-
-.project-info{
+.project-left{
+    width: 60vw;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: space-around;
-    margin: 2rem;
-    padding: 4rem;
-    background-image: url('https://www.mangals.com/wp-content/uploads/2024/06/20.png');
-    height: 80vh;
+    flex: 1;
 }
-.project-info h2{
-    font-size: 3rem;
-    color: #fff;
+.project-left .project-media img{
+    height: 20rem;
 }
-.project-info-content{
-    background-color: #ffffffea;
-    padding: 2rem;
-    width: 100%;
+.project-project-header{
+    font-family: var(--heading-font);
+    margin-top: 2rem;
 }
+.about-project-text{
+    font-family: var(--montserrat-medium);
+    margin-top: 1rem;
+}
+
+.project-right{
+    flex: 1;
+    width: 40vw;
+}
+
+
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* --------------------------------------- */
+
