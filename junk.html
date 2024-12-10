@@ -1197,6 +1197,296 @@ transition: width 0.3s ease;
 </div>
   <!-- ================================================================================================== -->
 
+  <div class="mission-vision-section">
+    <div class="mission-vision-section-head">
+       <h2>Company Roadmap</h2>
+       <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus incid sitatibus inci sitatibus inciunt ut harum cum ullam. Aut illum molestiae aliquam vel similique eveniet quisquam facilis dolores voluptate, quo omnis? Ab, harum eos?
+       </p>
+    </div>
+
+   <div class="mission-vision-section-head-img">
+       <img src="./images/mission-vision-head-demo-img.jpg" alt="">
+   </div>
+   
+   <div class="mission-vision-blank-container"></div>
+
+   <div class="mission-container">
+       <div class="mission-container-left">
+           <h2>Our Mission</h2>
+           <p>
+               Under the leadership of our Founder and Managing Director, Mr. Rahul Mangal, our mission is to establish Mangal Electrical Industries Limited as the premier global manufacturer and distributor of CRGO and transformer accessories.
+           </p>
+       </div>
+       <div class="mission-container-right">
+           <img src="./images/mission-demo-img.jpg" alt="">
+       </div>
+   </div>
+
+   <div class="values-container">
+      <div class="values-heading">
+          <h2>Our Values</h2>
+          <!-- <p>
+              At Mangal Electrical Industries Limited, our core values guide every aspect of our business.
+          </p> -->
+       </div>
+
+       <div class="values-content">
+           <div class="values-card">
+               <h3>Support</h3>
+               <p>
+                   Support a strong sense of commitment and trust at all levels, ensuring that we consistently deliver on our promises to stakeholders and clients.
+               </p>
+           </div>
+           <div class="values-card">
+               <h3>Working</h3>
+               <p>
+                   Working on new ideas and innovation to continuously improve our products and services, staying ahead in the competitive market.
+               </p>
+           </div>
+           <div class="values-card">
+               <h3>Ensuring</h3>
+               <p>
+                   Ensuring exceptional quality in everything we do, from our manufacturing processes to our customer service.
+               </p>
+           </div>
+           <div class="values-card">
+               <h3>Listen</h3>
+               <p>
+                   This value reflects the importance for of being attentive to the needs of the community as well as to the opinions and concerns of its customers and members.
+               </p>
+           </div>
+       </div>
+   </div>
+
+   <div class="mission-vision-blank-container-2"></div>
+
+   <div class="vision-container">
+       <div class="vision-container-right">
+           <img src="./images/mission-demo-img.jpg" alt="">
+       </div>
+       <div class="vision-container-left">
+           <h2>Our Vision</h2>
+           <p>
+               Under the leadership of our Founder and Managing Director, Mr. Rahul Mangal, our mission is to establish Mangal Electrical Industries Limited as the premier global manufacturer and distributor of CRGO and transformer accessories.
+           </p>
+       </div>
+   </div>
+
+</div>
+  
+.mission-vision-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.mission-vision-section-head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+.mission-vision-section-head h2{
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 2.2vw;
+}
+.mission-vision-section-head p{
+  width: 60%;
+  text-align: center;
+  padding: 1.8rem 0;
+  font-size: 1.1vw;
+  font-family: var(--montserrat-medium);
+}
+
+.mission-vision-blank-container{
+  height: 42rem;
+  background-color: #012D4C;
+  position: absolute;
+  right: 0;
+  top: 24rem;
+  z-index: -1;
+  width: 30rem;
+}
+.mission-vision-blank-container-2{
+  height: 40rem;
+  background-color: #012D4C;
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+  z-index: -1;
+  width: 30rem;
+}
+
+.mission-vision-section-head-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mission-vision-section-head-img img{
+  border-radius: 10rem;
+  width: 90vw;
+  height: 40vh;
+  border-top-right-radius: 0;
+}
+
+.mission-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+.mission-container-left {
+  width: 40%;
+}
+.mission-container-left h2{
+  font-size: 2.2vw;
+  font-family: var(--heading-font);
+}
+.mission-container-left p{
+  font-size: 1.1vw;
+  width: 70%;
+  font-family: var(--montserrat-medium);
+  margin-top: 1rem;
+  color: #515050;
+  line-height: 32px;
+}
+.mission-container-right img{
+  height: 44vh;
+  border-radius: 10px;
+  border-top-right-radius: 6rem;
+}
+.mission-container-right{
+  position: relative;
+}
+.mission-container-right::before{
+  content: '';
+  height: 12rem;
+  width: 12rem;
+  background-color: #5AB947;
+  right: -2rem;
+  top: -2rem;
+  border-top-right-radius: 6rem;
+  z-index: -1;
+  position: absolute;
+}
+
+
+.values-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 3rem 6rem;
+  background-color: #CCDEEA;
+  margin-left: 6rem;
+  border-top-left-radius: 6rem;
+}
+.values-container h2{
+  font-size: 2.2vw;
+  font-family: var(--heading-font);
+  margin-bottom: 2.6rem;
+  margin-top: 1.6rem;
+}
+.values-heading p{
+  font-family: var(--montserrat-medium);
+  margin-bottom: 2rem;
+}
+.values-content{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+}
+.values-card{
+  padding: 1rem;
+  width: 24%;
+}
+.values-card h3{
+  font-family: var(--heading-font);
+  font-size: 1.4vw;
+  color: #292828;
+}
+.values-card p{
+  font-family: var(--montserrat-medium);
+  margin-top: 1rem;
+  color: #545454;
+}
+
+.vision-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 4rem 0;
+}
+.vision-container-right{
+  position: relative;
+}
+.vision-container-right img{
+  height: 44vh;
+  border-radius: 10px;
+  border-top-left-radius: 6rem;
+}
+.vision-container-right::before{
+  content: '';
+  height: 12rem;
+  width: 12rem;
+  background-color: #5AB947;
+  left: -2rem;
+  top: -2rem;
+  border-top-left-radius: 6rem;
+  z-index: -1;
+  position: absolute;
+}
+.vision-container-left {
+  width: 40%;
+}
+.vision-container-left h2{
+  font-size: 2.2vw;
+  font-family: var(--heading-font);
+}
+.vision-container-left p{
+  font-size: 1.1vw;
+  width: 70%;
+  font-family: var(--montserrat-medium);
+  margin-top: 1rem;
+  color: #515050;
+  line-height: 32px;
+}
+
+  <!-- ================================================================================================== -->
+
+  <div class="about-section-about-page">
+    <div class="about-section-about-page-left">
+        <img src="https://cdn.pixabay.com/photo/2017/02/03/18/05/factory-2035768_1280.jpg" alt="">
+    </div>
+
+    <div class="about-section-right about-section-right-about-page">
+        <span>. About Mangal</span>
+        <h2>We work for you since 1980</h2>
+        <p>
+            <b>
+                Allan wrasse climbing gourami amur pike Arctic char, steelhead sprat sea lamprey grunion. Walleye poolfish sand goby butterfly ray stream catfish jewfish.
+            </b>
+        </p>
+
+        <p>
+            Spanish mackerel yellow weaver sixgill. Sandperch flyingfish yellowfin cutthroat trout grouper whitebait horsefish bullhead shark California smoothtongue, striped burrfish threadtail saber-toothed blenny Red
+        </p>
+        <p>
+            Arctic char, catfish jewfish. Spanish mackerel yellow weaver sixgill. Sandperch flyingfish yellowfin cutthroat trout grouper whitebait horsefish bullhead shark California
+        </p>
+
+    </div>
+</div>
+
+  <!-- ================================================================================================== -->
+
+
 
 
 
