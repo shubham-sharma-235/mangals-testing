@@ -31,34 +31,197 @@
 
 /* --------------------------------------- */
 
+.project-hero{
+    height: 70vh;
+    width: 100%;
+    background-color: #012D4C;
+    background-image: url('../images/pratapgargh-circle-hero-demo.jpeg');
+    background-repeat: no-repeat;
+    background-size: 140%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.project-hero-content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 6rem;
+}
+.project-hero-content p{
+    font-family: var(--montserrat-semi-bold);
+    font-size: 20px;
+    position: relative;
+}
+.project-hero-content p::before{
+    content: '';
+    left: -6rem;
+    top: 10px;
+    width: 6rem;
+    height: 3px;
+    background-color: #aef7a0;
+    position: absolute;
+}
+.project-hero-content h1{
+    font-family: var(--heading-font);
+    padding: 12px 0;
+    font-size: 40px;
+}
+
 .project-main{
     display: flex;
     flex-direction: row;
-    margin: 2rem 6rem;
+    margin: 6rem 10rem;
 }
 .project-left{
-    width: 60vw;
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 .project-left .project-media img{
-    height: 20rem;
+    height: 26rem;
 }
 .project-project-header{
-    font-family: var(--heading-font);
+    font-family: var(--montserrat-bold);
     margin-top: 2rem;
+    font-size: 1.4rem;
 }
 .about-project-text{
     font-family: var(--montserrat-medium);
     margin-top: 1rem;
+    line-height: 26px;
+    width: 86%;
+    color: #323232;
+}
+.project-project-checklist li{
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+.project-project-checklist i{
+    color: #5AB947;
+    font-size: 1.6rem;
+    margin-right: 10px;
 }
 
 .project-right{
-    flex: 1;
     width: 40vw;
 }
 
+.project-right-card-one{
+    width: 24rem;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #012d4ca1;
+    padding: 2rem;
+}
+.project-right-card-one h2{
+    font-family: var(--heading-font);
+    margin-bottom: 1rem;
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+}
+.project-info div{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    font-family: var(--montserrat-medium);
+}
+.project-info div p b{
+    font-size: 20px;
+    color: #000;
+}
+.project-info div p{
+    font-size: 16px;
+    margin-top: 1rem;
+    color: #323232;
+}
+
+.project-right-card-two{
+    margin-top: 2rem;
+    width: 24rem;
+    background-color: #012D4C;
+    padding: 2rem;
+    color: #fff;
+}
+.project-right-card-two .project-info div p b{
+    font-size: 14px;
+    color: #A9A9A9;
+    font-weight: 600;
+}
+.project-right-card-two .project-info div p{
+    font-size: 16px;
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* ---------------------------------------- */
+
+.product-snipts-slider{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin: 1.8rem 0;
+}
+.product-image-slider {
+    width: 90%;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-image-slides {
+    display: flex;
+    width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-image-slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.product-image-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-image-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+}
+
+.product-image-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-image-dot.active {
+    width: 30px; /* Make the active dot wider */
+    background-color: #333;
+    border-radius: 8px;
+}
+
+/* ---------------------------------------- */
 
 /* --------------------------------------- */
 /* --------------------------------------- */
