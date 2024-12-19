@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     images[currentIndex].classList.add("active");
     contentItems[currentIndex].classList.add("active");
-    progressBars[currentIndex].style.transition = "width 3s linear";
+    progressBars[currentIndex].style.transition = "width 4s linear";
     progressBars[currentIndex].style.width = "100%";
   }, 100);
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 50);
   }
 
-  setInterval(changeSlide, 3000);
+  setInterval(changeSlide, 4000);
 
   // Navbar hide/show on scroll
   window.addEventListener("scroll", () => {

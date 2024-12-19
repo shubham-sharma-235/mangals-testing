@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'azonix';
+    src: url('../fonts/azonix.otf');
+}
+@font-face{
+    font-family: 'montserrat-bold';
+    src: url('../fonts/montserrat-bold.ttf');
+}
+@font-face{
+    font-family: 'montserrat-medium';
+    src: url('../fonts/montserrat-medium.ttf');
+}
+@font-face{
+    font-family: 'montserrat-semiBold';
+    src: url('../fonts/montserrat-semi-bold.ttf');
+}
+:root{
+    --montserrat-medium: 'montserrat-medium';
+    --montserrat-bold: 'montserrat-bold';
+    --montserrat-semi-bold: 'montserrat-semiBold';
+    --heading-font: 'azonix';
+
+    --primary-color: #5AB947;
+    --secondary-color: #015998;
+}
+
+/* -------------------------------------------------- */
+
+.gallery-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: 110% 120%;
+    background-position: center;
+    background-image: url('../images/gallery-hero-img.jpeg');
+}
+.gallery-hero h1{
+    font-size: 3vw;
+    color: #fff;
+    font-family: var(--heading-font);
+}
