@@ -55,14 +55,15 @@
     font-family: var(--montserrat-semi-bold);
     font-size: 20px;
     position: relative;
+    padding-left: 2rem;
 }
 .project-hero-content p::before{
     content: '';
     left: -6rem;
     top: 10px;
-    width: 6rem;
+    width: 7rem;
     height: 3px;
-    background-color: #aef7a0;
+    background-color: #5ae93d;
     position: absolute;
 }
 .project-hero-content h1{

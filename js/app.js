@@ -33,12 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
     progressBars[currentIndex].style.width = "0%";
 
     setTimeout(() => {
-      progressBars[currentIndex].style.transition = "width 3s linear";
+      progressBars[currentIndex].style.transition = "width 5s linear";
       progressBars[currentIndex].style.width = "100%";
     }, 50);
   }
 
-  setInterval(changeSlide, 4000);
+  setInterval(changeSlide, 5000);
 
   // Navbar hide/show on scroll
   window.addEventListener("scroll", () => {
@@ -55,6 +55,27 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+// -----------------------------------------------------------------------
+
+const backToTopButton = document.getElementById('backToTop');
+
+// Function to show or hide the button
+window.addEventListener('scroll', () => {
+    if (window.scrollY > window.innerHeight * 1.6) { // 160vh equivalent
+        backToTopButton.style.display = 'block'; // Show the button
+    } else {
+        backToTopButton.style.display = 'none'; // Hide the button
+    }
+});
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
 
 // -----------------------------------------------------------------------
 
@@ -216,3 +237,4 @@ rightBtn.addEventListener('click', () => {
 updateProgressBar();
 
 // -----------------------------------------------------------------------
+

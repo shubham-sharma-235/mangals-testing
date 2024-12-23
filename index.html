@@ -13,14 +13,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- <div class="preloader">
-        <div class="loading-wrapper">
-          <div class="leaf"></div>
-          <div class="leaf"></div>
-          <div class="leaf"></div>
-          <div class="leaf"></div>
-        </div>
+    <!-- <div id="preloader">
+        <div class="leaf leaf-one"></div>
+        <div class="leaf leaf-two"></div>
+        <div class="leaf leaf-three"></div>
+        <div class="leaf leaf-four"></div>
     </div> -->
+
+    <button id="backToTop" onclick="scrollToTop()"><i class='bx bx-up-arrow-alt'></i></button>
+      
     <div class="main" id="main">
          <div class="navbar" id="navbar">
             <nav class="navbar-container">
@@ -45,7 +46,7 @@
                     </div>
                   </li>
                   <li>
-                    <a class="main-menu-link" href="#projects">Epic Projects</a>
+                    <a class="main-menu-link" href="#projects">Epc Projects</a>
                     <div class="dropdown">
                       <a href="#projects-sub1">Pratapgarh Circle</a>
                       <a href="#projects-sub2">Farrukhabad Substation</a>
@@ -58,6 +59,18 @@
                       <a href="#beyond-sub1">CSR</a>
                       <a href="#beyond-sub2">Gallery</a>
                       <a href="#beyond-sub3">Career</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="main-menu-link" href="#beyond">Investor Relations</a>
+                    <div class="dropdown">
+                        <a href="#products-sub1">DRHP</a>
+                        <a href="#products-sub2">Audited Financial Statements</a>
+                        <a href="#products-sub3">Policies</a>
+                        <a href="#products-sub4">Material Creditors</a>
+                        <a href="#products-sub5">AV Presentation</a>
+                        <a href="#products-sub6">Industry Report</a>
+                        <a href="#products-sub6">Group Companies</a>
                     </div>
                   </li>
                 </ul>
@@ -83,23 +96,32 @@
                   <div class="content-item active">
 
                     <h2 class="slide-heading">
-                        India's Leading Crgo Steel Processors, Suppliers & Exporters
+                        Serve & Conserve: <br> A Commitment to Sustainability
                     </h2>
 
                     <p class="slide-paragraph">
-                        Mangal Electrical Industries are committed to sustainability, delivering eco-friendly transformer accessories <br> that promote energy efficiency and reduce environmental impact.
+                        "Serve & Conserve" represents our dedication to sustainable industrial growth. <br>
+                         We deliver innovative solutions while preserving resources for a better future.
                     </p>
                     <button class="slide-button button-style-two">Enquire Now</button>
                   </div>
 
                   <div class="content-item">
-                    <h2 class="slide-heading">Slide 2 Heading</h2>
-                    <p class="slide-paragraph">Description for Slide 2.</p>
+                    <h2 class="slide-heading">
+                        Discover Solutions: Driving Innovation Forward
+                    </h2>
+                    <p class="slide-paragraph">
+                        "Discover Solutions" reflects our commitment to innovative industrial growth. We provide <br> cutting-edge solutions designed to meet today's needs and shape a sustainable future.
+                    </p>
                     <button class="slide-button button-style-two">Learn More 2</button>
                   </div>
                   <div class="content-item">
-                    <h2 class="slide-heading">Slide 3 Heading</h2>
-                    <p class="slide-paragraph">Description for Slide 3.</p>
+                    <h2 class="slide-heading">
+                        Excellence in Every Step <br> of the Journey
+                    </h2>
+                    <p class="slide-paragraph">
+                        We prioritize precision and efficiency in every project, ensuring top-tier industrial <br> solutions that drive success and sustainability across all sectors.
+                    </p>
                     <button class="slide-button button-style-two">Learn More 3</button>
                   </div>
                 </div>
@@ -134,21 +156,26 @@
                 <div data-aos="fade-up" data-aos-duration="400">
                     <span>Mangal</span>
                     <h2>
-                        Why we <br> are special?
+                        Certified <br> for Excellence
+                         
                     </h2>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="400">
                     <p>
-                        Allan wrasse climbing gourami amur pike Arctic char, steelhead sprat sea <br> lamprey grunion. Walleye poolfish sand goby butterfly ray stream catfish.
+                       Our company is committed to maintaining the highest standards of quality <br>
+                        and innovation. With certifications like NABL, NTPC, and PGCIL, along with <br>
+                        our state-of-the-art Brockhaus Laboratory Testing, we ensure top-tier solutions.
                     </p>
                     <p>
-                        Spanish mackerel yellow weaver sixgill. Sandperch flyingfish yellowfin <br> cutthroat trout grouper whitebait horsefish bullhead shark California <br> smoothtongue, striped burrfish threadtail saber-toothed blenny Red
+                        Tailored engineering and strong global partnerships reflect our dedication to <br>
+                         providing reliable and customized transformer solutions for industries worldwide.
                     </p>
                 </div>
             </div>
 
             <div class="special-card-section">
-                <div
+                <a href="./quility-assurance.html">
+                    <div
                     data-aos="fade-up" 
                     data-aos-delay="50"
                     data-aos-duration="500"
@@ -176,10 +203,11 @@
                         </div>
                         
                     </div>
-                    <!-- <p class="certificate-btn">View Certificate</p> -->
-                </div>
+                  </div>
+                </a>
 
-                <div
+                <a href="">
+                    <div
                     data-aos="fade-up" 
                     data-aos-delay="50"
                     data-aos-duration="700"
@@ -205,21 +233,22 @@
                             <img src="./images/02.png" alt="">
                         </div>
                     </div>
-                    <!-- <p class="certificate-btn certificate-btn-odd">View Certificate</p> -->
-                </div>
+                  </div>
+                </a>
 
-                <div
-                data-aos="fade-up" 
-                data-aos-delay="50"
-                data-aos-duration="900"
-                data-aos-easing="ease-in-out"
-                    >
-                   <div class="special-card" onclick="showPopup('popup3')">
-                    <div class="info-icon">
-                        <i class='bx bx-info-circle' ></i>
-                    </div>
+                <a href="">
+                    <div
+                        data-aos="fade-up" 
+                        data-aos-delay="50"
+                        data-aos-duration="900"
+                        data-aos-easing="ease-in-out"
+                            >
+                        <div class="special-card" onclick="showPopup('popup3')">
+                           <div class="info-icon">
+                               <i class='bx bx-info-circle' ></i>
+                           </div>
 
-                    <div>
+                        <div>
                     </div>
 
                     <div>
@@ -230,89 +259,46 @@
                         <p>Tailored transformer solutions to meet specific requirements.</p>
                     </div>
 
-                    <div class="special-inner-div">
-                        <img src="./images/03.png" alt="">
+                      <div class="special-inner-div">
+                          <img src="./images/03.png" alt="">
+                      </div>
                     </div>
                   </div>
-                  <!-- <p class="certificate-btn">View Certificate</p> -->
-                </div>
+                </a>
 
-                <div
-                data-aos="fade-up" 
-                data-aos-delay="50"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                    >
-                  <div class="special-card special-card-odd" onclick="showPopup('popup4')">
-                    <div class="info-icon">
-                        <i class='bx bx-info-circle' ></i>
+                <a href="">
+                    <div
+                    data-aos="fade-up" 
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                        >
+                      <div class="special-card special-card-odd" onclick="showPopup('popup4')">
+                        <div class="info-icon">
+                            <i class='bx bx-info-circle' ></i>
+                        </div>
+    
+                        <div>
+                        </div>
+    
+                        <div>
+                            <img src="https://www.mangals.com/wp-content/uploads/2024/06/Global-Partnerships.svg" alt="">
+                            <h3>
+                                Global Partnerships
+                            </h3>
+                            <p>Trusted by leading industry partners worldwide</p>
+                        </div>
+    
+                        <div class="special-inner-div">
+                            <img src="./images/04.png" alt="">
+                        </div>
+                      </div>
                     </div>
-
-                    <div>
-                    </div>
-
-                    <div>
-                        <img src="https://www.mangals.com/wp-content/uploads/2024/06/Global-Partnerships.svg" alt="">
-                        <h3>
-                            Global Partnerships
-                        </h3>
-                        <p>Trusted by leading industry partners worldwide</p>
-                    </div>
-
-                    <div class="special-inner-div">
-                        <img src="./images/04.png" alt="">
-                    </div>
-                  </div>
-                  <!-- <p class="certificate-btn certificate-btn-odd">View Certificate</p> -->
-                </div>
+                </a>
             </div>
         </div>
 
-        <!-- Popup Containers -->
-        <div class="popup-container">
-            <div id="popup1" class="popup">
-                <div class="popup-content">
-                    <span class="popup-close" onclick="closePopup('popup1')">×</span>
-                    
-                    <div class="special-head certificate-head">
-                        <div data-aos="fade-up" data-aos-duration="400">
-                            <span>. Mangal</span>
-                            <h2>
-                                Quality Assurance <br> Certificate
-                            </h2>
-                        </div>
-                        <div data-aos="fade-up" data-aos-duration="400">
-                            <p>
-                                Spanish mackerel yellow weaver sixgill. Sandperch flyingfish yellowfin <br> cutthroat trout grouper whitebait horsefish bullhead shark California <br> smoothtongue, striped burrfish threadtail saber-toothed blenny Red
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="certificate-image">
-                        <img src="./images/certificate-demo-img.jpg" alt="">
-                    </div>
-
-                </div>
-            </div>
-            <div id="popup2" class="popup">
-                <div class="popup-content">
-                    <span class="popup-close" onclick="closePopup('popup2')">×</span>
-                    <p>Content for Card 2</p>
-                </div>
-            </div>
-            <div id="popup3" class="popup">
-                <div class="popup-content">
-                    <span class="popup-close" onclick="closePopup('popup3')">×</span>
-                    <p>Content for Card 3</p>
-                </div>
-            </div>
-            <div id="popup4" class="popup">
-                <div class="popup-content">
-                    <span class="popup-close" onclick="closePopup('popup4')">×</span>
-                    <p>Content for Card 4</p>
-                </div>
-            </div>
-        </div>
+        
         
         <!-- ------------------------------What We Do-------------------------------- -->
 
@@ -323,7 +309,7 @@
                     Our mission is to<br>
                     Make energy accessible
                 </h2>
-
+                
                 <p data-aos="fade" data-aos-duration="400">
                     Established in 1990, MEIL is an ISO 9001:2015 certified leader in manufacturing CRGO products and manufacturing transformers. We are approved by Power Grid Corporation of India Limited for 400 kV Class Projects.
                 </p>
@@ -374,6 +360,154 @@
 
                 <!-- <div class="what-we-do-arrow-div"><i class='bx bx-right-arrow-alt'></i></div> -->
             </div>
+        </div>
+
+        <!-- ------------------------------------------------------------- -->
+
+        <div class="history-section">
+            <div class="history-head" data-aos="fade" data-aos-duration="600">
+                <span>. History</span>
+                <h2>History of our company</h2>
+            </div>
+
+            <div class="history-scroll-container" data-aos="fade-up" data-aos-duration="800">
+                <div class="history-scroll-content">
+                  <div class="history-item">
+                    <div>
+                        <h3>2024</h3>
+                        <h4>Public limited company</h4>
+                        <p>
+                            transitioned from Private ltd company to Public 
+                            limited company <br> NTPC Approval
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="history-item">
+                    <div>
+                        <h3>2023</h3>
+                        <h4>ZED Silver <br> Arrroved</h4>
+                        <p>
+                            Received approval from ZED Silver that reflect our
+                            commitment to excellence in manufacturing and operational
+                            practices
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="history-item">
+                    <div>
+                        <h3>2022</h3>
+                        <h4>Humble Begaining</h4>
+                        <p>
+                            Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                            consectetur adipisicing elit. Veritatis, enim odio po
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="history-item">
+                    <div>
+                        <h3>2004</h3>
+                        <h4>Humble Begaining</h4>
+                        <p>
+                            Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                            consectetur adipisicing elit. Veritatis, enim odio po
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="history-item">
+                    <div>
+                        <h3>2024</h3>
+                        <h4>Humble Begaining</h4>
+                        <p>
+                            Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                            consectetur adipisicing elit. Veritatis, enim odio po
+                        </p>
+                    </div>
+                  </div>
+                  <div class="history-item">
+                    <div>
+                        <h3>1980</h3>
+                        <h4>Humble Begaining</h4>
+                        <p>
+                            Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                            consectetur adipisicing elit. Veritatis, enim odio po
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="history-item">
+                    <div>
+                        <h3>1990</h3>
+                        <h4>Humble Begaining</h4>
+                        <p>
+                            Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                            consectetur adipisicing elit. Veritatis, enim odio po
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="history-item">
+                    <div>
+                        <h3>2002</h3>
+                        <h4>Humble Begaining</h4>
+                        <p>
+                            Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                            consectetur adipisicing elit. Veritatis, enim odio po
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="history-item">
+                    <div>
+                        <h3>2004</h3>
+                        <h4>Humble Begaining</h4>
+                        <p>
+                            Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                            consectetur adipisicing elit. Veritatis, enim odio po
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="history-item">
+                    <div>
+                        <h3>2024</h3>
+                        <h4>Humble Begaining</h4>
+                        <p>
+                            Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                            consectetur adipisicing elit. Veritatis, enim odio po
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="history-item">
+                    <div>
+                        <h3>2004</h3>
+                        <h4>Humble Begaining</h4>
+                        <p>
+                            Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                            consectetur adipisicing elit. Veritatis, enim odio po
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="history-item">
+                    <div>
+                        <h3>2024</h3>
+                        <h4>Humble Begaining</h4>
+                        <p>
+                            Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                            consectetur adipisicing elit. Veritatis, enim odio po
+                        </p>
+                    </div>
+                  </div>
+
+                </div>
+                <hr class="history-timeline">
+            </div>
+            
         </div>
 
         <!-- ------------------------------------------------------------- -->
@@ -488,7 +622,7 @@
                     </div>
                     <h4>CRGO Cut Lamination</h4>
                     <p>
-                        RGO Cut Lamination is a product used <br> to manufacture transformer cores
+                        Minimizes core losses in transformers.
                     </p>
                     <div class="product-card-btn">
                         <button>Explore</button>
@@ -499,9 +633,9 @@
                     <div class="product-card-two-img product-card-bg">
                         <img src="./images/product-three.svg" alt="">
                     </div>
-                    <h4>CRGO Cut Lamination</h4>
+                    <h4>CRGO Core Assembly</h4>
                     <p>
-                        RGO Cut Lamination is a product used <br> to manufacture transformer cores
+                        Ensures exceptional performance in transformers.
                     </p>
                     <div class="product-card-btn">
                         <button>Explore</button>
@@ -512,9 +646,9 @@
                     <div class="product-card-three-img product-card-bg">
                         <img src="./images/product-five.svg" alt="">
                     </div>
-                    <h4>CRGO Cut Lamination</h4>
+                    <h4>Amorphous Core</h4>
                     <p>
-                        RGO Cut Lamination is a product used <br> to manufacture transformer cores
+                        Minimizes energy loss with Metglas® metal.
                     </p>
                     <div class="product-card-btn">
                         <button>Explore</button>
@@ -525,9 +659,9 @@
                     <div class="product-card-four-img product-card-bg">
                         <img src="./images/product-six.svg" alt="">
                     </div>
-                    <h4>CRGO Cut Lamination</h4>
+                    <h4>CRGO Slit Coils</h4>
                     <p>
-                        RGO Cut Lamination is a product used <br> to manufacture transformer cores
+                        Essential for transformers and power devices.
                     </p>
                     <div class="product-card-btn">
                         <button>Explore</button>
@@ -1014,6 +1148,29 @@
             <span>Mangals</span>
         </div> -->
 
+        
+        <!-- ------------------------------------------------------------- -->
+
+        <div class="contact-container">
+            <div class="contact-card">
+                <div class="contact-card-head">
+                    <h2>Feel Free to Contact us on</h2>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-card-left">
+                        <h4><span>FOR INTERNATIONAL</span> INQUIRIES</h4>
+                        <p>+91 905-710-0200</p>
+                    </div>
+                    <div class="contact-card-right">
+                        <h4><span>FOR DOMESTIC</span> INQUIRIES</h4>
+                        <p>+91 926-514-4007</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
         <!-- ------------------------------------------------------------- -->
 
         <div class="footer-top">
@@ -1088,6 +1245,8 @@
                 </div>
             </div>
 
+            <!-- ------------------------------------------------------------- -->
+
             <div class="footer-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3555.685614745619!2d75.77471071045179!3d26.97685345723474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db245d48bec49%3A0xbf8faf0994292a9!2sMangal%20Electrical%20Industries%20Private%20Limited!5e0!3m2!1sen!2sin!4v1731952603486!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -1100,7 +1259,7 @@
                                 <div class="col-xl-4 col-lg-4 mb-50">
                                     <div class="footer-widget">
                                         <div class="footer-logo">
-                                            <a href="index.html"><img src="./logo/mangal-logo-without-bg.png" class="img-fluid" alt="logo"></a>
+                                            <a href="index.html"><img src="./logo/logo-white.svg" class="img-fluid" alt="logo"></a>
                                         </div>
                                         <div class="footer-text">
                                             <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, 
@@ -1158,14 +1317,14 @@
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                                     <div class="copyright-text">
-                                        <p>Copyright &copy; 2018, All Right Reserved <a href="./index.html">Mangal</a></p>
+                                        <p>Copyright &copy; 2024, All Right Reserved <a href="./index.html">Mangal</a></p>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                                     <div class="footer-menu">
                                         <ul>
-                                            <li><a href="#">Terms</a></li>
-                                            <li><a href="#">Privacy</a></li>
+                                            <li><a href="#">Terms & Conditions</a></li>
+                                            <li><a href="#">Privacy Policies</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1255,42 +1414,6 @@
         });
     </script>
     <script>
-        let currentPopup = null;
-        
-        function showPopup(popupId) {
-            // Close any currently open popups
-            if (currentPopup) {
-                closePopup();
-            }
-        
-            // Show the selected popup
-            currentPopup = document.getElementById(popupId);
-            currentPopup.classList.add("show");
-        
-            // Add a click listener to close the popup when clicking outside
-            setTimeout(() => {
-                document.addEventListener("click", handleOutsideClick);
-            }, 0);
-        }
-        
-        function closePopup() {
-            if (currentPopup) {
-                currentPopup.classList.remove("show");
-                currentPopup = null;
-        
-                // Remove the outside click listener
-                document.removeEventListener("click", handleOutsideClick);
-            }
-        }
-        
-        function handleOutsideClick(event) {
-            if (currentPopup && !currentPopup.contains(event.target)) {
-                closePopup();
-            }
-        }
-    </script>
-
-    <script>
         document.addEventListener("DOMContentLoaded", () => {
         
         const observer = new IntersectionObserver(entries => {
@@ -1310,21 +1433,40 @@
         }); 
     </script>
     
-    <!-- <script>
-        // Wait for the entire page to load
-        window.addEventListener("load", () => {
-          // Hide the preloader
-          const preloader = document.querySelector(".preloader");
-          preloader.classList.add("hidden");
     
-          // Show the main
-          const main = document.getElementById("main");
-          main.style.display = "block";
-    
-          // Re-enable scrolling
-          document.body.style.overflow = "auto";
+    <script>
+        const scrollContainer = document.querySelector('.history-scroll-container');
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        
+        scrollContainer.addEventListener('mousedown', (e) => {
+          isDown = true;
+          scrollContainer.classList.add('active');
+          startX = e.pageX - scrollContainer.offsetLeft;
+          scrollLeft = scrollContainer.scrollLeft;
         });
-    </script> -->
+        
+        scrollContainer.addEventListener('mouseleave', () => {
+          isDown = false;
+          scrollContainer.classList.remove('active');
+        });
+        
+        scrollContainer.addEventListener('mouseup', () => {
+          isDown = false;
+          scrollContainer.classList.remove('active');
+        });
+        
+        scrollContainer.addEventListener('mousemove', (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - scrollContainer.offsetLeft;
+          const walk = (x - startX) * 2; // Multiply for faster scroll
+          scrollContainer.scrollLeft = scrollLeft - walk;
+        });
+        
+    </script>
     <script src="./js/app.js"></script>
 </body>
 </html>

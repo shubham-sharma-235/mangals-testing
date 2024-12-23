@@ -1,0 +1,153 @@
+@font-face{
+    font-family: 'azonix';
+    src: url('../fonts/azonix.otf');
+}
+@font-face{
+    font-family: 'montserrat-bold';
+    src: url('../fonts/montserrat-bold.ttf');
+}
+@font-face{
+    font-family: 'montserrat-medium';
+    src: url('../fonts/montserrat-medium.ttf');
+}
+@font-face{
+    font-family: 'montserrat-semiBold';
+    src: url('../fonts/montserrat-semi-bold.ttf');
+}
+:root{
+    --montserrat-medium: 'montserrat-medium';
+    --montserrat-bold: 'montserrat-bold';
+    --montserrat-semi-bold: 'montserrat-semiBold';
+    --heading-font: 'azonix';
+
+    --primary-color: #5AB947;
+    --secondary-color: #015998;
+}
+
+.csr-hero{
+    height: 76vh;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-image: url('https://www.mangals.com/wp-content/uploads/2024/06/csr-1.jpg');
+    background-size: 140%;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.csr-hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.csr-hero-content h1{
+    font-size: 3.4vw;
+    color: #fff;
+    z-index: 100;
+    font-family: var(--heading-font);
+}
+
+/* ------------------------------------- */
+
+.csr-section-one-container{
+    margin-top: 4rem;
+}
+.csr-section-one-container,.vision-container,.values-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 6rem;
+}
+.csr-section-one-left{
+    padding-left: 4rem;
+    width: 52%;
+}
+.csr-section-one-left h2{
+    font-size: 2.2vw;
+    font-family: var(--heading-font);
+    padding-bottom: 22px;
+}
+.csr-section-one-left p{
+    font-size: 1.1vw;
+    font-family: var(--montserrat-medium);
+    padding-bottom: 24px;
+    color: #4f4e4e;
+}
+.csr-section-one-left h3{
+    font-family: var(--montserrat-semi-bold);
+}
+.csr-section-one-left ul li{
+    list-style-type: disc;
+    font-family: var(--montserrat-medium);
+    margin: 12px 34px;
+    font-size: 1.1vw;
+    color: #4f4e4e;
+    list-style-image: url('../images/icons8-leaf-12.png');
+}
+.csr-section-one-right img{
+    width: 28vw;
+    height: 68vh;
+    border-top-left-radius: 19rem;
+    border-bottom-right-radius: 19rem;
+    transform-origin: bottom left;
+    /* animation: leaf-rotation-right .8s ease-in; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+} 
+.csr-section-one-right::before{
+    content: '';
+    position: absolute;
+    background-color: #00f382;
+    background:linear-gradient(#012D4C,#5AB947);
+    top: 0rem;
+    right: 0rem;
+    width: 29vw;
+    height: 70vh;
+    border-bottom-right-radius: 18rem;
+    border-top-left-radius: 18rem;
+    z-index: -1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.csr-section-card{
+    position: absolute;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    bottom: -2rem;
+    right: 0rem;
+    width: 18vw;
+    height: 20vh;
+    z-index: 10;
+}
+
+.csr-section-two-right img{
+    width: 28vw;
+    height: 68vh;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 18rem;
+    border-top-right-radius: 18rem;
+    transform-origin: bottom left;
+} 
+.csr-section-two-right::before{
+    content: '';
+    position: absolute;
+    background:linear-gradient(#012D4C,#5AB947);
+    top: 0rem;
+    left: 0rem;
+    width: 29vw;
+    height: 70vh;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 18rem;
+    border-bottom-left-radius: 18rem;
+    z-index: -1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* ------------------------------------- */

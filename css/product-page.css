@@ -35,9 +35,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url('../images/product-demo-img.png');
+    background-image: url('../images/crgo-stock-img-2.png');
     background-repeat: no-repeat;
-    background-size: 100% 180%;
+    background-size: 100% 200%;
+    background-position: center;
     text-align: center;
     height: 70vh;
 }
@@ -80,7 +81,7 @@
     align-items: start;
     justify-content: start;
     padding: 2.2rem 4rem;
-    background-color: #001c2f;
+    background-color: #d0d7db6d;
 }
 .about-product .about-inner-div{
     display: flex;
@@ -97,14 +98,14 @@
 }
 .about-product-right h2{
     margin-bottom: 1rem;
-    font-size: 2.8rem;
-    color: #fff;
+    font-size: 2.2rem;
+    color: #363535;
     font-family: var(--heading-font);
 }
 .about-product p{
     font-family: var(--montserrat-medium);
     padding: 12px 4px;
-    color: #b9b9b9;
+    color: #444343;
     line-height: 28px;
 }
 .product-page-quote-btn{
@@ -132,7 +133,6 @@
 .product-features{
     display: flex;
     flex-direction: column;
-    align-items: start;
     justify-content: center;
     padding: 3rem;
 }
@@ -176,7 +176,7 @@
     align-items: center;
     justify-content: space-between;
     height: 6rem;
-    width: 92vw;
+    width: 88vw;
     /* border-top-left-radius: 3rem;
     border-bottom-right-radius: 3rem; */
     margin: 4px 0;

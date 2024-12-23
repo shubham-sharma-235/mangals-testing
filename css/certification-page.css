@@ -1,0 +1,123 @@
+@font-face{
+    font-family: 'azonix';
+    src: url('../fonts/azonix.otf');
+}
+@font-face{
+    font-family: 'montserrat-bold';
+    src: url('../fonts/montserrat-bold.ttf');
+}
+@font-face{
+    font-family: 'montserrat-medium';
+    src: url('../fonts/montserrat-medium.ttf');
+}
+@font-face{
+    font-family: 'montserrat-semiBold';
+    src: url('../fonts/montserrat-semi-bold.ttf');
+}
+:root{
+    --montserrat-medium: 'montserrat-medium';
+    --montserrat-bold: 'montserrat-bold';
+    --montserrat-semi-bold: 'montserrat-semiBold';
+    --heading-font: 'azonix';
+
+    --primary-color: #5AB947;
+    --secondary-color: #015998;
+}
+
+.quality-assurance-hero{
+    height: 76vh;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-image: url('https://www.mangals.com/wp-content/uploads/2024/06/csr-1.jpg');
+    background-size: 140%;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.quality-assurance-hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quality-assurance-hero-content h1{
+    font-size: 3.4vw;
+    color: #fff;
+    z-index: 100;
+    font-family: var(--heading-font);
+}
+
+/* ------------------------------------- */
+
+.certificate-container{
+    height: 100vh;
+    background-color: #012742;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+}
+/* .certificate-container::after{
+    position: absolute;
+    content: '';
+    background-image: url('../images/leaves-white-stroke-group.png');
+    width: 50rem;
+    height: 40rem;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    scale: .7;
+    z-index: 0;
+    top: -4rem;
+    right: 0rem;
+} */
+.certificate-section{
+    position: absolute;
+    top: 10rem;
+    height: 68vh;
+    z-index: 1;
+    background-color: #BDE3B5;
+    background: linear-gradient(30deg,#CCDEEA,#BDE3B5);
+    width: 100%;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+}
+
+.certificate-section-left {
+    width: 46%;
+    padding: 0 2rem;
+    z-index: 10;
+}
+.certificate-section-left h2{
+    font-family: var(--heading-font);
+    color: #3d3d3d;
+    margin-bottom: 4px;
+    font-size: 1.6rem;
+}
+.certificate-section-left hr{
+    width: 14%;
+    margin-top: 12px;
+    border: #012D4C 1px solid;
+    margin-bottom: 1.4rem;
+}
+.certificate-section-left p{
+    font-family: var(--montserrat-medium);
+    color: #444;
+    line-height: 26px;
+    padding: 10px 0;
+}
+.certificate-section-right{
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+/* .certificate-section-right{
+    margin-right: 4rem;
+} */
+
+/* ------------------------------------- */
+
+.footer-top{
+    margin-top: 0rem;
+}
+
