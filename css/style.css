@@ -738,7 +738,7 @@ nav.scrolled #logo {
 /* ------------------ Certification Section ------------------------ */
 
 .special-container{
-    height: 110vh;
+    height: 100vh;
     background-color: #fff;
     width: 100%;
     padding-top: 3rem;
@@ -1260,6 +1260,8 @@ nav.scrolled #logo {
 .steps-heading p{
     font-family: var(--montserrat-medium);
     font-size: 16px!important;
+    line-height: 26px;
+    color: #404040;
 }
 .steps-section{
     display: flex;
@@ -1270,6 +1272,22 @@ nav.scrolled #logo {
     padding-left: 1rem;
     padding: 4rem;
     position: relative;
+}
+
+
+.steps-heading::before{
+    content: '';
+    position: absolute;
+    background-image: url('../images/leaves_stroke.svg');
+    top: -4rem;
+    left: -16rem;
+    height: 30rem;
+    width: 40rem;
+    z-index: 100;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    filter: blur(4px);
+    filter: opacity(15%);
 }
 
 @media(max-width:500px){

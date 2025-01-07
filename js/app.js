@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const logo = document.getElementById("logo");
   let lastScrollY = window.scrollY;
   const scrollThreshold = 100; // Threshold for hiding/showing navbar
-  const colorChangeThreshold = window.innerHeight * 0.9; // 90% of viewport height
+  const colorChangeThreshold = window.innerHeight * 0.3; // 90% of viewport height
 
   // Show the navbar with animation on page load
   setTimeout(() => {
