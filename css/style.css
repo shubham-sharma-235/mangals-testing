@@ -1244,6 +1244,19 @@ nav.scrolled #logo {
     font-size: 2vw;
     margin: 12px 0;
 }
+.steps-heading h2::after{
+    content: '';
+    background-color: #00f38222;
+    height: 3.4rem;
+    width: 3.4rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    position: absolute;
+    left: 16px;
+    top: 80px;
+    z-index: -1;
+}
+
 .steps-heading p{
     font-family: var(--montserrat-medium);
     font-size: 16px!important;
@@ -1291,7 +1304,7 @@ nav.scrolled #logo {
 }
 .steps-section{
     padding-top: 2rem;
-    height: 420vh;
+    height: 450vh;
     /* background: linear-gradient(#d5e2ead9,#cce6c7af); */
 }
 .card-stack-section{
@@ -1548,12 +1561,14 @@ nav.scrolled #logo {
     -webkit-text-fill-color: transparent;
 }
 .card-container-2 .stack-card h3{
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 1.6rem;
+    margin-bottom: 6px;
     font-family: var(--montserrat-semi-bold);
+    color: #3c3c3c;
 }
 .card-container-2 .stack-card p{
     font-size: 14px;
+    color: #898787;
     font-family: var(--montserrat-medium);
 }
 
