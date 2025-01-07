@@ -43,7 +43,7 @@
     height: 70vh;
 }
 .product-hero-section h1{
-    font-size: 4.4vw;
+    font-size: 3.4vw;
     color: #fff;
     font-family: var(--heading-font);
 }
@@ -68,7 +68,7 @@
 .about-product-left img{
     border-top-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
-    height: 28rem;
+    height: 30rem;
 }
 .product-ribbon{
     position: relative;
@@ -126,6 +126,13 @@
     color: #fff;
     font-size: 1.2rem;
     box-shadow: rgb(0, 243, 130) 0px 10px 20px -11px;
+}
+
+.about-product-right ul li{
+    list-style: disc;
+    font-family: var(--montserrat-medium);
+    padding: 4px 0;
+    color: #444343;
 }
 
 /* --------------------------------------- */

@@ -1256,6 +1256,7 @@ nav.scrolled #logo {
     width: 100%;
     padding-left: 1rem;
     padding: 4rem;
+    position: relative;
 }
 
 @media(max-width:500px){
@@ -1628,6 +1629,19 @@ nav.scrolled #logo {
     background-color: #e6ebef92;
     padding-bottom: 5rem;
 }
+
+.product-section::after{
+    content: '';
+    height: 90%;
+    width: 40rem;
+    /* background-image: url('../images/leaves_stroke.svg'); */
+    position: absolute;
+    right: 0;
+    filter: blur(1px);
+    z-index: -1;
+}
+
+
 /* .product-section::before{
     content: '';
     position: absolute;
@@ -1895,7 +1909,7 @@ nav.scrolled #logo {
 }
 
 .impact-text h3 {
-  font-size: 2px;
+  font-size: 24px;
   margin: 0;
   font-family: var(--heading-font);
 } 
