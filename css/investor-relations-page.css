@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'azonix';
+    src: url('../fonts/azonix.otf');
+}
+@font-face{
+    font-family: 'montserrat-bold';
+    src: url('../fonts/montserrat-bold.ttf');
+}
+@font-face{
+    font-family: 'montserrat-medium';
+    src: url('../fonts/montserrat-medium.ttf');
+}
+@font-face{
+    font-family: 'montserrat-semiBold';
+    src: url('../fonts/montserrat-semi-bold.ttf');
+}
+:root{
+    --montserrat-medium: 'montserrat-medium';
+    --montserrat-bold: 'montserrat-bold';
+    --montserrat-semi-bold: 'montserrat-semiBold';
+    --heading-font: 'azonix';
+
+    --primary-color: #5AB947;
+    --secondary-color: #015998;
+}
+
+/* --------------------------------------- */
+
+.investor-relations-hero{
+    height: 70vh;
+    width: 100%;
+    background-color: #012D4C;
+    background-image: url('../images/pratapgargh-circle-hero-demo.jpeg');
+    background-repeat: no-repeat;
+    background-size: 140%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.investor-relations-hero-content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 6rem;
+}
+.investor-relations-hero-content p{
+    font-family: var(--montserrat-semi-bold);
+    font-size: 20px;
+    position: relative;
+    padding-left: 2rem;
+}
+.investor-relations-hero-content p::before{
+    content: '';
+    left: -6rem;
+    top: 10px;
+    width: 7rem;
+    height: 3px;
+    background-color: #5ae93d;
+    position: absolute;
+}
+.investor-relations-hero-content h1{
+    font-family: var(--heading-font);
+    padding: 12px 0;
+    font-size: 40px;
+}
+
+/* --------------------------------------- */
+
+
+.investor-relations-materials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ir-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 1.4rem 1rem;
+    border-top: 1px solid #444;
+    /* background-color:#ecf3f9d1; */
+    border-top: 1px solid #444;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+.ir-card:nth-child(1){
+    margin-top: 4rem;
+}
+.ir-card:nth-last-child(1){
+    border-bottom: 1px solid #444;
+}
+.ir-card h2{
+    font-family: var(--montserrat-semi-bold);
+    font-size: 1.2rem;
+}
+.ir-card-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 4.6rem;
+    width: 4.6rem;
+    background-color: #ebebeb;
+    transition: all ease-in-out .15s;
+}
+.ir-card-arrow img{
+    height: 50%;
+}
+.ir-card:hover .ir-card-arrow{
+    transform: rotate(-45deg);    
+}
+.ir-card:hover{
+    background-color: #e7f1f881;
+}
+
+/* -------------------------------------------------- */
+
+.ir-table-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ir-table-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 2rem 1rem;
+    border-top: 1px solid #444;
+}
+.ir-table-cards:nth-child(1){
+    margin-top: 4rem;
+    background-color: #012D4C;
+    color: #fff;
+}
+.ir-table-cards:nth-last-child(1){
+    background-color: #eaf4fb;
+    border-bottom: 1px solid #444;
+}
+.ir-table-cards:nth-child(1) h3{
+    font-family: var(--montserrat-medium);
+}
+.ir-table-cards h3{
+    font-family: var(--montserrat-semi-bold);
+    font-size: 1.2rem;
+}
+
+/* -------------------------------------------------- */
+
+.av-presentation-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.av-presentation-card {
+    margin: 1rem;
+    margin-top: 4rem;
+}
+.av-presentation-card video{
+    width: 30rem;
+    background-color: #012D4C;
+    padding: 4px;
+}
+.av-presentation-card h4{
+    text-align: center;
+    font-family: var(--montserrat-medium);
+    padding: 1rem;
+    background-color: #5AB947;   
+}
+
+/* -------------------------------------------------- */
+
+.ir-card-heading{
+    background-color: #012D4C;
+    color: #fff;
+    cursor:auto;
+}
+.ir-card-heading:hover{
+    background-color: #012D4C;
+}
+
+/* -------------------------------------------------- */
+

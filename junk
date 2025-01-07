@@ -844,3 +844,366 @@ function handleOutsideClick(event) {
 
       /* ------------------------------------------------------------ */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="product-card" data-aos="fade-up" data-aos-duration="400">
+                    <div class="product-card-one-img product-card-bg">
+                        <img src="./images/product-one-ing.svg" alt="">
+                    </div>
+                    <h4>CRGO Cut Lamination</h4>
+                    <p>
+                        Minimizes core losses in transformers.
+                    </p>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <!-- <button>Enquiry</button> -->
+                    </div>
+                </div>
+                <div class="product-card"  data-aos="fade-up" data-aos-duration="600">
+                    <div class="product-card-two-img product-card-bg">
+                        <img src="./images/product-three.svg" alt="">
+                    </div>
+                    <h4>CRGO Core Assembly</h4>
+                    <p>
+                        Ensures exceptional performance in transformers.
+                    </p>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <!-- <button>Enquiry</button> -->
+                    </div>
+                </div>
+                <div class="product-card"  data-aos="fade-up" data-aos-duration="800">
+                    <div class="product-card-three-img product-card-bg">
+                        <img src="./images/product-five.svg" alt="">
+                    </div>
+                    <h4>Amorphous Core</h4>
+                    <p>
+                        Minimizes energy loss with Metglas® metal.
+                    </p>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <!-- <button>Enquiry</button> -->
+                    </div>
+                </div>
+                <div class="product-card"  data-aos="fade-up" data-aos-duration="1000">
+                    <div class="product-card-four-img product-card-bg">
+                        <img src="./images/product-six.svg" alt="">
+                    </div>
+                    <h4>CRGO Slit Coils</h4>
+                    <p>
+                        Essential for transformers and power devices.
+                    </p>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <!-- <button>Enquiry</button> -->
+                    </div>
+                </div>
+
+
+
+                <div class="product-card" data-aos="fade-up" data-aos-duration="400">
+                    <div class="product-card-one-img product-card-bg">
+                        <img src="./images/product-one-ing.svg" alt="">
+                    </div>
+                    <h4>CRGO Cut Lamination</h4>
+                    <p>
+                        Minimizes core losses in transformers.
+                    </p>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <!-- <button>Enquiry</button> -->
+                    </div>
+                </div>
+                <div class="product-card"  data-aos="fade-up" data-aos-duration="600">
+                    <div class="product-card-two-img product-card-bg">
+                        <img src="./images/product-three.svg" alt="">
+                    </div>
+                    <h4>CRGO Core Assembly</h4>
+                    <p>
+                        Ensures exceptional performance in transformers.
+                    </p>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <!-- <button>Enquiry</button> -->
+                    </div>
+                </div>
+                <div class="product-card"  data-aos="fade-up" data-aos-duration="800">
+                    <div class="product-card-three-img product-card-bg">
+                        <img src="./images/product-five.svg" alt="">
+                    </div>
+                    <h4>Amorphous Core</h4>
+                    <p>
+                        Minimizes energy loss with Metglas® metal.
+                    </p>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <!-- <button>Enquiry</button> -->
+                    </div>
+                </div>
+                <div class="product-card"  data-aos="fade-up" data-aos-duration="1000">
+                    <div class="product-card-four-img product-card-bg">
+                        <img src="./images/product-six.svg" alt="">
+                    </div>
+                    <h4>CRGO Slit Coils</h4>
+                    <p>
+                        Essential for transformers and power devices.
+                    </p>
+                    <div class="product-card-btn">
+                        <button>Explore</button>
+                        <!-- <button>Enquiry</button> -->
+                    </div>
+                </div>
+                .product-card-container{
+                    display: grid;
+                    /* grid-gap: 1rem; */
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    /* gap: 4.6rem 1rem; */
+                    grid-gap: .6rem;
+                    margin: 0 4rem;
+                }
+                .product-card{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    /* background-color: #fff; */
+                    padding: 20px;
+                    cursor: pointer;
+                    margin: 10px;
+                    border-top-left-radius: 2.6rem;
+                    border-bottom-right-radius: 2.6rem;
+                    border-top-right-radius: .4rem;
+                    border-bottom-left-radius: .4rem;
+                    background-color: #fff;
+                    background-color: #e4eaf093;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+                }
+                .product-card:hover .product-card-btn button{
+                    background-color: #5AB947;
+                }
+                .product-card h4{
+                    font-family: var(--heading-font);
+                    font-size: 1.2vw;
+                    margin-top: 2rem;
+                }
+                .product-card p{
+                    font-family: var(--montserrat-medium);
+                    text-align: center;
+                    padding: 12px;
+                    font-size: 14px;
+                    color: #3d3d3d;
+                }
+                .product-card-btn{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 1rem;
+                }
+                .product-card button{
+                    border: none;
+                    width: 90%;
+                    background-color: #012D4C;
+                    background-color: #012D4C;
+                    margin-top: 1rem;
+                    color: #fff;
+                    font-family: var(--montserrat-medium);
+                    height: 2.2rem;
+                    transition: all ease-in-out .3s;
+                    cursor: pointer;
+                    margin: 2px;
+                    font-weight: 200;
+                    border-top-left-radius: 1.4rem;
+                    border-bottom-right-radius: 1.4rem;
+                }
+                .product-card button:nth-child(1){
+                    /* background:linear-gradient(45deg,#012d4cc6,#5ab947df); */
+                }
+                .product-card button:nth-child(2){
+                    /* background:linear-gradient(-45deg,#012d4cc6,#5ab947df); */
+                }
+                .product-card button:hover{
+                    /* background:linear-gradient(45deg,#012d4cec,#5ab947fd); */
+                    /* background-color: #ccdeea83; */
+                    transition: all ease-in-out .3s;
+                }
+                
+                .product-card-bg{
+                    width: 18rem;
+                    height: 18rem;
+                    position: relative;
+                    background-size: 110%;
+                    border-top-left-radius: 2rem;
+                    border-bottom-right-radius: 2rem;
+                    background-position: center;
+                }
+                .product-card-one-img{
+                    background-image: url('https://www.mangals.com/wp-content/uploads/2024/07/CRGO-Cut-Lamination_1.3.jpg');
+                }
+                .product-card-two-img{
+                    background-image: url('https://www.mangals.com/wp-content/uploads/2024/07/CRGO-Core-Assembly_1-1.jpg');
+                }
+                .product-card-three-img{
+                    background-image: url('https://www.mangals.com/wp-content/uploads/2024/06/Amorphous-Core_1.jpg');
+                }
+                .product-card-four-img{
+                    background-image: url('https://www.mangals.com/wp-content/uploads/2024/06/CRGO-Slit-Coils_1.jpg');
+                }
+                .product-card img{
+                    height: 18rem;
+                    width: 18rem;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    /* background: rgba(0, 0, 0, 0.3);
+                    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+                    backdrop-filter: blur( 10px );
+                    -webkit-backdrop-filter: blur( 10px );
+                    border-top-left-radius: 2rem;
+                    border-bottom-right-radius: 2.1rem;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+                    display: none;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="special-head map-head" data-aos="fade" data-aos-duration="1000">
+                <div>
+                    <span>Impact</span>
+                    <h2>
+                        Our<br> Impact
+                    </h2>
+                </div>
+                <div>
+                    <p>
+                        
+                    </p>
+                    <p>
+                        With revenue of Rs. 1000 crore, we are growing fast. But besides our strong <br>
+                        financial performance and energy-efficient solutions, we are consciously <br>
+                        contributing our share in shaping a sustainable ecosystem that continues <br>
+                        to flourish over generations. <br>
+                    </p>
+                </div>
+            </div>
+            <div class="impact-container">
+                <div class="impact-left impact-box">
+                    <div class="impact-content">
+                        <h2>Environment</h2>
+                        <p>
+                            We are beyond the conventional power transmission industry and ensure our actions positively impact environmental restoration. We advocate and implement significant dust-free infrastructural developments for a greener and healthier ecosystem.
+                        </p>
+                    </div>
+                </div>
+                <div class="impact-right impact-box">
+                    <div class="impact-content">
+                        <h2>Empowerment</h2>
+                        <p>
+                            Doing good is our way of creating meaningful change and giving back to the world. We nurture talent, empowering individuals to achieve their full potential. By celebrating achievements, we inspire progress and shared success. Together, we cultivate a culture of growth, collaboration, and transformation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            .impact-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 6rem;
+            }
+            .impact-left{
+                background-image: url('https://www.mangals.com/wp-content/uploads/2024/06/DSC0629-scaled.jpg');
+                height: 80vh;
+                width: 50vw;
+                background-size: 140%;
+                border-top-left-radius: 6rem;
+                border-bottom-right-radius: 6rem;
+            }
+            .impact-right{
+                background-image: url('https://www.mangals.com/wp-content/uploads/2024/06/DSC_0218-scaled.jpg');
+                height: 80vh;
+                width: 50vw;
+                background-size: 140%;
+                border-top-right-radius: 6rem;
+                border-bottom-left-radius: 6rem;
+            }
+            .impact-box{
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 4rem;
+                text-align: center;
+                margin: 0 12px;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                transition: all ease-in-out .4s;
+                cursor: pointer;
+            }
+            .impact-box:hover{
+                filter: grayscale(1);
+                transition: all ease-in .4s;
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                background-size: 138%;
+            }
+            .impact-content{
+                padding: 2rem;
+                background: rgba( 16, 16, 16, 0.45 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 3.5px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            }
+            .impact-box h2{
+                font-family: var(--heading-font);
+                font-size: 2vw;
+            }
+            .impact-box p{
+                font-family: var(--montserrat-medium);
+                margin-top: 12px;
+                font-size: 1vw;
+                margin-top: 1.2rem;
+                line-height: 30px;
+                color: #dbdbdb;
+            }
+
+
+
