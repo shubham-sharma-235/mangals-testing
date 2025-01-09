@@ -35,9 +35,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url('../images/crgo-stock-img-2.png');
     background-repeat: no-repeat;
-    background-size: 100% 200%;
+    background-size: 100% 100%;
     background-position: center;
     text-align: center;
     height: 70vh;

@@ -2226,11 +2226,12 @@ nav.scrolled #logo {
     cursor: pointer;
     font-weight: bold;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: var(--montserrat-medium);
+    font-weight: 500;
 }
 .faq-question i{
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: #999;
 }
 .faq-question:hover {
