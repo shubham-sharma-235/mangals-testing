@@ -77,6 +77,7 @@ function scrollToTop() {
     });
 }
 
+
 // -----------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -84,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const logo = document.getElementById("logo");
   let lastScrollY = window.scrollY;
   const scrollThreshold = 100; // Threshold for hiding/showing navbar
-  const colorChangeThreshold = window.innerHeight * 0.3; // 90% of viewport height
+  const colorChangeThreshold = window.innerHeight * 0.2; // 20% of viewport height
 
   // Show the navbar with animation on page load
   setTimeout(() => {
@@ -237,4 +238,49 @@ rightBtn.addEventListener('click', () => {
 updateProgressBar();
 
 // -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+
+const productSlides = document.querySelectorAll('.product-slide');
+const prevProductBtn = document.getElementById('prevProductBtn');
+const nextProductBtn = document.getElementById('nextProductBtn');
+
+let currentProductIndex = 0;
+
+// Function to show the current slide
+function showProductSlide(index) {
+  productSlides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (i === index) {
+      slide.classList.add('active');
+    }
+  });
+}
+
+// Auto-slide every 3 seconds
+let autoProductSlide = setInterval(() => {
+  nextProductSlide();
+}, 3000);
+
+function nextProductSlide() {
+  currentProductIndex = (currentProductIndex + 1) % productSlides.length;
+  showProductSlide(currentProductIndex);
+}
+
+function prevProductSlide() {
+  currentProductIndex = (currentProductIndex - 1 + productSlides.length) % productSlides.length;
+  showProductSlide(currentProductIndex);
+}
+
+// Manual navigation buttons
+nextProductBtn.addEventListener('click', () => {
+  clearInterval(autoProductSlide); // Stop auto-slide on manual interaction
+  nextProductSlide();
+  autoProductSlide = setInterval(nextProductSlide, 5000); // Restart auto-slide
+});
+
+prevProductBtn.addEventListener('click', () => {
+  clearInterval(autoProductSlide); // Stop auto-slide on manual interaction
+  prevProductSlide();
+  autoProductSlide = setInterval(nextProductSlide, 5000); // Restart auto-slide
+});
 

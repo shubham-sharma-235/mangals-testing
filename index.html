@@ -33,7 +33,7 @@
                   <li><a class="main-menu-link active" href="./index.html">Home</a></li>
                   <li><a class="main-menu-link" href="./about-mangal.html">About</a></li>
                   <li>
-                    <a class="main-menu-link" style="cursor: pointer;">Our Products</a>
+                    <a class="main-menu-link" style="cursor: pointer;">Products</a>
                     <div class="dropdown">
                       <a href="./mangal-products/crgo-wide-coil.html">CRGO Wide Coils</a>
                       <a href="./mangal-products/crgo-slit-coil.html">CRGO Slit Coils</a>
@@ -58,7 +58,7 @@
                     <div class="dropdown">
                       <a href="./beyond-business/csr.html">CSR</a>
                       <a href="./beyond-business/gallery.html">Gallery</a>
-                      <a href="#beyond-sub3">Career</a>
+                      <!-- <a href="#beyond-sub3">Career</a> -->
                     </div>
                   </li>
                   <li>
@@ -71,7 +71,7 @@
                       <a href="./investor-relations/industry-report.html">Industry Report</a>
                       <a href="./investor-relations/group Companies.html">Group Companies</a>
   
-                      <a style="cursor: pointer;">Corporate Governance</a>
+                      <a style="cursor: pointer;display: flex;align-items: center;justify-content: space-between;">Corporate Governance<i style="font-size: 17px;" class='bx bx-chevron-right'></i></a>
                       <!-- Sub-dropdown HTML -->
                       <div class="sub-dropdown">
                         <a href="./board-of-directors.html">Board Members</a>
@@ -82,6 +82,7 @@
                       </div>
                     </div>
                   </li>
+                  <li><a class="main-menu-link" href="./about-mangal.html">Career</a></li>
                 </ul>
                 <div class="nav-contact-container">
                     <li>
@@ -1399,19 +1400,24 @@
     </script>
     <script>
         const faqs = document.querySelectorAll('.faq');
-        
-        faqs.forEach((faq) => {
-          faq.querySelector('.faq-question').addEventListener('click', () => {
-            // Close all FAQs except the clicked one
-            faqs.forEach((item) => {
-              if (item !== faq) {
-                item.classList.remove('open');
-              }
-            });
-            // Toggle the clicked FAQ
-            faq.classList.toggle('open');
-          });
-        });
+ 
+         // Open the first FAQ by default
+         if (faqs.length > 0) {
+           faqs[0].classList.add('open');
+         }
+         
+         faqs.forEach((faq) => {
+           faq.querySelector('.faq-question').addEventListener('click', () => {
+             // Close all FAQs except the clicked one
+             faqs.forEach((item) => {
+               if (item !== faq) {
+                 item.classList.remove('open');
+               }
+             });
+             // Toggle the clicked FAQ
+             faq.classList.toggle('open');
+           });
+         });
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {

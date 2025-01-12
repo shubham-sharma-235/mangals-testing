@@ -236,6 +236,9 @@ nav {
 .navbar-container.scrolled .main-menu-link{
     color: #000;
 }
+.navbar-container.scrolled .active{
+    color: #5AB947;
+}
 .navbar-container.scrolled .main-menu-link a{
     color: #fff; 
 }
@@ -379,6 +382,7 @@ nav.scrolled #logo {
 .dropdown a:nth-child(6) { transition-delay: 0.35s; }
 .dropdown a:nth-child(7) { transition-delay: 0.4s; }
 .dropdown a:nth-child(8) { transition-delay: 0.45s; }
+.dropdown a:nth-child(9) { transition-delay: 0.5s; }
 
 /* Apply opacity and transform only when dropdown is visible */
 .nav-menu-container li:hover .dropdown a {
@@ -2247,9 +2251,14 @@ nav.scrolled #logo {
   font-size: 1rem;
   font-family: var(--montserrat-medium);
 }
+.faq.open .faq-question{
+    background-color: #e4eaee;
+    /* background: linear-gradient(45deg,#015998,#5AB947); */
+}
 .faq.open .faq-answer {
-  max-height: 150px; /* Adjust for longest answer */
-  padding: 20px 15px;
+    max-height: 150px; /* Adjust for longest answer */
+    padding: 20px 15px;
+    /* background: linear-gradient(45deg,#CCDEEA,#BDE3B5); */
 }
 .arrow {
   margin-right: .8rem;

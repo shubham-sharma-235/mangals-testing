@@ -36,6 +36,7 @@
                         <a href="./crgo-wide-coil.html">CRGO Wide Coils</a>
                         <a href="./crgo-slit-coil.html" class="dropdown-active">CRGO Slit Coils</a>
                         <a href="./crgo-cut-lamination.html">CRGO Cut Lamination</a>
+                        <a href="./crgo-core-assembly.html">CRGO Core Assembly</a>
                         <a href="./crgo-core-coil-assembly.html">CRGO Core Coil Assembly</a>
                         <a href="./amorphous-core.html">Amorphous Core</a>
                         <a href="./immersed-circuit-breaker-icb.html">Immersed Circuit Breaker</a>
@@ -94,7 +95,33 @@
         <div class="about-product">
             <div class="about-inner-div">
                 <div class="about-product-left">
-                    <img src="https://www.mangals.com/wp-content/uploads/2024/06/CRGO-Slit-Coils_1.jpg" alt="">
+                   <div>
+                      <div class="product-slider-container">
+                        <div class="product-slider">
+                          <div class="product-slide active">
+                            <img src="https://www.mangals.com/wp-content/uploads/2024/06/CRGO-Slit-Coils_1.jpg" alt="Product Image 1">
+                          </div>
+                          <div class="product-slide">
+                            <img src="https://www.mangals.com/wp-content/uploads/2024/06/crgo-slit-coil-Technical-Specifications-1.jpg" alt="Product Image 2">
+                          </div>
+                          <div class="product-slide">
+                            <img src="https://images.unsplash.com/photo-1735809489088-ead6b62e5ac5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Image 3">
+                          </div>
+                          <div class="product-slide">
+                            <img src="https://images.unsplash.com/photo-1735809489088-ead6b62e5ac5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Image 4">
+                          </div>
+                          <div class="product-slide">
+                            <img src="https://images.unsplash.com/photo-1735809489088-ead6b62e5ac5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Image 5">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="product-buttons">
+                        <button class="product-button" id="prevProductBtn">&lt;</button>
+                        <button class="product-button" id="nextProductBtn">&gt;</button>
+                      </div>
+                   </div>
+
                     <div class="product-ribbon"></div>
                 </div>
                 <div class="about-product-right">
@@ -106,6 +133,10 @@
 
                         <p>
                             CRGO Coils offer high magnetic permeability, low core loss, and excellent insulation properties, making them ideal for applications that require high efficiency and low losses. These coils are available in mother form in various sizes (900mm to 1250mm), width shapes, and thicknesses (0.18mm to 0.35mm), allowing manufacturers to choose the right product for their specific needs.
+                        </p>
+
+                        <p>
+                            We offer precision cutting services for magnetic core coils, providing various widths to meet customer needs. Our advanced CNC Slitting line with a carbide cutter ensures top-quality results with perfect accuracy. We guarantee that both edges of our slit coils will have a maximum 10-micron burr.
                         </p>
                     </div>
                     <!-- <div>
@@ -126,13 +157,13 @@
                 </h2>
             </div>
             <div data-aos="fade-up" data-aos-duration="400">
-                <p>
+                <!-- <p>
                     We offer precision cutting services for magnetic core coils, <br>
                      providing various  widths to meet customer needs. Our advanced <br>
                      CNC Slitting line with a carbide cutter  ensures top-quality <br>
                      results with perfect accuracy. We guarantee that both edges of <br>
                     our slit coils will have a maximum 10-micron burr.
-                </p>
+                </p> -->
             </div>
         </div>
 
@@ -468,19 +499,24 @@
     <script src="../js/app.js"></script>
     <script>
         const faqs = document.querySelectorAll('.faq');
-        
-        faqs.forEach((faq) => {
-          faq.querySelector('.faq-question').addEventListener('click', () => {
-            // Close all FAQs except the clicked one
-            faqs.forEach((item) => {
-              if (item !== faq) {
-                item.classList.remove('open');
-              }
-            });
-            // Toggle the clicked FAQ
-            faq.classList.toggle('open');
-          });
-        });
+ 
+         // Open the first FAQ by default
+         if (faqs.length > 0) {
+           faqs[0].classList.add('open');
+         }
+         
+         faqs.forEach((faq) => {
+           faq.querySelector('.faq-question').addEventListener('click', () => {
+             // Close all FAQs except the clicked one
+             faqs.forEach((item) => {
+               if (item !== faq) {
+                 item.classList.remove('open');
+               }
+             });
+             // Toggle the clicked FAQ
+             faq.classList.toggle('open');
+           });
+         });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

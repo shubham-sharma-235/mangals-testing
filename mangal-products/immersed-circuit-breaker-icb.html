@@ -10,8 +10,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="../logo/flaticon.svg" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="../css/product-page.css">
+    <style>
+        .product-features{
+            padding: 1.2rem 3rem;
+        }
+
+        .feature-toggle-container {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .feature-toggle-container.active {
+            display: block;
+            opacity: 1;
+        }
+        .feature-toggle-button-container {
+            margin-bottom: 20px;
+        }
+        .feature-toggle-button-container button {
+            margin-right: 10px;
+            padding: 10px 25px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border: none;
+            background-color: #ebe8e8ce;
+            transition: all ease-in-out .3s;
+        }
+        .feature-toggle-button-container button:hover{
+            background-color: #cecdcda5;
+        }
+        .feature-toggle-button-container button.active {
+            background-color: #1e1e1e;
+            color: white;
+        }
+    </style>
     <style>
         .product-hero-section{
             background-image: url('https://www.mangals.com/wp-content/uploads/2024/07/crgo-icb-main.jpg');
@@ -36,6 +70,7 @@
                         <a href="./crgo-wide-coil.html">CRGO Wide Coils</a>
                         <a href="./crgo-slit-coil.html">CRGO Slit Coils</a>
                         <a href="./crgo-cut-lamination.html">CRGO Cut Lamination</a>
+                        <a href="./crgo-core-assembly.html">CRGO Core Assembly</a>
                         <a href="./crgo-core-coil-assembly.html">CRGO Core Coil Assembly</a>
                         <a href="./amorphous-core.html">Amorphous Core</a>
                         <a href="./immersed-circuit-breaker-icb.html" class="dropdown-active">Immersed Circuit Breaker</a>
@@ -86,26 +121,52 @@
         <div class="product-hero-section">
             <h1>Immersed Circuit Breaker (ICB)</h1>
             <p>
-                Cold Rolled Grain Oriented Steel Slit Coils, are electrical  <br>
-                steel products that are widely used in the manufacturing of transformers
+                Immersed Circuit Breakers (ICBs): Highly sensitive, durable, and efficient circuit <br>
+                 breakers designed for superior performance and tailored to diverse industrial needs.
             </p>
         </div>
 
         <div class="about-product">
             <div class="about-inner-div">
                 <div class="about-product-left">
-                    <img src="https://www.mangals.com/wp-content/uploads/2024/07/crgo-icb-product.jpg" alt="">
+                    <div>
+                        <div class="product-slider-container">
+                          <div class="product-slider">
+                            <div class="product-slide active">
+                              <img src="https://www.mangals.com/wp-content/uploads/2024/07/crgo-icb-product.jpg" alt="Product Image 1">
+                            </div>
+                            <div class="product-slide">
+                              <img src="https://images.unsplash.com/photo-1735809489088-ead6b62e5ac5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Image 2">
+                            </div>
+                            <div class="product-slide">
+                              <img src="https://images.unsplash.com/photo-1735809489088-ead6b62e5ac5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Image 3">
+                            </div>
+                            <div class="product-slide">
+                              <img src="https://images.unsplash.com/photo-1735809489088-ead6b62e5ac5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Image 4">
+                            </div>
+                            <div class="product-slide">
+                              <img src="https://images.unsplash.com/photo-1735809489088-ead6b62e5ac5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Image 5">
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="product-buttons">
+                          <button class="product-button" id="prevProductBtn">&lt;</button>
+                          <button class="product-button" id="nextProductBtn">&gt;</button>
+                        </div>
+                    </div>
+
                     <div class="product-ribbon"></div>
                 </div>
                 <div class="about-product-right">
                     <div>
-                        <h2>About Amorphous Core</h2>
+                        <h2>About Immersed Circuit Breaker (ICB)</h2>
                         <p>
-                            Amorphous is a non-crystal material developed when high-temperature liquids are rapidly frozen. The energy loss (hysteresis loss) is minimal when the magnetic induction flux travels through the iron core since there is no rule of atomic arrangement. Furthermore, because the thickness is roughly 0.03 mm—almost 1/10 of that of silicon steel—eddy current loss is reduced. As a result, it is possible to reduce the no-load loss (hysteresis loss and eddy current loss) to roughly 1/5 of silicon steel. Amorphous steel ribbon is coiled to form the core of transformers with amorphous cores.
+                            With 25 years of rich expertise in manufacturing, Mangal Electrical Industries Ltd. specialises in Immersed Circuit Breakers (ICBs). Each set of ICBs includes a breaker, indicator light, connecting rod, lock pin, and handle. Designed with top-notch technology and high-grade raw materials, our circuit breakers are highly sensitive, easy to operate, and offer superior performance and maximum working life. We provide various ranges of circuit breakers tailored to client requirements, featuring efficient voltage capabilities to meet diverse industrial needs.
                         </p>
 
                         <p>
-                            We manufacture high-quality amorphous cores for single-phase and three-phase distribution transformers according to customer needs. These cores are made of high-quality Metglas® amorphous metal. Some parts of the cores are coated with epoxy for added strength.
+                            Our circuit breakers are constructed with a metal frame in a compartmentalised pattern and have an air-insulated nature. The oil-immersed design effectively reduces damage levels and significantly lowers maintenance costs for distribution transformers. This makes them an ideal choice for ensuring the longevity and reliability of power distribution systems. The strong construction and precise engineering of our ICBs enable them to perform optimally even under challenging environmental conditions, providing consistent protection and reliability.
                         </p>
                     </div>
                     <!-- <div>
@@ -122,7 +183,7 @@
             <div data-aos="fade-up" data-aos-duration="400">
                 <span>. Mangal</span>
                 <h2>
-                    Technical <br> Specifications
+                    ICB <br> Details
                 </h2>
             </div>
             <div data-aos="fade-up" data-aos-duration="400">
@@ -130,73 +191,181 @@
                     Our coils are simple to assemble with bonded edges, ensuring core <br> 
                     integrity and reliable transformers. We anneal the magnetic field to <br>
                     relieve stress and optimise magnetic properties. Our cores undergo <br>
-                    thorough testing to ensure consistent performance and minimise <br>transformer losses.
+                    thorough testing to ensure consistent performance and minimise <br>
+                    transformer losses.
                 </p>
             </div>
         </div>
+        
+        <div class="product-features">
+            <div class="feature-toggle-button-container">
+                <button class="feature-toggle-button active" data-target="toggle-1">Components</button>
+                <button class="feature-toggle-button" data-target="toggle-2">Design</button>
+                <button class="feature-toggle-button" data-target="toggle-3">Technology</button>
+                <button class="feature-toggle-button" data-target="toggle-4">Our Ranges</button>
+                <button class="feature-toggle-button" data-target="toggle-5">We Deal in</button>
+                <button class="feature-toggle-button" data-target="toggle-6">Ratings include</button>
+            </div>
 
-        <div class="product-features">   
+            <!-- ------------------------------------------------------------- -->
             
-            <div class="product-feature-main-content">
-                
+            <div id="toggle-1" class="feature-toggle-container active product-feature-main-content">
                 <div data-aos="fade-up">
                     <p>
-                        <b>Thickness:</b>
+                        Breaker
                     </p>
+                </div>
+    
+                <div data-aos="fade-up" data-aos-duration="600">
                     <p>
-                        0.025mm
+                        Indicator light
                     </p>
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="600">
                     <p>
-                        <b>Width range:</b>
-                    </p>
-                    <p>
-                        142mm, 170mm, 213mm
+                        Connecting Rod
                     </p>
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="600">
                     <p>
-                        <b>Low losses</b>
-                    </p>
-                    <!-- <p>
-                        10 Micron
-                    </p> -->
-                </div>
-
-                <div data-aos="fade-up" data-aos-duration="600">
-                    <p>
-                       <b>Special Annealing Process</b>
+                        Lock Pin
                     </p>
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="600">
                     <p>
-                        <b>Steplap core cutting</b>
-                    </p>
-                </div>
-
-                <div data-aos="fade-up" data-aos-duration="600">
-                    <p>
-                        <b>Accurate Dimensions of mendral and plates</b>
-                    </p>
-                </div>
-
-                <div data-aos="fade-up" data-aos-duration="600">
-                    <p>
-                        <b>Proper packing</b>
+                        Handle
                     </p>
                 </div>
             </div>
+
+            <!-- ------------------------------------------------------------- -->
+            
+            <div id="toggle-2" class="feature-toggle-container product-feature-main-content">
+                <div data-aos="fade-up">
+                    <p>
+                        Highly sensitive and easy to operate
+                    </p>
+                </div>
+    
+                <div data-aos="fade-up" data-aos-duration="600">
+                    <p>
+                        Metal construction in a compartmentalised pattern
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="600">
+                    <p>
+                        Air insulated nature
+                    </p>
+                </div>
+            </div>
+            
+            <!-- ------------------------------------------------------------- -->
+            
+            <div id="toggle-3" class="feature-toggle-container product-feature-main-content">
+                <div data-aos="fade-up">
+                    <p>
+                        Utilises top-notch technology for efficient operation
+                    </p>
+                </div>
+    
+                <div data-aos="fade-up" data-aos-duration="600">
+                    <p>
+                        Designed with high-grade raw materials for maximum working life
+                    </p>
+                </div>
+            </div>
+
+            <!-- ------------------------------------------------------------- -->
+            
+            <div id="toggle-4" class="feature-toggle-container product-feature-main-content">
+                <div data-aos="fade-up">
+                    <p>
+                        Available in various ranges to meet client requirements
+                    </p>
+                </div>
+    
+                <div data-aos="fade-up" data-aos-duration="600">
+                    <p>
+                        Efficient voltage capabilities
+                    </p>
+                </div>
+            </div>
+            
+            <!-- ------------------------------------------------------------- -->
+            
+            <div id="toggle-5" class="feature-toggle-container product-feature-main-content">
+                <div data-aos="fade-up">
+                    <p>
+                        Single-phase Oil Immersed Internal Circuit Breakers
+                    </p>
+                </div>
+    
+                <div data-aos="fade-up" data-aos-duration="600">
+                    <p>
+                        Three-phase Oil Immersed Internal Circuit Breakers
+                    </p>
+                </div>
+            </div>
+            
+            <!-- ------------------------------------------------------------- -->
+            
+            <div id="toggle-6" class="feature-toggle-container product-feature-main-content">
+                <div data-aos="fade-up">
+                    <p>
+                        5 kVA single-phase
+                    </p>
+                </div>
+    
+                <div data-aos="fade-up" data-aos-duration="600">
+                    <p>
+                        10 kVA single-phase
+                    </p>
+                </div>
+    
+                <div data-aos="fade-up" data-aos-duration="600">
+                    <p>
+                        16 kVA single-phase
+                    </p>
+                </div>
+    
+                <div data-aos="fade-up" data-aos-duration="600">
+                    <p>
+                        25 kVA single-phase
+                    </p>
+                </div>
+    
+                <div data-aos="fade-up" data-aos-duration="600">
+                    <p>
+                        25 kVA three-phase
+                    </p>
+                </div>
+    
+                <div data-aos="fade-up" data-aos-duration="600">
+                    <p>
+                        63 kVA three-phase
+                    </p>
+                </div>
+    
+                <div data-aos="fade-up" data-aos-duration="600">
+                    <p>
+                        100 kVA three-phase
+                    </p>
+                </div>
+            </div>
+
+            <!-- ------------------------------------------------------------- -->
         </div>
+        
         
         <!-- ------------------------------------------------------------- -->
 
         <div class="product-faq-section">
             <div class="product-faq-head">
-                <h2>CRGO Slit Coils FAQs</h2>
+                <h2>Wound Core FAQs</h2>
             </div>
 
             <div class="product-faq-container">
@@ -204,35 +373,35 @@
                     <div class="faq" data-aos="fade" data-aos-duration="100">
                       <div class="faq-question">
                         <i class='bx bx-right-arrow-alt arrow' ></i>
-                        How does an Amorphous Core differ from other types of Cores ?
+                        What are the Features of Immersed Circuit Breaker ?
                       </div>
-                      <div class="faq-answer">Amorphous cores differ from others because they are made from a special substance cooled quickly from hot liquids. This reduces energy loss when magnets pass through, making them more efficient than other cores.</div>
+                      <div class="faq-answer">Features of Immersed Circuit Breaker are as follows: Efficient compartmentalised design, Dust-resistant construction, Stable operating voltage, Suitable for distribution transformers.</div>
                     </div>
                     <div class="faq" data-aos="fade" data-aos-duration="200">
                       <div class="faq-question">
                         <i class='bx bx-right-arrow-alt arrow' ></i>
-                        What are the Properties of an Amorphous Core ?
+                        Are Immersed Circuit Breakers suitable for both residential and industrial applications ?
                       </div>
-                      <div class="faq-answer">Amorphous cores have low energy loss, high magnetic permeability, and excellent magnetic properties.
+                      <div class="faq-answer">Yes, Immersed Circuit Breakers are versatile and can be used in residential and industrial settings. They offer reliable protection for electrical systems in various environments.
                       </div>
                     </div>
                     <div class="faq" data-aos="fade" data-aos-duration="300">
                       <div class="faq-question">
                         <i class='bx bx-right-arrow-alt arrow' ></i>
-                        What is the Composition of the Amorphous Core ?
+                        What safety features are incorporated into Immersed Circuit Breakers ?
                       </div>
-                      <div class="faq-answer">Amorphous cores are made from a non-crystalline material formed by the rapid cooling of hot liquids, typically composed of iron, nickel, and boron.
+                      <div class="faq-answer">Immersed Circuit Breakers incorporate safety features such as overload protection, short circuit protection, and earth leakage protection. They are designed to ensure the safety of electrical systems and prevent damage to equipment and personnel.
                       </div>
                     </div>
                     <div class="faq"  data-aos="fade" data-aos-duration="400">
                       <div class="faq-question">
                         <i class='bx bx-right-arrow-alt arrow' ></i>
-                        Can Amorphous Cores be Customized for Specific Applications ?
+                        Are there any environmental considerations when using Immersed Circuit Breakers ?
                       </div>
-                      <div class="faq-answer">Amorphous cores can be customised for specific applications and tailored to meet the requirements of different transformers and other magnetic devices.</div>
+                      <div class="faq-answer">Yes, Immersed Circuit Breakers use insulating oil, which may have environmental implications if not handled or disposed of properly. To minimise environmental impact, it's important to adhere to proper maintenance and disposal procedures.</div>
                     </div>
                 </div>
-            </div>            
+            </div>               
         </div>
 
         <div class="contact-container">
@@ -422,18 +591,48 @@
     <script src="../js/app.js"></script>
     <script>
         const faqs = document.querySelectorAll('.faq');
-        
-        faqs.forEach((faq) => {
-          faq.querySelector('.faq-question').addEventListener('click', () => {
-            // Close all FAQs except the clicked one
-            faqs.forEach((item) => {
-              if (item !== faq) {
-                item.classList.remove('open');
-              }
+ 
+         // Open the first FAQ by default
+         if (faqs.length > 0) {
+           faqs[0].classList.add('open');
+         }
+         
+         faqs.forEach((faq) => {
+           faq.querySelector('.faq-question').addEventListener('click', () => {
+             // Close all FAQs except the clicked one
+             faqs.forEach((item) => {
+               if (item !== faq) {
+                 item.classList.remove('open');
+               }
+             });
+             // Toggle the clicked FAQ
+             faq.classList.toggle('open');
+           });
+         });
+    </script>
+    <script>
+        const buttons = document.querySelectorAll('.feature-toggle-button');
+        const contents = document.querySelectorAll('.feature-toggle-container');
+    
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                buttons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+    
+                // Hide all contents
+                contents.forEach(content => {
+                    content.style.display = 'none';
+                    content.classList.remove('active');
+                });
+    
+                // Show the corresponding content
+                const target = button.getAttribute('data-target');
+                const targetContent = document.getElementById(target);
+                targetContent.style.display = 'block';
+                setTimeout(() => targetContent.classList.add('active'), 10);
             });
-            // Toggle the clicked FAQ
-            faq.classList.toggle('open');
-          });
         });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

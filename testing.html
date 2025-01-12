@@ -1,178 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .project-container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-        
-        .project-info {
-          width: 90%;
-          margin-bottom: 20px;
-          padding: 20px;
-          border: 1px solid #ccc;
-          border-radius: 8px;
-          background-color: #f9f9f9;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .project-content {
-          display: none; /* Hidden initially */
-        }
-        .project-info div img{
-            height: 14rem;
-        }
-        .project-cards {
-          display: grid;
-          grid-template-columns: repeat(8, 1fr);
-          gap: 10px;
-          /* width: 60%; */
-        }
-        
-        .project-card {
-          padding: 15px;
-          text-align: center;
-          border: 1px solid #ccc;
-          border-radius: 8px;
-          cursor: pointer;
-          background-color: #eaeaea;
-          transition: background-color 0.3s ease, transform 0.2s ease;
-
-          height: 8rem;
-          width: 8rem;
-        }
-
-        .project-card img{
-            height: 8rem;
-            width: 8rem;
-        }
-        
-        .project-card:hover {
-          background-color: #d1d1d1;
-          transform: translateY(-3px);
-        }
-        
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoom-In Image Slider</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+    .slider-container {
+      width: 80%;
+      max-width: 800px;
+      overflow: hidden;
+      position: relative;
+    }
+    .slider {
+      position: relative;
+    }
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      transform: scale(1);
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .slide.active {
+      opacity: 1;
+      transform: scale(1.1); /* Zoom effect */
+    }
+    .buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .button {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
 </head>
 <body>
-    <div class="project-container">
-        <div id="project-info" class="project-info">
-          <h2>Default Title</h2>
-          <p>This is the default content. Click a project card below to change this content.</p>
-        </div>
-      
-        <!-- Hidden content for each project card -->
-        <div class="project-content" id="content-1">
-          <div>
-            <img src="./images/product-one-ing.svg" alt="">
-          </div>
-          <div>
-
-          </div>
-        </div>
-        <div class="project-content" id="content-2">
-          <h2>Project 2</h2>
-          <p>This is the detailed content for Project 2.</p>
-        </div>
-        <div class="project-content" id="content-3">
-          <h2>Project 3</h2>
-          <p>This is the detailed content for Project 3.</p>
-        </div>
-        <div class="project-content" id="content-4">
-          <h2>Project 4</h2>
-          <p>This is the detailed content for Project 4.</p>
-        </div>
-        <div class="project-content" id="content-5">
-          <h2>Project 5</h2>
-          <p>This is the detailed content for Project 5.</p>
-        </div>
-        <div class="project-content" id="content-6">
-          <h2>Project 6</h2>
-          <p>This is the detailed content for Project 6.</p>
-        </div>
-        <div class="project-content" id="content-7">
-          <h2>Project 7</h2>
-          <p>This is the detailed content for Project 7.</p>
-        </div>
-        <div class="project-content" id="content-8">
-          <h2>Project 8</h2>
-          <p>This is the detailed content for Project 8.</p>
-        </div>
-      
-        <!-- Bottom cards -->
-        <div class="project-cards">
-          <div class="project-card" data-content="content-1">
-            <div>
-                <img src="./images/product-one-ing.svg" alt="">
-            </div>
-          </div>
-          <div class="project-card" data-content="content-2">
-            <div>
-                <img src="./images/product-three.svg" alt="">
-            </div>
-          </div>
-          <div class="project-card" data-content="content-3">
-            <div>
-                <img src="./images/product-five.svg" alt="">
-            </div>
-          </div>
-          <div class="project-card" data-content="content-4">
-            <div>
-                <img src="./images/product-six.svg" alt="">
-            </div>
-          </div>
-          <div class="project-card" data-content="content-5">
-            <div>
-                <img src="./images/product-one-ing.svg" alt="">
-            </div>
-          </div>
-          <div class="project-card" data-content="content-6">
-            <div>
-                <img src="./images/product-one-ing.svg" alt="">
-            </div>
-          </div>
-          <div class="project-card" data-content="content-7">
-            <div>
-                <img src="./images/product-one-ing.svg" alt="">
-            </div>
-          </div>
-          <div class="project-card" data-content="content-8">
-            <div>
-                <img src="./images/product-one-ing.svg" alt="">
-            </div>
-          </div>
-        </div>
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide active"><img src="https://via.placeholder.com/800x400/ff7f7f" alt="Image 1"></div>
+      <div class="slide"><img src="https://via.placeholder.com/800x400/7f7fff" alt="Image 2"></div>
+      <div class="slide"><img src="https://via.placeholder.com/800x400/7fff7f" alt="Image 3"></div>
+      <div class="slide"><img src="https://via.placeholder.com/800x400/ffff7f" alt="Image 4"></div>
+      <div class="slide"><img src="https://via.placeholder.com/800x400/ff7fff" alt="Image 5"></div>
     </div>
-      
-      
-    <script>
-     document.querySelectorAll('.project-card').forEach(card => {
-  card.addEventListener('click', () => {
-    const contentId = card.getAttribute('data-content');
-    const contentDiv = document.getElementById(contentId);
+    <div class="buttons">
+      <button class="button" id="prevBtn">&lt;</button>
+      <button class="button" id="nextBtn">&gt;</button>
+    </div>
+  </div>
 
-    // Get the project-info container
-    const projectInfo = document.getElementById('project-info');
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
 
-    // Replace content of project-info with the selected content
-    projectInfo.innerHTML = contentDiv.innerHTML;
-  });
-});
+    let currentIndex = 0;
 
-// Initialize the project-info with the first content (content-1)
-window.onload = () => {
-  const firstContent = document.getElementById('content-1').innerHTML;
-  const projectInfo = document.getElementById('project-info');
-  projectInfo.innerHTML = firstContent;
-};
+    // Function to show the current slide with zoom effect
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+          slide.classList.add('active');
+        }
+      });
+    }
 
+    // Auto-slide every 3 seconds
+    let autoSlide = setInterval(() => {
+      nextSlide();
+    }, 3000);
 
-    </script>
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    // Manual navigation buttons
+    nextBtn.addEventListener('click', () => {
+      clearInterval(autoSlide); // Stop auto-slide on manual interaction
+      nextSlide();
+      autoSlide = setInterval(nextSlide, 3000); // Restart auto-slide
+    });
+
+    prevBtn.addEventListener('click', () => {
+      clearInterval(autoSlide); // Stop auto-slide on manual interaction
+      prevSlide();
+      autoSlide = setInterval(nextSlide, 3000); // Restart auto-slide
+    });
+  </script>
 </body>
 </html>

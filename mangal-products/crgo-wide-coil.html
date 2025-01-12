@@ -36,6 +36,7 @@
                       <a href="./crgo-wide-coil.html" class="dropdown-active">CRGO Wide Coils</a>
                       <a href="./crgo-slit-coil.html">CRGO Slit Coils</a>
                       <a href="./crgo-cut-lamination.html">CRGO Cut Lamination</a>
+                      <a href="./crgo-core-assembly.html">CRGO Core Assembly</a>
                       <a href="./crgo-core-coil-assembly.html">CRGO Core Coil Assembly</a>
                       <a href="./amorphous-core.html">Amorphous Core</a>
                       <a href="./immersed-circuit-breaker-icb.html">Immersed Circuit Breaker</a>
@@ -94,7 +95,33 @@
         <div class="about-product">
             <div class="about-inner-div">
                 <div class="about-product-left">
-                    <img src="https://www.mangals.com/wp-content/uploads/2024/07/mother-coil_product-image.jpg" alt="">
+                    <div>
+                        <div class="product-slider-container">
+                          <div class="product-slider">
+                            <div class="product-slide active">
+                              <img src="https://www.mangals.com/wp-content/uploads/2024/07/mother-coil_product-image.jpg" alt="Product Image 1">
+                            </div>
+                            <div class="product-slide">
+                              <img src="https://images.unsplash.com/photo-1735809489088-ead6b62e5ac5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Image 2">
+                            </div>
+                            <div class="product-slide">
+                              <img src="https://images.unsplash.com/photo-1735809489088-ead6b62e5ac5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Image 3">
+                            </div>
+                            <div class="product-slide">
+                              <img src="https://images.unsplash.com/photo-1735809489088-ead6b62e5ac5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Image 4">
+                            </div>
+                            <div class="product-slide">
+                              <img src="https://images.unsplash.com/photo-1735809489088-ead6b62e5ac5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Image 5">
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="product-buttons">
+                          <button class="product-button" id="prevProductBtn">&lt;</button>
+                          <button class="product-button" id="nextProductBtn">&gt;</button>
+                        </div>
+                    </div>
+                    
                     <div class="product-ribbon"></div>
                 </div>
                 <div class="about-product-right">
@@ -363,7 +390,12 @@
         
     <script src="../js/app.js"></script>
     <script>
-        const faqs = document.querySelectorAll('.faq');
+       const faqs = document.querySelectorAll('.faq');
+
+        // Open the first FAQ by default
+        if (faqs.length > 0) {
+          faqs[0].classList.add('open');
+        }
         
         faqs.forEach((faq) => {
           faq.querySelector('.faq-question').addEventListener('click', () => {

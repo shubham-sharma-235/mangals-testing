@@ -1207,3 +1207,299 @@ function handleOutsideClick(event) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        <div class="history-section">
+        <div class="history-head" data-aos="fade">
+            <span>. History</span>
+            <h2>History of our company</h2>
+        </div>
+
+        <div class="history-scroll-container" data-aos="fade-up" data-aos-duration="600">
+            <div class="history-scroll-content">
+              <div class="history-item">
+                <div>
+                    <h3>1980</h3>
+                    <h4>Humble Begaining</h4>
+                    <p>
+                        Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                        consectetur adipisicing elit. Veritatis, enim odio po
+                    </p>
+                </div>
+              </div>
+
+              <div class="history-item">
+                <div>
+                    <h3>1990</h3>
+                    <h4>Humble Begaining</h4>
+                    <p>
+                        Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                        consectetur adipisicing elit. Veritatis, enim odio po
+                    </p>
+                </div>
+              </div>
+
+              <div class="history-item">
+                <div>
+                    <h3>2002</h3>
+                    <h4>Humble Begaining</h4>
+                    <p>
+                        Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                        consectetur adipisicing elit. Veritatis, enim odio po
+                    </p>
+                </div>
+              </div>
+
+              <div class="history-item">
+                <div>
+                    <h3>2004</h3>
+                    <h4>Humble Begaining</h4>
+                    <p>
+                        Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                        consectetur adipisicing elit. Veritatis, enim odio po
+                    </p>
+                </div>
+              </div>
+
+              <div class="history-item">
+                <div>
+                    <h3>2024</h3>
+                    <h4>Humble Begaining</h4>
+                    <p>
+                        Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                        consectetur adipisicing elit. Veritatis, enim odio po
+                    </p>
+                </div>
+              </div>
+              <div class="history-item">
+                <div>
+                    <h3>1980</h3>
+                    <h4>Humble Begaining</h4>
+                    <p>
+                        Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                        consectetur adipisicing elit. Veritatis, enim odio po
+                    </p>
+                </div>
+              </div>
+
+              <div class="history-item">
+                <div>
+                    <h3>1990</h3>
+                    <h4>Humble Begaining</h4>
+                    <p>
+                        Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                        consectetur adipisicing elit. Veritatis, enim odio po
+                    </p>
+                </div>
+              </div>
+
+              <div class="history-item">
+                <div>
+                    <h3>2002</h3>
+                    <h4>Humble Begaining</h4>
+                    <p>
+                        Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                        consectetur adipisicing elit. Veritatis, enim odio po
+                    </p>
+                </div>
+              </div>
+
+              <div class="history-item">
+                <div>
+                    <h3>2004</h3>
+                    <h4>Humble Begaining</h4>
+                    <p>
+                        Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                        consectetur adipisicing elit. Veritatis, enim odio po
+                    </p>
+                </div>
+              </div>
+
+              <div class="history-item">
+                <div>
+                    <h3>2024</h3>
+                    <h4>Humble Begaining</h4>
+                    <p>
+                        Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                        consectetur adipisicing elit. Veritatis, enim odio po
+                    </p>
+                </div>
+              </div>
+
+              <div class="history-item">
+                <div>
+                    <h3>2004</h3>
+                    <h4>Humble Begaining</h4>
+                    <p>
+                        Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                        consectetur adipisicing elit. Veritatis, enim odio po
+                    </p>
+                </div>
+              </div>
+
+              <div class="history-item">
+                <div>
+                    <h3>2024</h3>
+                    <h4>Humble Begaining</h4>
+                    <p>
+                        Lorem ipsum dolor sit Veritatis, enim odio po amet, 
+                        consectetur adipisicing elit. Veritatis, enim odio po
+                    </p>
+                </div>
+              </div>
+
+            </div>
+            <hr class="history-timeline">
+        </div>
+        
+    </div>
+
+    <!-- ------------------------------------------------------------- -->
+
+    <script>
+    const scrollContainer = document.querySelector('.history-scroll-container');
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    
+    scrollContainer.addEventListener('mousedown', (e) => {
+      isDown = true;
+      scrollContainer.classList.add('active');
+      startX = e.pageX - scrollContainer.offsetLeft;
+      scrollLeft = scrollContainer.scrollLeft;
+    });
+    
+    scrollContainer.addEventListener('mouseleave', () => {
+      isDown = false;
+      scrollContainer.classList.remove('active');
+    });
+    
+    scrollContainer.addEventListener('mouseup', () => {
+      isDown = false;
+      scrollContainer.classList.remove('active');
+    });
+    
+    scrollContainer.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - scrollContainer.offsetLeft;
+      const walk = (x - startX) * 2; // Multiply for faster scroll
+      scrollContainer.scrollLeft = scrollLeft - walk;
+    });
+    
+</script>
+
+/* -------------------------------------- */
+
+.history-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #e3eaef71;
+    margin-top: 4rem;
+}
+.history-head{
+    padding: 2rem 3rem;
+    padding-top: 6rem;
+}
+.history-head h2{
+    color: #000;
+    font-size: 2vw;
+    font-family: var(--heading-font);
+    margin-top: 1.2rem;
+}
+.history-head span{
+    font-family: var(--montserrat-medium);
+}
+
+.history-scroll-container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  cursor: grab;
+  padding: 0 0rem;
+  position: relative;
+  background-color: #e3eaef39;
+}
+.history-scroll-content {
+  display: flex;
+  width: max-content;
+  gap: 16px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+.history-item {
+  width: 300px;
+  height: 250px;
+  margin: 1rem 6rem;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.history-item div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    user-select: none;
+}
+.history-item div h3{
+    font-size: 4rem;
+    -webkit-text-stroke-width: 1px;
+    letter-spacing: 2px;
+    margin: 12px 0;
+    -webkit-text-stroke-color: #015998b0;
+    color: transparent;
+    font-weight: 100;
+    font-family: var(--heading-font);
+}
+.history-item div h4{
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-family: var(--heading-font);
+}
+.history-item div p{
+    color: #4A5257;
+    padding-top: 12px;
+    line-height: 26px;
+    font-size: 16px;
+    font-family: var(--montserrat-medium);
+}
+.history-item::after{
+    content: '';
+    height: 20px;
+    width: 50px;
+    background-color: #00f382;
+    position: relative;
+    top: 9.9rem;
+    left: -17rem;
+    border-radius: 50%;
+    z-index: 100;
+}
+.history-timeline{
+    height: 2px;
+    background-color: #000;
+    border: none;
+    position: sticky;
+    left: 0;
+}
