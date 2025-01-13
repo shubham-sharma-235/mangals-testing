@@ -28,8 +28,9 @@
     height: 76vh;
     background-size: 140%;
     background-repeat: no-repeat;
-    background-image: url('../images/about-hero-stock-img.png');
-    background-size: 100%;
+    background-image: url('https://www.mangals.com/wp-content/uploads/2024/06/about-Us_main-2.jpg');
+    background-size: 140%;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
