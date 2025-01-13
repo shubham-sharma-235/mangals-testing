@@ -234,3 +234,302 @@
 
 /* -------------------------------------------------- */
 
+
+.committee-section {
+  max-width: 1100px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 1.6rem;
+}
+.committee-section h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: var(--montserrat-bold);
+}
+.committee-section p {
+  font-size: .9rem;
+  color: #444;
+  margin-bottom: 30px;
+  text-align: justify;
+  font-family: var(--montserrat-medium);
+}
+.committee-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.committee-section table thead {
+  background-color: #2c3e50;
+  color: #ffffff;
+  font-family: var(--montserrat-medium);
+}
+.committee-section table th,
+.committee-section table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 0.85rem;
+    font-family: var(--montserrat-medium);
+    cursor: default;
+}
+.committee-section table th {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.committee-section table tbody tr {
+  transition: background-color 0.3s ease;
+}
+.committee-section table tbody tr:nth-child(even) {
+  background-color: #f2f6fa;
+}
+.committee-section table tbody tr:hover {
+  background-color: #eaf2f8;
+}
+
+@media (max-width: 768px) {
+  .committee-section {
+    padding: 15px;
+  }
+
+  .committee-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .committee-section p {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .committee-section table {
+    font-size: 0.9rem;
+  }
+
+  .committee-section table th, 
+  .committee-section table td {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .committee-section table thead {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .committee-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .committee-section p {
+    font-size: 0.8rem;
+  }
+
+  .committee-section table th, 
+  .committee-section table td {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .committee-section table {
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+}
+
+/* -------------------------------------------------- */
+
+.investor-grievance-section {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 1.6rem;
+}
+
+.investor-grievance-section .card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 20px;
+  width: 100%; 
+  max-width: 1200px; 
+}
+
+.investor-grievance-section h2 {
+  font-size: 1.8rem;
+  color: white;
+  background-color: #003366; 
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: var(--montserrat-semi-bold);
+}
+
+.investor-grievance-section p {
+  font-size: 1rem;
+  margin: 10px 16px;
+  line-height: 1.6;
+  text-align: left;
+  font-family: var(--montserrat-medium);
+}
+
+.investor-grievance-section p strong {
+  font-weight: bold;
+  color: #003366;
+}
+
+.investor-grievance-section p a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.investor-grievance-section p a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .investor-grievance-section {
+    padding: 10px;
+    height: auto; 
+  }
+
+  .investor-grievance-section .card {
+    width: 100%;
+    max-width: 100%; 
+  }
+
+  .investor-grievance-section h2 {
+    font-size: 1.6rem; 
+  }
+  
+  .investor-grievance-section p {
+    font-size: 0.95rem; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .investor-grievance-section {
+    padding: 10px;
+  }
+
+  .investor-grievance-section .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .investor-grievance-section h2 {
+    font-size: 1.4rem; 
+  }
+
+  .investor-grievance-section p {
+    font-size: 0.9rem;
+  }
+}
+
+/* -------------------------------------------------- */
+
+.board-members-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.board-members-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.board-member-card{
+  position: relative;
+  margin: 4rem;
+  cursor: default;
+}
+.board-member-card-img img{
+  width: 27vw;
+  height: 59vh;
+  border-top-left-radius: 19rem;
+  border-bottom-right-radius: 19rem;
+  transform-origin: bottom left;
+  position: relative;
+} 
+.board-member-card-img::after{
+  content: '';
+  position: absolute;
+  background:linear-gradient(#012D4C,#5AB947);
+  top: 0rem;
+  left: -1rem;
+  width: 28vw;
+  height: 61vh;
+  border-bottom-right-radius: 18rem;
+  border-top-left-radius: 18rem;
+  z-index: -1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.board-member-ribbon{
+  position: absolute;
+  background: rgba(255, 255, 255, 0.318);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.287);
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.328);
+  bottom: -2rem;
+  left: 8rem;
+  width: 18vw;
+  height: 15vh;
+  z-index: 100;
+}
+.board-member-ribbon h2{
+  font-size: 1.4rem;
+}
+.board-member-ribbon p{
+  font-size: .8rem;
+}
+
+
+.board-member-card:hover .board-member-ribbon {
+  height: 55vh; /* Expanded height to fit larger content */
+  transition: height 0.4s ease-in-out;
+  background: rgba(255, 255, 255, 0.655);
+}
+
+.board-member-ribbon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  overflow: hidden; /* Hide overflowing content */
+  height: 15vh; /* Initial height of the ribbon */
+  transition: height 0.4s ease-in-out;
+  font-family: var(--montserrat-semi-bold);
+}
+
+/* Hidden content animations */
+.board-member-ribbon .hidden-content {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  padding: .8rem 2rem;
+  color: #252525;
+}
+/* .board-member-ribbon .hidden-content p{
+  font-size: 12px;
+} */
+
+.board-member-card:hover .board-member-ribbon .hidden-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+

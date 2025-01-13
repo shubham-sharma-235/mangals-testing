@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'azonix';
+    src: url('../fonts/azonix.otf');
+}
+@font-face{
+    font-family: 'montserrat-bold';
+    src: url('../fonts/montserrat-bold.ttf');
+}
+@font-face{
+    font-family: 'montserrat-medium';
+    src: url('../fonts/montserrat-medium.ttf');
+}
+@font-face{
+    font-family: 'montserrat-semiBold';
+    src: url('../fonts/montserrat-semi-bold.ttf');
+}
+:root{
+    --montserrat-medium: 'montserrat-medium';
+    --montserrat-bold: 'montserrat-bold';
+    --montserrat-semi-bold: 'montserrat-semiBold';
+    --heading-font: 'azonix';
+
+    --primary-color: #5AB947;
+    --secondary-color: #015998;
+}
+
+/* --------------------------------------- */
+
+.career-hero{
+    height: 70vh;
+    width: 100%;
+    background-color: #012D4C;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.career-hero-content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 6rem;
+}
+.career-hero-content p{
+    font-family: var(--montserrat-semi-bold);
+    font-size: 20px;
+    position: relative;
+    padding-left: 2rem;
+}
+.career-hero-content p::before{
+    content: '';
+    left: -6rem;
+    top: 10px;
+    width: 7rem;
+    height: 3px;
+    background-color: #5ae93d;
+    position: absolute;
+}
+.career-hero-content h1{
+    font-family: var(--heading-font);
+    padding: 12px 0;
+    font-size: 40px;
+}
+
+/* --------------------------------------- */
+
+.career-page {
+  max-width: 1340px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #2c3e50;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--montserrat-semi-bold);
+}
+tr:hover {
+  background-color: #eaf2f8;
+}
+td{
+    font-family: var(--montserrat-medium);
+    padding: 18px 10px;
+    font-size: 14px;
+}
+td:last-child {
+  text-align: center;
+  width: 150px;
+}
+.apply-btn a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+.apply-btn a:hover {
+  background-color: #005bb5;
+}
+@media (max-width: 768px) {
+  table {
+    font-size: 0.9rem;
+  }
+  .career-header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+

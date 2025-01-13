@@ -293,6 +293,7 @@ nav.scrolled #logo {
 .nav-menu-container {
     display: flex;
     gap: 16px 30px;
+    gap: 16px 26px;
     list-style: none;
     /* padding: 2.2rem 0; */
 }
@@ -484,6 +485,16 @@ nav.scrolled #logo {
     opacity: 1;
     transform: translateY(0);
 }
+/* .nav-contact-btn{
+    background-color: #BDE3B5;
+    height: 160%;
+    padding: 0 30px;
+    margin-right: -2rem;
+} */
+/* .nav-contact-btn a{
+    color: #000!important;
+} */
+
 
 
 .image-slider {
