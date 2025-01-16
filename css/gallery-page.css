@@ -130,3 +130,41 @@
     right: 5%;
 }
 
+@media(max-width:1120px){
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .gallery-hero{
+        height: 75vh;
+        background-position: center;
+        background-size: 160% 120%;
+    }
+}
+@media(max-width:780px){
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 30px;
+    }
+    .gallery-hero{
+        height: 60vh;
+        background-position: center;
+        background-size: 170% 120%;
+    }
+    .gallery-hero h1{
+        font-size: 6vw;
+    }
+}
+@media(max-width:520px){
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+    .gallery-hero{
+        height: 50vh;
+        background-position: center;
+        background-size: 290% 120%;
+    }
+    .gallery-hero h1{
+        font-size: 8vw;
+    }
+}
