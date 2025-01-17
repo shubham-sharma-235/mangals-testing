@@ -1849,7 +1849,7 @@ nav.scrolled #logo {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 22vw;
   width: calc(100% / 3 - 20px); /* Increased width for 3 cards per row */
   position: relative;
   color: #fff;
@@ -1880,12 +1880,12 @@ nav.scrolled #logo {
 }
 
 .impact-text h3 {
-  font-size: 24px;
+  font-size: 1.6vw;
   margin: 0;
   font-family: var(--heading-font);
 } 
 .impact-text p {
-  font-size: 14px;
+  font-size: 1vw;
   color: #ddd;
   margin: 4px 0 0;
   font-family: var(--montserrat-medium);
@@ -1938,6 +1938,7 @@ nav.scrolled #logo {
     transform: scale(1);
     z-index: 0;
     right: 0;
+    width: 66vw;
 }
 .testimonial-container{
     position: absolute;
@@ -1946,7 +1947,7 @@ nav.scrolled #logo {
     background-color: #121C22;
     right: 4rem;
     bottom: 0;
-    padding: 65px 70px 65px 70px;
+    padding: 4vw 4vw 4vw 4vw;
     /* border-top-left-radius: 5rem; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -1959,14 +1960,14 @@ nav.scrolled #logo {
     width: 38vw;
     height: 12vh;
     right: 4rem;
-    bottom: -5.7rem;
+    bottom: -5.7vw;
     padding: 0 4rem;
     background-color: #00f382;
     z-index: 100;
     /* border-bottom-right-radius: 5rem; */
 }
 .testimonial-content h2{
-    font-size: 40px;
+    font-size: 2.4vw;
     font-family: var(--heading-font);
     color: #fff;
 }
@@ -1974,8 +1975,8 @@ nav.scrolled #logo {
     font-family: var(--montserrat-medium);
     color: #999;
     padding: 12px 0;
-    font-size: 20px;
-    margin-top: 2rem;
+    font-size: 1.2vw;
+    margin-top: 1vw;
 }
 .testimonial-content h3{
     color: #fff;
@@ -2013,7 +2014,7 @@ nav.scrolled #logo {
 /* -------------------- Quality Approval section ------------------------ */
 
 .quality-approval-section{
-    height: 70vh;
+    height: 76vh;
 }
 .scroll-container {
   position: relative;
@@ -2031,8 +2032,7 @@ nav.scrolled #logo {
 }
 .scroll-item {
     flex: 0 0 auto;
-    width: 300px;
-    height: 250px;
+    width: 20vw;
     margin: 0 10px;
     background-color: #fff;
     border-radius: 8px;
@@ -2086,6 +2086,7 @@ nav.scrolled #logo {
     width: 80%;
 } */
 .map-container svg{
+    width: 80vw;
     height: 80vh;
     /* animation: map-animation ease-out 1s; */
 }
@@ -2124,7 +2125,9 @@ nav.scrolled #logo {
     z-index: 100;
     
 }
-
+.faq-left img{
+    height: 42vw;
+}
 .faq-right{
     display: flex;
     flex-direction: column;
