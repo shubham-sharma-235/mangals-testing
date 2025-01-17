@@ -465,14 +465,14 @@ nav.scrolled #logo {
   opacity: 1;
 }
 .slide-heading {
-  font-size: 3.4rem;
+  font-size: 3.4vw;
   font-weight: bold;
   color: #fff;
   margin-bottom: 20px;
   font-family: var(--heading-font);
 }
 .slide-paragraph {
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   color: #d9d8d8;
   margin-bottom: 30px;
   font-family: var(--montserrat-medium);
@@ -552,7 +552,7 @@ nav.scrolled #logo {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 14rem;
+    width: 14vw;
     height: 3.6rem;
     padding-left: 1rem;
     cursor: pointer;
@@ -767,7 +767,7 @@ nav.scrolled #logo {
     display: block;
 }
 .special-inner-div img{
-    height: 8rem;
+    height: 7.6vw;
     margin-top: -6rem;
     margin-bottom: -4px;
 }
@@ -780,13 +780,13 @@ nav.scrolled #logo {
     font-weight: 400;
 }
 .special-card-section .special-card h3{
-    font-size: 1.4rem;
+    font-size: 1.4vw;
     margin: 12px 0;
     font-family: var(--montserrat-medium);
 }
 .special-card-section .special-card p{
     color: #383737;
-    font-size: 1rem;
+    font-size: 1vw;
     font-family: var(--montserrat-medium);
 }
 .special-card-section .special-card h2{
@@ -1008,7 +1008,7 @@ nav.scrolled #logo {
     padding: 6rem 0;
     padding-bottom: 0rem;
     height: 90vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .what-we-do-left{
     padding: 1rem 7.4rem;
@@ -1108,8 +1108,8 @@ nav.scrolled #logo {
     content: '';
     background-image: url('../images/leaves-white-stroke-group.png');
     transform: scale(.7);
-    height: 57.6vw;
-    width: 66vw;
+    height: 57.6rem;
+    width: 66rem;
     position: absolute;
     z-index: 100;
     
@@ -1163,8 +1163,8 @@ nav.scrolled #logo {
 .steps-heading{
     position: sticky;
     top: 14px;
-    margin-left: 1rem;
-    padding: 4rem 2rem;
+    margin-left: 1vw;
+    padding: 2vw 2vw;
     line-height: 40px;
 }
 .steps-heading h2{
@@ -1210,8 +1210,8 @@ nav.scrolled #logo {
     background-image: url('../images/leaves_stroke.svg');
     top: -4rem;
     left: -16rem;
-    height: 30rem;
-    width: 40rem;
+    height: 30vw;
+    width: 40vw;
     z-index: 100;
     background-repeat: no-repeat;
     transform: rotate(180deg);
@@ -1374,33 +1374,18 @@ nav.scrolled #logo {
 }
 
 
-@media(max-width:1440px){
-    /* .card-container .stack-card{
-        margin: 14px 0;
-        margin-right: 2rem;
-        height: 540px;
-        width: 460px;
-    } */
-    /* .work-heading h1 {
-        font-size: 3.6rem;
-    } */
-    /* .steps-heading h1 p{
-        font-size: 1rem;
-    } */
-    .heading-style-display {
-        font-size: 5.6em;
-    }
+@media(max-width:1450px){
     .steps-section{
         margin-top: 2rem;
         padding-top: 2rem;
-        height: 290vh;
+        height: 470vh;
     }
 }
 @media(max-width:1300px){
     .steps-section{
         margin-top: 2rem;
         padding-top: 2rem;
-        height: 250vh;
+        height: 430vh;
     }
 }
 @media(max-width:1050px){
@@ -1499,7 +1484,7 @@ nav.scrolled #logo {
     transform: rotate(2deg); */
 }
 .card-container-2 .stack-card h2{
-    font-size: 3.6rem;
+    font-size: 3.8vw;
     font-family: var(--heading-font);
     position: absolute;
     top: -2rem;
@@ -1508,13 +1493,13 @@ nav.scrolled #logo {
     -webkit-text-fill-color: transparent;
 }
 .card-container-2 .stack-card h3{
-    font-size: 1.6rem;
+    font-size: 1.6vw;
     margin-bottom: 6px;
     font-family: var(--montserrat-semi-bold);
     color: #3c3c3c;
 }
 .card-container-2 .stack-card p{
-    font-size: 14px;
+    font-size: .9vw;
     color: #898787;
     font-family: var(--montserrat-medium);
 }
@@ -2654,6 +2639,22 @@ footer iframe{
 
 /* ------------------------------- */
 
+@media(max-width:1490px){
+    .product-card img {
+        height: 16rem;
+    }
+}
+@media(max-width:1430px){
+    .what-we-do-section{
+        padding: 6rem 0;
+        height: 100vh;
+    }
+    .what-we-do-right {
+        position: relative;
+        display: inline-block;
+        margin-right: -4rem;
+    }
+}
 @media(max-width:1350px){
     .nav-menu-container {
         gap: 16px 20px;
@@ -2677,7 +2678,67 @@ footer iframe{
         font-size: 12px;
     }
 
+
+    .steps-heading h2 br{
+        display: none;
+    }
+
+    .product-card-container{
+        margin: 0 6rem;    
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .product-card {
+        padding: .8rem;
+        padding-top: 2.2rem;
+        border-top-left-radius: 8rem;
+        border-bottom-right-radius: 8rem;
+        margin: 16px 12px;
+    }
+    .product-card img{
+        height: 15rem;
+        border-top-left-radius: 8rem;
+        border-bottom-right-radius: 8rem;
+    }
     
+    .product-card:nth-of-type(2),.product-card:nth-of-type(4){
+        border-top-right-radius: 8rem;
+        border-bottom-left-radius: 8rem;  
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .product-card:nth-of-type(2) img,.product-card:nth-of-type(4) img{
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 8rem;
+        border-bottom-left-radius: 8rem;  
+    }
+    
+    .product-card:nth-of-type(5),.product-card:nth-of-type(7){
+        border-top-right-radius: 8rem;
+        border-bottom-left-radius: 8rem;  
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .product-card:nth-of-type(5) img,.product-card:nth-of-type(7) img{
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 8rem;
+        border-bottom-left-radius: 8rem;  
+    }
+
+    
+
+    
+}
+
+@media(max-width:1040px){
+    .product-card-container{
+        margin: 0 8rem;    
+        grid-template-columns: 1fr 1fr;
+    }
+    .product-card img{
+        height: 17rem;
+    }
 }
 
 /* ------------------------------- */
@@ -2947,6 +3008,15 @@ footer iframe{
     }
     
     
+
+
+    .product-card-container{
+        margin: 0 1rem;    
+        grid-template-columns: 1fr;
+    }
+    .product-card img{
+        height: 16rem;
+    }
 
 }
 
