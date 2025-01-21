@@ -1433,7 +1433,11 @@ nav.scrolled #logo {
     }
 }
 @media(max-width:660px){
-
+    .steps-section {
+        flex-direction: column;
+        margin-bottom: 4rem !important;
+        padding: 4rem;
+    }
     .card-container-2 .stack-card{
         margin: 14px 0;
         margin-right: 2rem;
@@ -2692,7 +2696,7 @@ footer iframe{
     }
     .product-card {
         padding: .8rem;
-        padding-top: 2.2rem;
+        padding-top: 1rem;
         border-top-left-radius: 8rem;
         border-bottom-right-radius: 8rem;
         margin: 16px 12px;
@@ -2729,9 +2733,6 @@ footer iframe{
         border-bottom-left-radius: 8rem;  
     }
 
-    
-
-    
 }
 
 @media(max-width:1040px){
@@ -2965,7 +2966,7 @@ footer iframe{
     /* ------ History Section --------- */
 
     .steps-section {
-        margin-bottom: 4rem !important;
+        margin-bottom: 0rem !important;
         width: 100%;
         padding-left: 1rem;
         padding: .8rem;
@@ -3025,6 +3026,10 @@ footer iframe{
         top: -1rem;
     }
     
+    .product-head span {
+        font-size: 12px;
+    }
+    
 
 
     .bts-section {
@@ -3053,7 +3058,17 @@ footer iframe{
     .product-card img{
         height: 16rem;
     }
+    .product-head h2 {
+        margin-top: 10px;
+        margin-bottom: 1rem;
+        font-size: 6vw;
+        line-height: 30px;
+        margin-top: 1.6rem;
 
+    }
+    .product-head h2 br{
+        display: none;
+    }
 
 
     .bts-bg-image{
@@ -3251,9 +3266,9 @@ footer iframe{
         margin: 0.5rem 0 1.5rem;
         font-size: .85rem;
     }
-
-
-
+    .footer-contact {
+        grid-template-columns: 1fr;
+    }
     .footer-section-one-left h2 {
         font-size: 7vw;
     }
