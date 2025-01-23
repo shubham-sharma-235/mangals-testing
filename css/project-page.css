@@ -34,7 +34,7 @@
 .project-hero{
     height: 70vh;
     width: 100%;
-    background-color: #012D4C;
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: 140%;
     display: flex;
@@ -222,8 +222,84 @@
 
 /* ---------------------------------------- */
 
-/* --------------------------------------- */
-/* --------------------------------------- */
-/* --------------------------------------- */
-/* --------------------------------------- */
+@media(max-width:1300px){
+    .project-hero {
+        height: 70vh;
+        background-size: 160%;
+    }
+    .project-main{
+        margin: 4rem 7rem;
+    }
+}
+
+@media(max-width:1050px){
+    .project-hero {
+        height: 70vh;
+        background-size: 180%;
+    }
+    .project-main{
+        margin: 2rem 4rem;
+    }
+}
+
+@media(max-width:700px){
+    .project-hero {
+        height: 70vh;
+        background-size: 300%;
+    }
+}
+
+@media(max-width:600px){
+    .project-hero {
+        height: 70vh;
+        background-size: 380%;
+    }
+}
+
+@media(max-width:500px){
+    .project-hero {
+        height: 70vh;
+        background-size: 500%;
+    }
+}
+
+@media(max-width:350px){
+    .project-hero {
+        height: 70vh;
+        background-size: 600%;
+    }
+}
+
+@media(max-width:660px){
+    .project-hero-content {
+        padding: 0 4vw;
+    }
+    .project-hero-content p {
+        font-size: 16px;
+        padding-left: 2rem;
+    }
+    .project-hero-content h1 {
+        padding: 12px 0;
+        font-size: 28px;
+    }
+    .project-image-slider {
+        width: 100%;
+        height: 70vh;
+    }
+    .project-project-header {
+        font-family: var(--montserrat-bold);
+        margin-top: 1.4rem;
+        font-size: 1.4rem;
+    }
+    .project-main {
+        flex-direction: column;
+        margin: 1rem 1rem;
+    }
+    .project-right-card-one {
+        width: 92vw;
+        padding: 1.6rem;
+        margin-top: 20px;
+    }
+}
+
 
