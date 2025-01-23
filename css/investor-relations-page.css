@@ -138,6 +138,7 @@
     margin-left: 2px;
 }
 
+
 /* .ir-card:hover .ir-card-btn{
     background: linear-gradient(155deg,#015998,#5AB947);
 } */
@@ -197,6 +198,19 @@
     font-size: 1.2rem;
 }
 
+@media(max-width:640px){
+  .ir-table-cards{
+    flex-direction: column;
+    width: 90%;
+    padding: 2rem 1rem;
+  }
+  .ir-table-cards h3 {
+    font-size: 3vw;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
 /* -------------------------------------------------- */
 
 .av-presentation-section{
@@ -219,6 +233,25 @@
     font-family: var(--montserrat-medium);
     padding: 1rem;
     background-color: #5AB947;   
+}
+
+@media(max-width:960px){
+  .av-presentation-section{
+    flex-direction: column;
+  }
+  .av-presentation-card {
+    margin: 1rem;
+    margin-top: 1rem;
+  }
+  .av-presentation-card video{
+    width: 88vw;
+    padding: 2px;
+  }
+  .av-presentation-card h4{
+    padding: 12px;
+    font-size: 3.4vw;
+    width: 88vw;
+  }
 }
 
 /* -------------------------------------------------- */
@@ -533,6 +566,46 @@
   transform: translateY(0);
 }
 
+@media(max-width:600px){
+  .board-members-section {
+    grid-template-columns: 1fr;
+  }
+  .board-member-card {
+    position: relative;
+    margin: 3rem 1rem;
+    cursor: default;
+  }
+  .board-member-card-img img {
+    width: 88vw;
+    height: 59vh;
+    border-top-left-radius: 14rem;
+    border-bottom-right-radius: 14rem;
+  }
+  .board-member-card-img::after {
+    left: -1rem;
+    width: 88vw;
+    height: 56vh;
+    border-bottom-right-radius: 14rem;
+    border-top-left-radius: 14rem;
+  }
+  .board-member-ribbon {
+    padding-top: 1rem;
+    bottom: -2rem;
+    left: 5rem;
+    width: 65vw;
+    height: 15vh;
+    z-index: 100;
+    text-align: center;
+  }
+  .board-member-card:hover .board-member-ribbon {
+    height: 60vh;
+    width: 70vw;
+  }
+  .board-member-ribbon .hidden-content {
+    padding: .8rem;
+  }
+}
+
 /* --------------------------------------------------------- */
 
 @media(max-width:700px){
@@ -548,7 +621,7 @@
     font-size: 16px;
   }
 }
-@media(max-width:500px){
+@media(max-width:600px){
   .investor-relations-hero{
       height: 70vh;
       background-color: #012D4C;
@@ -568,6 +641,10 @@
       font-size: 30px;
   }
   /* -------------- */
+  .ir-card h2 {
+    font-family: var(--montserrat-semi-bold);
+    font-size: 3.2vw;
+  }
   .ir-card:nth-child(1) {
     margin-top: 2.4rem;
   }
@@ -577,9 +654,9 @@
   }
   .ir-card-btn {
     padding: 16px 20px !important;
-    width: 7.2rem;
-    height: 2.4rem;
-    font-size: 14px;
+    width: 5.8rem;
+    height: 2.2rem;
+    font-size: 12px;
   }
 }
 
