@@ -130,7 +130,7 @@ nav {
     background-color: #fff; /* Change to white */
     border-bottom: 1px solid #0000004c;
 }
-.navbar-container.scrolled .main-menu-link{
+.navbar-container.scrolled .main-menu-link,.navbar-container.scrolled .phone-menu-button i{
     color: #000;
 }
 .navbar-container.scrolled .active{
@@ -406,6 +406,9 @@ nav.scrolled #logo {
 }
 .nav-contact-btn li :hover .bx-right-top-arrow-circle{
     transform: rotate(45deg);
+}
+.phone-menu-button{
+    display: none;
 }
 
 /* ----------------------- Hero Section --------------------------- */
@@ -2745,6 +2748,13 @@ footer iframe{
         font-size: 28px;
     }
     /* --- Navbar --- */
+    .phone-menu-button{
+        display: block;
+        color: #fff;
+    }
+    .phone-menu-button i{
+        font-size: 1.5rem;
+    }
     .logo {
         height: 30px;
         margin-top: -14px;
@@ -2759,6 +2769,11 @@ footer iframe{
     }
     .nav-contact-container{
         display: none;
+    }
+    .navbar-container{
+        background: rgba(255, 255, 255, 0.035);
+        backdrop-filter: blur( 5px );
+        -webkit-backdrop-filter: blur( 5px );
     }
 
     /* --- Hero Section --- */
