@@ -497,27 +497,21 @@ aside p {
 /* -------------------------------------------------- */
 
 @media(max-width:1300px){
-    .project-hero {
+    .about-hero {
         height: 70vh;
         background-size: 160%;
-    }
-    .project-main{
-        margin: 4rem 7rem;
     }
 }
 
 @media(max-width:1050px){
-    .project-hero {
+    .about-hero {
         height: 70vh;
         background-size: 180%;
-    }
-    .project-main{
-        margin: 2rem 4rem;
     }
 }
 
 @media(max-width:700px){
-    .project-hero {
+    .about-hero {
         height: 75vh;
         background-size: 300%;
     }
