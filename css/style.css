@@ -2739,6 +2739,7 @@ footer iframe{
 /* ------------------------------- */
 
 @media(max-width:600px){
+
     #backToTop {
         bottom: 10px!important;
         right: 10px!important;
@@ -2747,13 +2748,15 @@ footer iframe{
         width: 3.2rem;
         font-size: 28px;
     }
+
     /* --- Navbar --- */
+
     .phone-menu-button{
         display: block;
         color: #fff;
     }
     .phone-menu-button i{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     .logo {
         height: 30px;
@@ -2776,7 +2779,80 @@ footer iframe{
         -webkit-backdrop-filter: blur( 5px );
     }
 
+
+    .phone-nav-container{
+        position: relative;
+        user-select: none;
+        
+        display: none;
+    }
+    .phone-nav-box{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2000;
+        background-color: #fff;
+        width: 80vw;
+        height: 100vh;
+    }
+
+    .phone-nav-link-container{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 4rem 1rem;
+    }
+    .phone-nav-link-container a{
+        margin: 4px 0;
+        width: 100%;
+        font-family: var(--montserrat-medium);
+        padding: 10px;
+    }
+
+    .phone-dropdown,
+    .sub-phone-dropdown {
+      display: none; /* Initially hidden */
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      z-index: 100;
+    }
+    
+    .phone-nav-link-container li {
+        position: relative; /* To position the dropdown correctly */
+        margin: 4px 0;
+        width: 100%;
+        font-family: var(--montserrat-medium);
+        background-color: #235d8734;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .phone-nav-link-container a{
+        width: 100%;
+        color: #000;
+    }
+    
+    .phone-dropdown a,
+    .sub-phone-dropdown a {
+      display: block;
+      padding: 5px 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .phone-dropdown a:hover,
+    .sub-phone-dropdown a:hover {
+      background-color: #f0f0f0;
+    }
+    
+    .show-dropdown {
+      display: block; /* Show the dropdown when the class is added */
+    }
+
+
     /* --- Hero Section --- */
+
     .image-slider {
         position: relative;
         width: 100%;

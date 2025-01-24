@@ -54,8 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
 // -----------------------------------------------------------------------
 
 const backToTopButton = document.getElementById('backToTop');
@@ -76,7 +74,6 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
-
 
 // -----------------------------------------------------------------------
 
@@ -115,6 +112,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     lastScrollY = currentScrollY;
+  });
+});
+
+// -----------------------------------------------------------------------
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdownContainers = document.querySelectorAll(".phone-nav-link-container > li");
+
+  dropdownContainers.forEach(container => {
+    container.addEventListener("click", function (event) {
+      const dropdown = this.querySelector(".phone-dropdown");
+
+      if (dropdown) {
+        // Toggle visibility of the clicked dropdown
+        dropdown.classList.toggle("show-dropdown");
+
+        // Hide other open dropdowns
+        document.querySelectorAll(".phone-dropdown").forEach(dd => {
+          if (dd !== dropdown) {
+            dd.classList.remove("show-dropdown");
+          }
+        });
+
+        event.stopPropagation(); // Prevent event from bubbling up
+      }
+    });
+  });
+
+  // Hide dropdown if clicked outside
+  document.addEventListener("click", () => {
+    document.querySelectorAll(".phone-dropdown").forEach(dd => {
+      dd.classList.remove("show-dropdown");
+    });
   });
 });
 
