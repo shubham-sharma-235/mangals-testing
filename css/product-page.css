@@ -439,7 +439,7 @@
     /* ----------------------- */
 
     .product-features {
-        padding: 1rem 1rem;
+        padding: 1rem!important;
     }
     .product-features {
         padding: 1rem;
