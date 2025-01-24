@@ -974,7 +974,6 @@ nav.scrolled #logo {
     border-bottom-left-radius: .3rem;
     border-top-right-radius: .3rem;
     cursor: pointer;
-    /* box-shadow: rgb(24, 167, 184) 0px 10px 20px -11px; */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .button-style-two span{
@@ -1002,8 +1001,6 @@ nav.scrolled #logo {
 .what-we-do-section{
     display: flex;
     flex-direction: row;
-    /* background:linear-gradient(125deg,#fff,#fff,#d0e0eb,#c3e1bc); */
-    background:linear-gradient(45deg,#012D4C,#5AB947);
     background:linear-gradient(#fff,#d0e0eb,#c3e1bc);
     padding: 6rem 0;
     padding-bottom: 0rem;
@@ -1015,20 +1012,6 @@ nav.scrolled #logo {
     padding-bottom: 0;
     position: relative;
 }
-/* .what-we-do-left::before{
-    content: '';
-    background-image: url('../images/leaves_stroke.svg');
-    height: 30rem;
-    width: 40rem;
-    position: absolute;
-    left: -13rem;
-    bottom: -18rem;
-    z-index: 10;
-    background-repeat: no-repeat;
-    transform: rotate(90deg);
-    filter: blur(0px);
-    filter:contrast()(10%);
-} */
 .what-we-do-left span{
     color: var(--secondary-color);
     color: #2E2E2E;
