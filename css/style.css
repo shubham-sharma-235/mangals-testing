@@ -2898,13 +2898,13 @@ footer iframe{
         height: 3rem;
         width: 3rem;
         left: 0px;
-        bottom: -15px;
+        bottom: -6vw;
     }
     .hero-section-colored-div .hero-section-cd-green::before{
         height: 3rem;
         width: 3rem;
         left: 3rem;
-        bottom: -15px;
+        bottom: -6vw;
     }
 
     /* ------ Certification Section --------- */
