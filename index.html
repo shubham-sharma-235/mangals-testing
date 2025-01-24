@@ -1479,10 +1479,10 @@
           // Change navbar background color and logo after scrolling 90vh
           if (currentScrollY > colorChangeThreshold) {
             nav.classList.add("scrolled");
-            logo.src = "../logo/mangal-logo-without-bg.png"; // Change to scrolled logo
+            logo.src = "./logo/mangal-logo-without-bg.png"; // Change to scrolled logo
           } else {
             nav.classList.remove("scrolled");
-            logo.src = "../logo/logo-white.svg"; // Change back to default logo
+            logo.src = "./logo/logo-white.svg"; // Change back to default logo
           }
           
           lastScrollY = currentScrollY;
