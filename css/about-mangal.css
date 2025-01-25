@@ -602,8 +602,8 @@ aside p {
         border-bottom-left-radius: 50vw;
     }
     .vision-left::after{
-        top: 1.1rem;
-        left: 1.1rem;
+        top: 2.4rem;
+        left: .4rem;
         width: 85vw;
         height: 95vw;
         border-top-right-radius: 50vw;
