@@ -2859,7 +2859,7 @@ footer iframe{
     .image-slider {
         position: relative;
         width: 100%;
-        height: 96vh; 
+        height: 94vh; 
         overflow: hidden;
         z-index: 1;
     }
@@ -2901,13 +2901,13 @@ footer iframe{
         height: 3rem;
         width: 3rem;
         left: 0px;
-        bottom: -6vw;
+        bottom: -7vw;
     }
     .hero-section-colored-div .hero-section-cd-green::before{
         height: 3rem;
         width: 3rem;
         left: 3rem;
-        bottom: -6vw;
+        bottom: -7vw;
     }
 
     /* ------ Certification Section --------- */
