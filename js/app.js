@@ -56,6 +56,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // -----------------------------------------------------------------------
 
+const menuBtn = document.querySelector('.phone-menu-button')
+const navCloseBtn = document.querySelector('.phone-nav-close-btn');
+const phoneNav = document.querySelector('.phone-nav-box');
+
+phoneNav.style.display = 'none';
+
+menuBtn.addEventListener('click',()=>{
+  phoneNav.style.display = 'block';
+})
+
+navCloseBtn.addEventListener('click',()=>{
+  phoneNav.style.display = 'none';
+})
+
+
+
+// -----------------------------------------------------------------------
+
 const backToTopButton = document.getElementById('backToTop');
 
 // Function to show or hide the button
@@ -264,5 +282,6 @@ rightBtn.addEventListener('click', () => {
 updateProgressBar();
 
 // -----------------------------------------------------------------------
+
 
 
