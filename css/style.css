@@ -3127,6 +3127,9 @@ footer iframe{
 
     /* ------ Product Section --------- */
     
+    .product-section {
+        padding-bottom: 3rem;
+    }
     .product-head h2::after {
         height: 2.6rem;
         width: 2.6rem;
@@ -3161,10 +3164,25 @@ footer iframe{
     /* -------- Bts Section ----------- */
 
     .bts-section {
-        height: 80vh;
+        height: 65vh;
+        background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-size: 100%;
+        position: relative;
+        margin-bottom: 3rem;
+    }
+    .bts-section::after{
+        content: '';
+        background-color: #001c2f79;
+        height: 65vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
     }
     .bts-bg-image{
-        margin-top: 8rem;
+        margin-top: 0rem;
+        display: none;
     }
     .bts-section::before {
         height: 60rem;
@@ -3178,11 +3196,14 @@ footer iframe{
         transform: scale(.5);
         display: none;
     }
+    .bts-container video {
+        width: 86%;
+    }
 
     /* ------ Quality approval Section --------- */
 
     .quality-approval-section {
-        height: 70vh;
+        height: 65vh;
     }
     .scroll-item {
         width: 44vw;
@@ -3209,7 +3230,7 @@ footer iframe{
         background-color: #0351891a;
         background: linear-gradient(#fff,#ccdeeac9,#bde3b5cd);
         padding-top: 2rem;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
     }
     .impact-container {
         flex-direction: column;
