@@ -28,7 +28,9 @@
     --primary-color: #5AB947;
     --secondary-color: #015998;
 }
-
+html{
+    user-select: none;
+}
 body{
     font-family: var(--primary-font);
 }
@@ -2746,7 +2748,6 @@ footer iframe{
 
 @media(max-width:1060px){
     /* --- Navbar --- */
-
     .phone-menu-button{
         display: block;
         color: #fff;
@@ -2780,8 +2781,6 @@ footer iframe{
     .phone-nav-container{
         position: relative;
         user-select: none;
-        
-        display: block;
     }
     .phone-nav-box{
         position: absolute;
@@ -2874,7 +2873,33 @@ footer iframe{
     .product-card img{
         height: 17rem;
     }
-
+    .phone-nav-box {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2000;
+        background-color: #001c2f;
+        width: 90vw;
+        height: 100vh;
+        transform: translateX(100%); /* Initially hidden */
+        transition: transform 0.3s ease-in-out; /* Smooth transition for open/close */
+      }
+      
+      .phone-nav-close-btn {
+        color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        cursor: pointer;
+      }
+      
+      .phone-menu-button {
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+      }
+      
     /* footer .footer-section-one {
         height: 180vh;
         background-size: 160%;

@@ -536,9 +536,8 @@ aside p {
 }
 
 @media(max-width:500px){
-    .csr-hero-content h1{
+    .about-hero-content h1 {
         font-size: 8vw;
-        text-align: center;
     }
 
     .mission-container, .vision-container, .values-container {
@@ -546,6 +545,9 @@ aside p {
         padding: 2rem 1rem;
         position: relative;
     }
+    .vision-right {
+        padding-right: 0;
+    }    
     .mission-right img {
         width: 84vw;
         height: 94vw;
@@ -561,7 +563,6 @@ aside p {
         border-top-left-radius: 50vw;
     }
 
-
     .csr-section-card {
         width: 52vw;
         height: 13vh;
@@ -573,7 +574,7 @@ aside p {
         margin-top: 0;
     }
     .mission-left,.vision-left{
-        padding: 1rem;
+        padding: 2rem 0;
     }
     .mission-container h2, .vision-container h2, .values-container h2 {
         font-size: 7vw;
@@ -614,11 +615,12 @@ aside p {
     .steps-section {
         padding-top: 2rem;
         margin-top: 3rem;
-        height: 470vh;
+        padding-bottom: 1rem;
+        height: auto;
     }
     .card {
         position: sticky;
-        top: 15rem;
+        top: 6.5rem;
         padding-top: calc(var(--index)* var(--card-top-offset));
     }
     .cards-head {
@@ -626,12 +628,12 @@ aside p {
         top: 10px;
     }
     .card__content {
-        height: 85vh;
+        height: 78vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        padding-top: 2rem;
+        padding-top: 1.4rem;
     }
     .card__content h2 {
         font-size: 4.2vw;
