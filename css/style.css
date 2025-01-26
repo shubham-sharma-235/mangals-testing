@@ -744,7 +744,8 @@ nav.scrolled #logo {
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    height: 50vh;
+    height: 26vw;
+    /* height: 50vh; */
     width: 20vw;
     padding-top: 2rem;
     padding-left: 2rem;
@@ -3338,7 +3339,7 @@ footer iframe{
     /* -------- Bts Section ----------- */
 
     .bts-section {
-        height: 63vh;
+        height: 58vh;
         background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
         background-size: 100%;
         position: relative;
@@ -3347,7 +3348,7 @@ footer iframe{
     .bts-section::after{
         content: '';
         background-color: #001c2f79;
-        height: 63vh;
+        height: 58vh;
         width: 100%;
         position: absolute;
         top: 0;
