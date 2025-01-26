@@ -2885,7 +2885,8 @@ footer iframe{
 .menu-container ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
+    font-family: var(--montserrat-medium);
 }
 
 .menu-container ul li a:hover {
