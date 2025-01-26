@@ -141,6 +141,11 @@ nav {
 .navbar-container.scrolled .main-menu-link a{
     color: #fff; 
 }
+.navbar-container.scrolled .nav-contact-btn li a{
+    color: #fff; 
+    background: linear-gradient(45deg,#015998,#5AB947);
+    font-size: 16px;
+}
 nav.show {
   top: 0; /* Bring navbar into view */
   transform: translateY(0);
@@ -386,17 +391,15 @@ nav.scrolled #logo {
 }
 
 .nav-contact-btn li a{
-    background: linear-gradient(45deg,#015998,#5AB947);
-    padding: 14px 20px;
+    padding: 10px 18px;
     border-radius: 4px;
     border-bottom-right-radius: 1.8rem;
     border-top-left-radius: 1.8rem;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 .nav-contact-btn li a{
-    color: #fff!important;
     font-weight: 100!important;
-    font-family: var(--heading-font);
-    font-size: 12px;
     display: flex;
     align-items: center;
 }
@@ -1166,14 +1169,14 @@ nav.scrolled #logo {
 .steps-heading h2::after{
     content: '';
     background-color: #001c2f2a;
-    background: linear-gradient( -40deg,#d0e0eb, #c3e1bc);;
-    height: 3.4rem;
-    width: 3.4rem;
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    background: linear-gradient( -40deg,#d0e0eb, #c3e1bc);
+    height: 3.2rem;
+    width: 3.2rem;
+    border-top-left-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
     position: absolute;
     left: 16px;
-    top: 105px;
+    top: 75px;
     z-index: -1;
 }
 
@@ -2683,10 +2686,13 @@ footer iframe{
     }
 
     .nav-contact-btn li a{
-        padding: 14px 18px;
+        padding: 12px 16px;
     }
     .nav-contact-btn li a{
-        font-size: 10px;
+        font-size: 14px;
+    }
+    .navbar-container.scrolled .nav-contact-btn li a {
+        font-size: 12px;
     }
     .nav-contact-btn li a .bx-right-top-arrow-circle{
         font-size: 12px;
@@ -2920,7 +2926,7 @@ footer iframe{
 
 /* ------------------------------- */
 
-@media(max-width:600px){
+@media(max-width:500px){
 
     #backToTop {
         bottom: 10px!important;

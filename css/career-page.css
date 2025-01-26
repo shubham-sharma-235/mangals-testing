@@ -36,11 +36,12 @@
     width: 100%;
     background-color: #012D4C;
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    background-position: center;
 }
 .career-hero-content{
     color: #fff;
@@ -72,61 +73,191 @@
 }
 
 /* --------------------------------------- */
-
 .career-page {
-  max-width: 1340px;
+  max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
   background: #fff;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  overflow-x: auto;
 }
+
 th, td {
-  padding: 12px;
+  padding: 16px 12px;
   text-align: left;
   border: 1px solid #ddd;
 }
+
 th {
   background-color: #2c3e50;
   color: white;
   text-transform: uppercase;
   font-family: var(--montserrat-semi-bold);
+  font-size: 1rem;
 }
-tr:hover {
-  background-color: #eaf2f8;
+
+td {
+  font-family: var(--montserrat-medium);
+  font-size: 0.95rem;
+  color: #333;
 }
-td{
-    font-family: var(--montserrat-medium);
-    padding: 18px 10px;
-    font-size: 14px;
-}
+
 td:last-child {
   text-align: center;
-  width: 150px;
+  width: 160px;
 }
+
+tr:hover {
+  background-color: #f5faff;
+}
+
 .apply-btn a {
+  display: inline-block;
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 10px 18px;
   background-color: #2c3e50;
   color: white;
   border-radius: 4px;
   font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+  font-family: var(--montserrat-semi-bold);
+  transition: all 0.3s ease;
 }
+
 .apply-btn a:hover {
   background-color: #005bb5;
 }
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .career-page {
+    padding: 15px;
+  }
+
+  table {
+    font-size: 0.95rem;
+  }
+
+  th, td {
+    padding: 12px 10px;
+  }
+
+  td:last-child {
+    width: 130px;
+  }
+}
+
 @media (max-width: 768px) {
+  .career-page {
+    padding: 15px;
+  }
+
+  .career-header h1 {
+    font-size: 1.4rem;
+  }
+
   table {
     font-size: 0.9rem;
   }
-  .career-header h1 {
-    font-size: 1.5rem;
+
+  th, td {
+    padding: 10px 8px;
+  }
+
+  td:last-child {
+    width: 140px;
+  }
+}
+
+@media (max-width: 706px) {
+  /* Stack rows into blocks for smaller screens */
+  table {
+    display: block;
+    border: none;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  td:first-child{
+    background-color: #055e9e12;
+    padding: 14px 6px;
+  }
+  td {
+    display: block;
+    text-align: left;
+    padding: 12px 10px;
+    border: none;
+    border-bottom: 1px solid #cccccce2;
+  }
+
+  td:last-child {
+    margin-top: 8px;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+
+  .apply-btn a {
+    padding: 8px 16px;
+    font-size: 0.85rem;
   }
 }
 
 
+@media(max-width:600px){
+  .career-hero {
+      background-size: 200%;
+  }
+  .career-hero-content {
+      padding: 0 4vw;
+  }
+  .career-hero-content p {
+      font-size: 16px;
+      padding-left: 2rem;
+  }
+  .career-hero-content h1 {
+      padding: 12px 0;
+      font-size: 28px;
+  }
+}
+
+@media(max-width:500px){
+  .career-hero {
+      height: 70vh;
+      background-size: 200%;
+  }
+}
+
+@media(max-width:350px){
+  .career-hero {
+      height: 70vh;
+      background-size: 280%;
+  }
+}

@@ -56,17 +56,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // -----------------------------------------------------------------------
 
-const menuBtn = document.querySelector('.phone-menu-button')
-const navCloseBtn = document.querySelector('.phone-nav-close-btn');
-const phoneNav = document.querySelector('.phone-nav-box');
+// const menuBtn = document.querySelector('.phone-menu-button')
+// const navCloseBtn = document.querySelector('.phone-nav-close-btn');
+// const phoneNav = document.querySelector('.phone-nav-box');
 
-menuBtn.addEventListener('click',()=>{
-  phoneNav.style.display = 'block';
-})
+// menuBtn.addEventListener('click',()=>{
+//   phoneNav.style.display = 'block';
+// })
 
-navCloseBtn.addEventListener('click',()=>{
-  phoneNav.style.display = 'none';
-})
+// navCloseBtn.addEventListener('click',()=>{
+//   phoneNav.style.display = 'none';
+// })
 
 // -----------------------------------------------------------------------
 

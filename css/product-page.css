@@ -379,6 +379,7 @@
     .product-ribbon {
         height: 6rem;
         width: .5rem;
+        top:-7rem;
     }
     .about-product-right {
         padding: 28px 12px;
@@ -411,7 +412,7 @@
     /* ----------------------- */
 
     .special-head {
-        padding: 0 4vw;
+        padding: 0 6vw;
         padding-top: 4vw;
         padding-bottom: 0;
     }
