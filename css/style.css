@@ -2750,6 +2750,19 @@ footer iframe{
         background-size: 260%;
         background-position: center;
     }
+
+    /* ----------------------------------- */
+
+    .footer-section-two {
+        padding: 4vw 4vw;
+    }
+
+    footer iframe {
+        width: 92%;
+        height: 36vh;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 @media(max-width:1060px){
@@ -2880,48 +2893,126 @@ footer iframe{
         height: 17rem;
     }
     .phone-nav-box {
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 2000;
-        background-color: #001c2f;
-        width: 90vw;
-        height: 100vh;
-        transform: translateX(100%); /* Initially hidden */
-        transition: transform 0.3s ease-in-out; /* Smooth transition for open/close */
-      }
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 2000;
+      background-color: #001c2f;
+      width: 90vw;
+      height: 100vh;
+      transform: translateX(100%); /* Initially hidden */
+      transition: transform 0.3s ease-in-out; /* Smooth transition for open/close */
+    }
+    
+    .phone-nav-close-btn {
+      color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+      cursor: pointer;
+    }
+    
+    .phone-menu-button {
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+    }
       
-      .phone-nav-close-btn {
-        color: #fff;
-        display: flex;
-        justify-content: flex-end;
-        padding: 20px;
-        cursor: pointer;
-      }
-      
-      .phone-menu-button {
-        color: #fff;
-        font-size: 24px;
-        cursor: pointer;
-        padding: 10px;
-      }
-      
-    /* footer .footer-section-one {
-        height: 180vh;
-        background-size: 160%;
+   /* --------------------------------- */
+
+   .footer-contact {
+        grid-template-columns: 1fr;
+    }
+    .footer-contact div:nth-child(1){
+        padding-top: 2rem;
+    }
+    .footer-contact div {
+        padding: 1rem 0;
+    }
+    .footer-socials-logo{
+        margin-top: 1px;
+    }
+}
+
+/* ------------------------------- */
+
+@media(max-width:840px){
+    .footer-top {
+        margin-top: 2rem;
+        padding: 3rem 4rem;
         flex-direction: column;
-        align-items: start;
+    }
+    .footer-top h2 {
+        text-align: center;
+        font-size: 5vw;
+        margin-bottom: 18px;
+    }
+
+    footer .footer-section-one{
+        height: auto;
+        background-size: 300%;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        padding: 4rem 0;
+        padding: 1.6rem 2rem;
+    }
+    .footer-contact div:nth-child(1){
+        padding-top: 2rem;
+    }
+    .footer-contact div {
+        padding: 1rem 0;
+        padding-right: 2rem;
+    }
+    .footer-section-one .stroke-font {
+        font-size: 16vw;
+        margin: 0rem 0;
+    }
+    .footer-socials-logo i{
+        font-size: 3vw;
+        margin-right: 3px;
+    }
+    .footer-socials-logo {
+        margin-top: 0;
     }
     .contact-section {
-        background: #ffffff;
-        padding: 2rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: 80vw;
+        width: 92vw;
         text-align: start;
-        padding: 4vw;
-    } */
+        padding: 1rem;
+    }
+    .contact-header h2 {
+        font-size: 4vw;
+    }
+    .contact-form input, .contact-form textarea {
+        font-size: .9rem;
+    }
+    .contact-header p {
+        margin: 0.5rem 0 1.5rem;
+        font-size: 2vw;
+    }
+    .footer-contact {
+        grid-template-columns: 1fr;
+    }
+    .footer-section-one-left h2 {
+        font-size: 5vw;
+    }
+    .footer-section-two {
+        flex-direction: column;
+        padding: 2rem 1.2rem;
+    }
+    .footer-text p {
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 22px;
+    }
+    .footer-text p br{
+        display: none;
+    }
+    .footer-widget-heading h3 {
+        font-size: 20px;
+        margin-top: 18px;
+        margin-bottom: 38px;
+    }
 }
 
 /* ------------------------------- */
@@ -3457,80 +3548,31 @@ footer iframe{
 
     /* ------ Footer Section --------- */
 
-    .footer-top {
-        margin-top: 2rem;
-        padding: 3rem 4rem;
-        flex-direction: column;
-    }
-    .footer-top h2 {
-        text-align: center;
-        font-size: 5vw;
-        margin-bottom: 18px;
-    }
-
     footer .footer-section-one{
-        height: auto;
         background-size: 540%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1.6rem 2rem;
+        padding: 1.6rem 1rem;
     }
-    .footer-contact div:nth-child(1){
-        padding-top: 2rem;
-    }
-    .footer-contact div {
-        padding: 1rem 0;
-        padding-right: 2rem;
-    }
-    .footer-section-one .stroke-font {
-        font-size: 14vw;
-        margin: 0rem 0;
+    .footer-section-one-left h2 {
+        font-size: 6vw;
     }
     .footer-socials-logo i{
         font-size: 6vw;
         margin-right: 6px;
     }
-    .footer-socials-logo {
-        margin-top: 0;
-    }
     .contact-section {
-        width: 88vw;
-        text-align: start;
-        padding: 1rem;
+        width: 92vw;
+        margin-top: 1rem;
+    }
+    footer iframe {
+        margin-top: 0;
+        margin-bottom: 2rem;
     }
     .contact-header h2 {
         font-size: 1.8rem;
     }
-    .contact-form input, .contact-form textarea {
-        font-size: .9rem;
-    }
     .contact-header p {
         margin: 0.5rem 0 1.5rem;
         font-size: .85rem;
-    }
-    .footer-contact {
-        grid-template-columns: 1fr;
-    }
-    .footer-section-one-left h2 {
-        font-size: 7vw;
-    }
-    .footer-section-two {
-        flex-direction: column;
-        padding: 2rem 1.2rem;
-    }
-    .footer-text p {
-        font-size: 14px;
-        line-height: 28px;
-        margin-bottom: 22px;
-    }
-    .footer-text p br{
-        display: none;
-    }
-    .footer-widget-heading h3 {
-        font-size: 20px;
-        margin-top: 18px;
-        margin-bottom: 38px;
     }
 }
 
