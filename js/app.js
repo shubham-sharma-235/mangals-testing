@@ -165,27 +165,27 @@ document.addEventListener("DOMContentLoaded", () => {
 // -----------------------------------------------------------------------
 
 // Function to animate numbers
-function animateNumbers() {
-  const counters = document.querySelectorAll('.stroke-font');
-  const speed = 50; // Adjust speed (higher is slower)
+// function animateNumbers() {
+//   const counters = document.querySelectorAll('.stroke-font');
+//   const speed = 50; // Adjust speed (higher is slower)
 
-  counters.forEach(counter => {
-    const updateCount = () => {
-      const target = +counter.getAttribute('data-target'); // Get the target number
-      const count = +counter.innerText; // Current number in the counter
-      const increment = Math.ceil(target / speed); // Calculate increment
+//   counters.forEach(counter => {
+//     const updateCount = () => {
+//       const target = +counter.getAttribute('data-target'); // Get the target number
+//       const count = +counter.innerText; // Current number in the counter
+//       const increment = Math.ceil(target / speed); // Calculate increment
 
-      if (count < target) {
-        counter.innerText = count + increment;
-        setTimeout(updateCount, 20); // Call the function recursively
-      } else {
-        counter.innerText = target; // Set to target once complete
-      }
-    };
+//       if (count < target) {
+//         counter.innerText = count + increment;
+//         setTimeout(updateCount, 20); // Call the function recursively
+//       } else {
+//         counter.innerText = target; // Set to target once complete
+//       }
+//     };
 
-    updateCount(); // Start animation
-  });
-}
+//     updateCount(); // Start animation
+//   });
+// }
 
 // Observer to trigger animation when section is in view
 const observer = new IntersectionObserver(
