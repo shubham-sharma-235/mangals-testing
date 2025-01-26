@@ -281,3 +281,47 @@ updateProgressBar();
 
 
 
+// Toggles the main menu visibility (open/close)
+function toggleMenu() {
+    const menu = document.getElementById('menu-container');
+    const overlay = document.getElementById('menu-overlay');
+
+    // Toggle visibility of the menu and overlay
+    menu.classList.toggle('visible');
+    overlay.classList.toggle('visible');
+
+    // Close any open dropdowns when the menu is toggled
+    const openDropdown = document.querySelector('.phone-dropdown.active');
+    if (openDropdown) {
+        openDropdown.classList.remove('active');
+    }
+}
+
+// Toggles the dropdown visibility for "Our Products"
+function togglePhoneDropdown(event) {
+    event.preventDefault(); // Prevent navigation behavior
+
+    const parent = event.target.closest('.phone-dropdown');
+    const allDropdowns = document.querySelectorAll('.phone-dropdown');
+
+    // Close all other dropdowns
+    allDropdowns.forEach((dropdown) => {
+        if (dropdown !== parent) {
+            dropdown.classList.remove('active');
+        }
+    });
+
+    // Toggle the clicked dropdown
+    parent.classList.toggle('active');
+}
+
+// Close dropdowns if clicked outside
+document.addEventListener('click', function (e) {
+    const menuContainer = document.getElementById('menu-container');
+    const openDropdown = document.querySelector('.phone-dropdown.active');
+
+    // If the click is outside the menu or the dropdown, close the dropdown
+    if (openDropdown && !menuContainer.contains(e.target)) {
+        openDropdown.classList.remove('active');
+    }
+});
