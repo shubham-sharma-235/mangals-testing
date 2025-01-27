@@ -29,7 +29,7 @@
     --secondary-color: #015998;
 }
 html{
-    /* user-select: none; */
+    -webkit-tap-highlight-color: transparent;
 }
 body{
     font-family: var(--primary-font);
@@ -2820,6 +2820,7 @@ footer iframe{
 }
 
 /* ----------------- Phone Navbar ----------------- */
+
 
 .menu-overlay {
     position: fixed;
