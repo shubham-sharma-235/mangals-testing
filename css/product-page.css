@@ -329,8 +329,32 @@
 
 /* ------------------------------------- */
 
+@media(max-width:1240px){
+    .product-slider-container {
+        width: 36vw;
+        height: 36vw;
+        border-top-left-radius: 9rem;
+        border-bottom-right-radius: 9rem;
+    }
+    .about-product {
+        padding: 2.2rem 1rem;
+        background-color: #d0d7db6d;
+    }
+    .about-product p {
+        font-family: var(--montserrat-medium);
+        padding: 12px 4px;
+        color: #444343;
+        line-height: 28px;
+    }
+}
 
 @media(max-width:800px){
+    .product-slider-container {
+        width: 500px;
+        height: 500px;
+        border-top-left-radius: 9rem;
+        border-bottom-right-radius: 9rem;
+    }
     .product-hero-section {
         background-size: 200% 120%;
         padding: 2rem;
