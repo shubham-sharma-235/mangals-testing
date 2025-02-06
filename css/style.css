@@ -745,9 +745,9 @@ nav.scrolled #logo {
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    height: 26vw;
+    height: 25vw;
     /* height: 50vh; */
-    width: 20vw;
+    width: 19vw;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
