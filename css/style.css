@@ -30,6 +30,7 @@
 }
 html{
     -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
 }
 body{
     font-family: var(--primary-font);
@@ -1762,8 +1763,18 @@ nav.scrolled #logo {
     left: 0;
     top: 0;
     z-index: 1;
-    filter: blur(6px);
+    filter: blur(4px);
     /* filter: grayscale(80%); */
+}
+.bts-section:after{
+    content: '';
+    background-color: #001c2fa6;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
 }
 .bts-bg-image img{
     width: 100%;
@@ -1802,7 +1813,7 @@ nav.scrolled #logo {
     justify-content: center;
 }
 .bts-container video{
-    width: 76%;
+    width: 60%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
