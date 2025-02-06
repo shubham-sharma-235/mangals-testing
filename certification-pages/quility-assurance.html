@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mangal Industries</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,78 +15,156 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="./logo/flaticon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="../logo/flaticon.svg" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/certification-page.css" />
+    <link rel="stylesheet" href="../css/certification-page.css" />
   </head>
   <body>
     <div class="main">
       <div class="navbar" id="navbar">
         <nav class="navbar-container">
             <div class="nav-icon-container nav-logo-container">
-              <i class="fi fi-rs-apps"></i>
-              <img class="logo" id="logo" src="./logo/logo-white.svg" alt="Logo">
+              <a href="../index.html">
+                <img class="logo" id="logo" src="../logo/logo-white.svg" alt="Logo">
+              </a>
             </div>
             <ul class="nav-menu-container">
-              <li><a class="main-menu-link" href="./index.html">Home</a></li>
-              <li><a class="main-menu-link" href="./about-mangal.html">About</a></li>
+              <li><a class="main-menu-link active" href="../index.html">Home</a></li>
+              <li><a class="main-menu-link" href="../about-mangal.html">About</a></li>
               <li>
-                <a class="main-menu-link" href="#products">Our Products</a>
+                <a class="main-menu-link" style="cursor: pointer;">Our Products</a>
                 <div class="dropdown">
-                  <a href="#products-sub1">CRGO Wide Coils</a>
-                  <a href="#products-sub2">CRGO Slit Coils</a>
-                  <a href="#products-sub3">CRGO Cut Lamination</a>
-                  <a href="#products-sub4">CRGO Core Coil Assembly</a>
-                  <a href="#products-sub5">Amorphous Core</a>
-                  <a href="#products-sub6">Immersed Circuit Breaker</a>
-                  <a href="#products-sub7">Wound Cores</a>
-                  <a href="#products-sub8">Toroidal Cores</a>
+                  <a href="../mangal-products/crgo-wide-coil.html">CRGO Wide Coils</a>
+                  <a href="../mangal-products/crgo-slit-coil.html">CRGO Slit Coils</a>
+                  <a href="../mangal-products/crgo-cut-lamination.html">CRGO Cut Lamination</a>
+                  <a href="../mangal-products/crgo-core-assembly.html">CRGO Core Assembly</a>
+                  <a href="../mangal-products/crgo-core-coil-assembly.html">CRGO Core Coil Assembly</a>
+                  <a href="../mangal-products/amorphous-core.html">Amorphous Core</a>
+                  <a href="../mangal-products/immersed-circuit-breaker-icb.html">Immersed Circuit Breaker</a>
+                  <a href="../mangal-products/wound-core.html">Wound Cores</a>
+                  <a href="../mangal-products/toroidal-cores.html">Toroidal Cores</a>
                 </div>
               </li>
               <li>
-                <a class="main-menu-link" href="#projects">Epc Projects</a>
+                <a class="main-menu-link" style="cursor: pointer;">Epc Projects</a>
                 <div class="dropdown">
-                  <a href="#projects-sub1">Pratapgarh Circle</a>
-                  <a href="#projects-sub2">Farrukhabad Substation</a>
-                  <a href="#projects-sub3">Dataganj Substation</a>
+                  <a href="../mangal-projects/pratapgarh-circle.html">Pratapgarh Circle</a>
+                  <a href="../mangal-projects/farrukhabad-substation.html">Farrukhabad Substation</a>
+                  <a href="../mangal-projects/dataganj-substation.html">Dataganj Substation</a>
                 </div>
               </li>
               <li>
-                <a class="main-menu-link" href="#beyond">Beyond Business</a>
-                <div class="dropdown">
-                  <a href="#beyond-sub1">CSR</a>
-                  <a href="#beyond-sub2">Gallery</a>
-                  <a href="#beyond-sub3">Career</a>
-                </div>
+                <a href="../beyond-business/csr.html" class="main-menu-link" style="cursor: pointer;">CSR</a>
               </li>
               <li>
-                <a class="main-menu-link" href="#beyond">Investor Relations</a>
+                <a href="../beyond-business/gallery.html" class="main-menu-link" style="cursor: pointer;">Gallery</a>
+              </li>
+              <li>
+                <a class="main-menu-link" style="cursor: pointer;">Investor Relations</a>
                 <div class="dropdown">
-                    <a href="#products-sub1">DRHP</a>
-                    <a href="#products-sub2">Audited Financial Statements</a>
-                    <a href="#products-sub3">Policies</a>
-                    <a href="#products-sub4">Material Creditors</a>
-                    <a href="#products-sub5">AV Presentation</a>
-                    <a href="#products-sub6">Industry Report</a>
-                    <a href="#products-sub6">Group Companies</a>
+                  <a href="../investor-relations/drhp.html">DRHP</a>
+                  <a href="../investor-relations/audited-financial-statements.html">Audited Financial Statements</a>
+                  <a href="../investor-relations/material-creditors.html">Material Creditors</a>
+                  <a href="../investor-relations/av-presentation.html">AV Presentation</a>
+                  <a href="../investor-relations/industry-report.html">Industry Report</a>
+                  <a href="../investor-relations/group-companies.html">Group Companies</a>
+
+                  <a style="cursor: pointer;display: flex;align-items: center;justify-content: space-between;">Corporate Governance<i style="font-size: 17px;" class='bx bx-chevron-right'></i></a>
+                  <!-- Sub-dropdown HTML -->
+                  <div class="sub-dropdown">
+                    <a href="../investor-relations/board-members.html">Board Members</a>
+                    <a href="../investor-relations/board-committees.html">Board Committees</a>
+                    <a href="../investor-relations/codes-and-policies.html">Codes & Policies</a>
+                    <a href="../investor-relations/annual-returns.html">Annual Returns</a>
+                    <a href="../investor-relations/grievance.html">Grievance</a>
+                  </div>
                 </div>
               </li>
+              <li><a class="main-menu-link" href="../career-at-mangal.html">Career</a></li>
             </ul>
-            <div class="nav-contact-container">
+
+            <!-- ------------------------------------------------------------- -->
+
+            <div class="nav-contact-container nav-contact-btn">
                 <li>
                     <a class="main-menu-link" href="#beyond">Get In Touch</a>
                 </li>
             </div>
-          </nav>            
+
+            <!-- ----------------------- -->
+
+            <!-- Phone Menu Button -->
+            <div class="phone-menu-button" onclick="toggleMenu()">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+            
+            <!-- Overlay -->
+            <div id="menu-overlay" class="menu-overlay" onclick="toggleMenu()"></div>
+            
+            <!-- Side Menu -->
+            <div id="menu-container" class="menu-container">
+                <!-- Close Button -->
+                <div class="menu-close-button" onclick="toggleMenu()">
+                    <i class='bx bx-x'></i>
+                </div>
+                <!-- Menu Items -->
+                <ul>
+                    <li><a class="phone-nav-active" href="./index.html" onclick="toggleMenu()">Home <i class='bx bx-chevron-right'></i> </a></li>
+                    <li><a href="./about-mangal.html" onclick="toggleMenu()">About <i class='bx bx-chevron-right'></i> </a></li>
+                    <li class="phone-dropdown">
+                        <a href="" onclick="togglePhoneDropdown(event)">Our Products <i class='bx bx-chevron-right'></i></a>
+                        <ul class="phone-dropdown-menu">
+                            <li><a href="./mangal-products/crgo-wide-coil.html" onclick="toggleMenu()">CRGO Wide Coils</a></li>
+                            <li><a href="./mangal-products/crgo-slit-coil.html" onclick="toggleMenu()">CRGO Slit Coils</a></li>
+                            <li><a href="./mangal-products/crgo-cut-lamination.html" onclick="toggleMenu()">CRGO Cut Lamination</a></li>
+                            <li><a href="./mangal-products/crgo-core-assembly.html" onclick="toggleMenu()">CRGO Core Assembly</a></li>
+                            <li><a href="./mangal-products/crgo-core-coil-assembly.html" onclick="toggleMenu()">CRGO Core Coil Assembly</a></li>
+                            <li><a href="./mangal-products/amorphous-core.html" onclick="toggleMenu()">Amorphous Core</a></li>
+                            <li><a href="./mangal-products/immersed-circuit-breaker-icb.html" onclick="toggleMenu()">Immersed Circuit Breaker</a></li>
+                            <li><a href="./mangal-products/wound-core.html" onclick="toggleMenu()">Wound Cores</a></li>
+                            <li><a href="./mangal-products/toroidal-cores.html" onclick="toggleMenu()">Toroidal Cores</a></li>
+                        </ul>
+                    </li>
+                    <li class="phone-dropdown">
+                        <a onclick="togglePhoneDropdown(event)">Epc Projects <i class='bx bx-chevron-right'></i></a>
+                        <ul class="phone-dropdown-menu">
+                            <li><a href="./mangal-projects/pratapgarh-circle.html" onclick="toggleMenu()">Pratapgarh Circle</a></li>
+                            <li><a href="./mangal-projects/farrukhabad-substation.html" onclick="toggleMenu()">Farrukhabad Substation</a></li>
+                            <li><a href="./mangal-projects/dataganj-substation.html" onclick="toggleMenu()">Dataganj Substation</a></li>
+                        </ul>
+                    </li>
+                    <li class="phone-dropdown">
+                        <a href=""" onclick="togglePhoneDropdown(event)">Investor Relations <i class='bx bx-chevron-right'></i></a>
+                        <ul class="phone-dropdown-menu">
+                            <li><a href="./investor-relations/drhp.html" onclick="toggleMenu()">DRHP</a></li>
+                            <li><a href="./investor-relations/audited-financial-statements.html" onclick="toggleMenu()">Audited Financial Statements</a></li>
+                            <li><a href="./investor-relations/material-creditors.html" onclick="toggleMenu()">Material Creditors</a></li>
+                            <li><a href="./investor-relations/av-presentation.html" onclick="toggleMenu()">AV Presentation</a></li>
+                            <li><a href="./investor-relations/industry-report.html" onclick="toggleMenu()">Industry Report</a></li>
+                            <li><a href="./investor-relations/group-companies.html" onclick="toggleMenu()">Group Companies</a></li>
+                            <li><a href="" onclick="togglePhoneDropdown(event)" style="cursor: pointer;display: flex;align-items: center;justify-content: space-between;margin-bottom: 12px;">Corporate Governance <i style="font-size: 17px;" class='bx bx-chevron-down'></i></a>
+                                <ul class="phone-dropdown-menu">
+                                    <li><a href="./investor-relations/board-members.html" onclick="toggleMenu()">Board Members</a></li>
+                                    <li><a href="./investor-relations/board-committees.html" onclick="toggleMenu()">Board Committees</a></li>
+                                    <li><a href="./investor-relations/codes-and-policies.html" onclick="toggleMenu()">Codes & Policies</a></li>
+                                    <li><a href="./investor-relations/annual-returns.html" onclick="toggleMenu()">Annual Returns</a></li>
+                                    <li><a href="./investor-relations/grievance.html" onclick="toggleMenu()">Grievance</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="./beyond-business/csr.html" onclick="toggleMenu()">CSR <i class='bx bx-chevron-right'></i></a></li>
+                    <li><a href="./beyond-business/gallery.html" onclick="toggleMenu()">Gallery <i class='bx bx-chevron-right'></i></a></li>
+                    <li><a href="./career-at-mangal.html" onclick="toggleMenu()">Career <i class='bx bx-chevron-right'></i></a></li>
+                    <li><a href="./contact-us.html" onclick="toggleMenu()">Get In Touch <i class='bx bx-chevron-right'></i></a></li>
+                </ul>
+            </div>          
+            
+            <!-- ---------------------------------------- -->
+            
+          </nav>     
       </div>
 
-      <!-- <div class="quality-assurance-hero">
-          <div class="quality-assurance-hero-content">
-              <h1>Quality Assurance</h1>
-          </div>
-      </div> -->
-
-    </div>
 
     <!-- ------------------------------------------------------------- -->
 
@@ -104,7 +182,7 @@
             </p>
         </div>
         <div class="certificate-section-right" data-aos="fade-up" data-aos-duration="1000">
-            <img src="./images/certificate-demo-img.jpg" alt="">
+            <img src="../images/certificate-demo-img.jpg" alt="">
         </div>
     </div>
 
@@ -221,7 +299,7 @@
                     <div class="footer-logo">
                       <a href="index.html"
                         ><img
-                          src="./logo/mangal-logo-without-bg.png"
+                          src="../logo/mangal-logo-without-bg.png"
                           class="img-fluid"
                           alt="logo"
                       /></a>
@@ -294,7 +372,7 @@
                   <div class="copyright-text">
                     <p>
                       Copyright &copy; 2018, All Right Reserved
-                      <a href="./index.html">Mangal</a>
+                      <a href="../index.html">Mangal</a>
                     </p>
                   </div>
                 </div>
@@ -315,7 +393,7 @@
 
     <!-- ------------------------------------------------------------- -->
 
-    <script src="./js/app.js"></script>
+    <script src="../js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         const gallery = document.querySelector('.gallery');
