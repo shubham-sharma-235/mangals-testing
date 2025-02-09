@@ -430,8 +430,8 @@ nav.scrolled #logo {
   z-index: 1;
 }
 .slider-bg {
-  position: absolute;
-  top: 0;
+    position: absolute;
+    top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -441,6 +441,16 @@ nav.scrolled #logo {
   transition: opacity 1s ease-in-out, transform 3s ease-in-out;
   transform: scale(1.2); /* Start with zoomed-in */
 }
+/* .slider-bg::after{
+  content:'';
+  position: absolute;
+  background-color: #0000006f;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+} */
 .slider-bg.active {
   opacity: 1;
   transform: scale(1); /* Zoom-out to normal size */
@@ -1928,7 +1938,7 @@ nav.scrolled #logo {
 
 .testimonial-section{
     height: 94vh;
-    background-image: url('../images/testimonial-bg-img.png');
+    background-image: url('../images/testimonial-bg-image.png');
     background-size: 100% 120%;
     background-repeat: no-repeat;
     /* margin: 4rem 0; */
