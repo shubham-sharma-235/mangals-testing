@@ -36,6 +36,7 @@
     width: 100%;
     background-color: #012D4C;
     background-image: url('../images/pratapgargh-circle-hero-demo.jpeg');
+    background: linear-gradient(20deg,#52b43e,#024e85);
     background-repeat: no-repeat;
     background-size: 100% 120%;
     display: flex;
