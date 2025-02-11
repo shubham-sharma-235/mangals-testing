@@ -28,7 +28,7 @@
     height: 76vh;
     background-size: 140%;
     background-repeat: no-repeat;
-    background-image: url('https://www.mangals.com/wp-content/uploads/2024/06/csr-1.jpg');
+    background-image: url('../images/csr-hero-image.jpg');
     background-size: 140%;
     display: flex;
     background-position: center;
@@ -112,10 +112,14 @@
 }
 .csr-section-card{
     position: absolute;
-    background: rgba( 255, 255, 255, 0.1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur( 7px );
+    background: rgba(5, 143, 40, 0.1);
+    box-shadow: 0 5px 42px 0 rgba(31, 38, 135, 0.219);
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    background-image: url('../images/map-bg.png');
+    background: linear-gradient(-90deg,#012d4c93,#5ab94717);
+    background-size: 150%;
+    background-position: center;
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     bottom: -2rem;
@@ -123,6 +127,38 @@
     width: 18vw;
     height: 20vh;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-family: var(--heading-font);
+    color: #fff;
+    text-align: center;
+}
+.csr-section-card-two{
+    position: absolute;
+    background: rgba(5, 143, 40, 0.1);
+    box-shadow: 0 5px 42px 0 rgba(31, 38, 135, 0.219);
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    background-image: url('../images/map-bg.png');
+    background: linear-gradient(90deg,#012d4c93,#5ab94717);
+    background-size: 150%;
+    background-position: center;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    bottom: -2rem;
+    left: 0rem;
+    width: 18vw;
+    height: 20vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-family: var(--heading-font);
+    color: #fff;
+    text-align: center;
 }
 
 .csr-section-two-right img{

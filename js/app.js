@@ -74,7 +74,7 @@ const backToTopButton = document.getElementById('backToTop');
 
 // Function to show or hide the button
 window.addEventListener('scroll', () => {
-    if (window.scrollY > window.innerHeight * 1.6) { // 160vh equivalent
+    if (window.scrollY > window.innerHeight * 1) { // 100vh equivalent
         backToTopButton.style.display = 'block'; // Show the button
     } else {
         backToTopButton.style.display = 'none'; // Hide the button

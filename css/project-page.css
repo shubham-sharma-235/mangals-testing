@@ -41,6 +41,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    background-position: center;
 }
 .project-hero-content{
     color: #fff;
@@ -93,7 +94,7 @@
     font-family: var(--montserrat-medium);
     margin-top: 1rem;
     line-height: 26px;
-    width: 86%;
+    width: 90%;
     color: #323232;
 }
 .project-project-checklist li{
@@ -152,8 +153,8 @@
     color: #fff;
 }
 .project-right-card-two .project-info div p b{
-    font-size: 14px;
-    color: #A9A9A9;
+    font-size: 16px;
+    color: #8d8c8cdb;
     font-weight: 600;
 }
 .project-right-card-two .project-info div p{
@@ -172,8 +173,8 @@
     margin: 1.8rem 0;
 }
 .project-image-slider {
-    width: 90%;
-    height: 70vh;
+    width: 98%;
+    height: 90vh;
     overflow: hidden;
     position: relative;
 }
@@ -181,8 +182,8 @@
 .project-image-slides {
     display: flex;
     width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 
 .project-image-slide {

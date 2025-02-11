@@ -39,7 +39,7 @@
     background-repeat: no-repeat;
     background-size: 110% 120%;
     background-position: center;
-    background-image: url('../images/gallery-hero-img.jpeg');
+    background-image: url('../images/gallery-hero-img.jpg');
 }
 .gallery-hero h1{
     font-size: 3vw;

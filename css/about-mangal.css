@@ -28,7 +28,7 @@
     height: 76vh;
     background-size: 140%;
     background-repeat: no-repeat;
-    background-image: url('https://www.mangals.com/wp-content/uploads/2024/06/about-Us_main-2.jpg');
+    background-image: url('../images/about-page-hero-bg.png');
     background-size: 140%;
     background-position: center;
     display: flex;
@@ -284,6 +284,7 @@
     justify-content: center;
     flex-direction: column;
     /* padding-bottom: 4rem; */
+
 }
 .cards-head{
     display: flex;
