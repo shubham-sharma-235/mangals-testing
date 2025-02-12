@@ -11,11 +11,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./logo/flaticon.svg" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        /* .navbar a{
-            color: #000;
-        } */
-    </style>
     <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
@@ -36,6 +31,7 @@
                       <a href="./mangal-products/crgo-wide-coil.html">CRGO Wide Coils</a>
                       <a href="./mangal-products/crgo-slit-coil.html">CRGO Slit Coils</a>
                       <a href="./mangal-products/crgo-cut-lamination.html">CRGO Cut Lamination</a>
+                      <a href="./mangal-products/crgo-core-assembly.html">CRGO Core Assembly</a>
                       <a href="./mangal-products/crgo-core-coil-assembly.html">CRGO Core Coil Assembly</a>
                       <a href="./mangal-products/amorphous-core.html">Amorphous Core</a>
                       <a href="./mangal-products/immersed-circuit-breaker-icb.html">Immersed Circuit Breaker</a>
@@ -51,13 +47,6 @@
                       <a href="./mangal-projects/dataganj-substation.html">Dataganj Substation</a>
                     </div>
                   </li>
-                  <!-- <li>
-                    <a class="main-menu-link" style="cursor: pointer;">Beyond Business</a>
-                    <div class="dropdown">
-                      <a href="./beyond-business/csr.html">CSR</a>
-                      <a href="./beyond-business/gallery.html">Gallery</a>
-                    </div>
-                  </li> -->
                   <li>
                     <a href="./beyond-business/csr.html" class="main-menu-link" style="cursor: pointer;">CSR</a>
                   </li>
@@ -73,7 +62,7 @@
                       <a href="./investor-relations/av-presentation.html">AV Presentation</a>
                       <a href="./investor-relations/industry-report.html">Industry Report</a>
                       <a href="./investor-relations/group-companies.html">Group Companies</a>
-    
+  
                       <a style="cursor: pointer;display: flex;align-items: center;justify-content: space-between;">Corporate Governance<i style="font-size: 17px;" class='bx bx-chevron-right'></i></a>
                       <!-- Sub-dropdown HTML -->
                       <div class="sub-dropdown">
@@ -85,94 +74,90 @@
                       </div>
                     </div>
                   </li>
-                  <li><a class="main-menu-link active" href="./career-at-mangal.html">Career</a></li>
+                  <li><a class="main-menu-link" href="./career-at-mangal.html">Career</a></li>
                 </ul>
+
+                <!-- ------------------------------------------------------------- -->
+
                 <div class="nav-contact-container nav-contact-btn">
                     <li>
-                        <a class="main-menu-link" href="#beyond">Get In Touch</a>
+                        <a class="main-menu-link" href="./contact-us.html">Get In Touch</a>
                     </li>
                 </div>
-    
-                <!-- ------------------------------------------------------------- -->
-    
-                <div class="nav-contact-container nav-contact-btn">
-                  <li>
-                      <a class="main-menu-link" href="#beyond">Get In Touch</a>
-                  </li>
-              </div>
-    
-              <!-- ----------------------- -->
-    
-              <!-- Phone Menu Button -->
-              <div class="phone-menu-button" onclick="toggleMenu()">
-                  <i class='bx bx-menu-alt-right'></i>
-              </div>
-              
-              <!-- Overlay -->
-              <div id="menu-overlay" class="menu-overlay" onclick="toggleMenu()"></div>
-              
-              <!-- Side Menu -->
-              <div id="menu-container" class="menu-container">
-                  <!-- Close Button -->
-                  <div class="menu-close-button" onclick="toggleMenu()">
-                      <i class='bx bx-x'></i>
-                  </div>
-                  <!-- Menu Items -->
-                  <ul>
-                      <li><a href="./index.html" onclick="toggleMenu()">Home <i class='bx bx-chevron-right'></i> </a></li>
-                      <li><a href="./about-mangal.html" onclick="toggleMenu()">About <i class='bx bx-chevron-right'></i> </a></li>
-                      <li class="phone-dropdown">
-                          <a href="" onclick="togglePhoneDropdown(event)">Our Products <i class='bx bx-chevron-right'></i></a>
-                          <ul class="phone-dropdown-menu">
-                              <li><a href="./mangal-products/crgo-wide-coil.html" onclick="toggleMenu()">CRGO Wide Coils</a></li>
-                              <li><a href="./mangal-products/crgo-slit-coil.html" onclick="toggleMenu()">CRGO Slit Coils</a></li>
-                              <li><a href="./mangal-products/crgo-cut-lamination.html" onclick="toggleMenu()">CRGO Cut Lamination</a></li>
-                              <li><a href="./mangal-products/crgo-core-assembly.html" onclick="toggleMenu()">CRGO Core Assembly</a></li>
-                              <li><a href="./mangal-products/crgo-core-coil-assembly.html" onclick="toggleMenu()">CRGO Core Coil Assembly</a></li>
-                              <li><a href="./mangal-products/amorphous-core.html" onclick="toggleMenu()">Amorphous Core</a></li>
-                              <li><a href="./mangal-products/immersed-circuit-breaker-icb.html" onclick="toggleMenu()">Immersed Circuit Breaker</a></li>
-                              <li><a href="./mangal-products/wound-core.html" onclick="toggleMenu()">Wound Cores</a></li>
-                              <li><a href="./mangal-products/toroidal-cores.html" onclick="toggleMenu()">Toroidal Cores</a></li>
-                          </ul>
-                      </li>
-                      <li class="phone-dropdown">
-                          <a onclick="togglePhoneDropdown(event)">Epc Projects <i class='bx bx-chevron-right'></i></a>
-                          <ul class="phone-dropdown-menu">
-                              <li><a href="./mangal-projects/pratapgarh-circle.html" onclick="toggleMenu()">Pratapgarh Circle</a></li>
-                              <li><a href="./mangal-projects/farrukhabad-substation.html" onclick="toggleMenu()">Farrukhabad Substation</a></li>
-                              <li><a href="./mangal-projects/dataganj-substation.html" onclick="toggleMenu()">Dataganj Substation</a></li>
-                          </ul>
-                      </li>
-                      <li class="phone-dropdown">
-                          <a href=""" onclick="togglePhoneDropdown(event)">Investor Relations <i class='bx bx-chevron-right'></i></a>
-                          <ul class="phone-dropdown-menu">
-                              <li><a href="./investor-relations/drhp.html" onclick="toggleMenu()">DRHP</a></li>
-                              <li><a href="./investor-relations/audited-financial-statements.html" onclick="toggleMenu()">Audited Financial Statements</a></li>
-                              <li><a href="./investor-relations/material-creditors.html" onclick="toggleMenu()">Material Creditors</a></li>
-                              <li><a href="./investor-relations/av-presentation.html" onclick="toggleMenu()">AV Presentation</a></li>
-                              <li><a href="./investor-relations/industry-report.html" onclick="toggleMenu()">Industry Report</a></li>
-                              <li><a href="./investor-relations/group-companies.html" onclick="toggleMenu()">Group Companies</a></li>
-                              <li><a href="" onclick="togglePhoneDropdown(event)" style="cursor: pointer;display: flex;align-items: center;justify-content: space-between;margin-bottom: 12px;">Corporate Governance <i style="font-size: 17px;" class='bx bx-chevron-down'></i></a>
-                                  <ul class="phone-dropdown-menu">
-                                      <li><a href="./investor-relations/board-members.html" onclick="toggleMenu()">Board Members</a></li>
-                                      <li><a href="./investor-relations/board-committees.html" onclick="toggleMenu()">Board Committees</a></li>
-                                      <li><a href="./investor-relations/codes-and-policies.html" onclick="toggleMenu()">Codes & Policies</a></li>
-                                      <li><a href="./investor-relations/annual-returns.html" onclick="toggleMenu()">Annual Returns</a></li>
-                                      <li><a href="./investor-relations/grievance.html" onclick="toggleMenu()">Grievance</a></li>
-                                  </ul>
-                              </li>
-                          </ul>
-                      </li>
-                      <li><a href="./beyond-business/csr.html" onclick="toggleMenu()">CSR <i class='bx bx-chevron-right'></i></a></li>
-                      <li><a href="./beyond-business/gallery.html" onclick="toggleMenu()">Gallery <i class='bx bx-chevron-right'></i></a></li>
-                      <li><a href="./career-at-mangal.html" onclick="toggleMenu()">Career <i class='bx bx-chevron-right'></i></a></li>
-                      <li><a class="phone-nav-active" href="./contact-us.html" onclick="toggleMenu()">Get In Touch <i class='bx bx-chevron-right'></i></a></li>
-                  </ul>
+
+                <!-- ----------------------- -->
+
+                <!-- Phone Menu Button -->
+                <div class="phone-menu-button" onclick="toggleMenu()">
+                    <i class='bx bx-menu-alt-right'></i>
+                </div>
+                
+                <!-- Overlay -->
+                <div id="menu-overlay" class="menu-overlay" onclick="toggleMenu()"></div>
+                
+                <!-- Side Menu -->
+                <div id="menu-container" class="menu-container">
+                    <!-- Close Button -->
+                    <div class="menu-close-button" onclick="toggleMenu()">
+                        <i class='bx bx-x'></i>
+                    </div>
+                    <!-- Menu Items -->
+                    <ul>
+                        <li><a class="phone-nav-active" href="./index.html" onclick="toggleMenu()">Home <i class='bx bx-chevron-right'></i> </a></li>
+                        <li><a href="./about-mangal.html" onclick="toggleMenu()">About <i class='bx bx-chevron-right'></i> </a></li>
+                        <li class="phone-dropdown">
+                            <a href="" onclick="togglePhoneDropdown(event)">Our Products <i class='bx bx-chevron-right'></i></a>
+                            <ul class="phone-dropdown-menu">
+                                <li><a href="./mangal-products/crgo-wide-coil.html" onclick="toggleMenu()">CRGO Wide Coils</a></li>
+                                <li><a href="./mangal-products/crgo-slit-coil.html" onclick="toggleMenu()">CRGO Slit Coils</a></li>
+                                <li><a href="./mangal-products/crgo-cut-lamination.html" onclick="toggleMenu()">CRGO Cut Lamination</a></li>
+                                <li><a href="./mangal-products/crgo-core-assembly.html" onclick="toggleMenu()">CRGO Core Assembly</a></li>
+                                <li><a href="./mangal-products/crgo-core-coil-assembly.html" onclick="toggleMenu()">CRGO Core Coil Assembly</a></li>
+                                <li><a href="./mangal-products/amorphous-core.html" onclick="toggleMenu()">Amorphous Core</a></li>
+                                <li><a href="./mangal-products/immersed-circuit-breaker-icb.html" onclick="toggleMenu()">Immersed Circuit Breaker</a></li>
+                                <li><a href="./mangal-products/wound-core.html" onclick="toggleMenu()">Wound Cores</a></li>
+                                <li><a href="./mangal-products/toroidal-cores.html" onclick="toggleMenu()">Toroidal Cores</a></li>
+                            </ul>
+                        </li>
+                        <li class="phone-dropdown">
+                            <a onclick="togglePhoneDropdown(event)">Epc Projects <i class='bx bx-chevron-right'></i></a>
+                            <ul class="phone-dropdown-menu">
+                                <li><a href="./mangal-projects/pratapgarh-circle.html" onclick="toggleMenu()">Pratapgarh Circle</a></li>
+                                <li><a href="./mangal-projects/farrukhabad-substation.html" onclick="toggleMenu()">Farrukhabad Substation</a></li>
+                                <li><a href="./mangal-projects/dataganj-substation.html" onclick="toggleMenu()">Dataganj Substation</a></li>
+                            </ul>
+                        </li>
+                        <li class="phone-dropdown">
+                            <a href=""" onclick="togglePhoneDropdown(event)">Investor Relations <i class='bx bx-chevron-right'></i></a>
+                            <ul class="phone-dropdown-menu">
+                                <li><a href="./investor-relations/drhp.html" onclick="toggleMenu()">DRHP</a></li>
+                                <li><a href="./investor-relations/audited-financial-statements.html" onclick="toggleMenu()">Audited Financial Statements</a></li>
+                                <li><a href="./investor-relations/material-creditors.html" onclick="toggleMenu()">Material Creditors</a></li>
+                                <li><a href="./investor-relations/av-presentation.html" onclick="toggleMenu()">AV Presentation</a></li>
+                                <li><a href="./investor-relations/industry-report.html" onclick="toggleMenu()">Industry Report</a></li>
+                                <li><a href="./investor-relations/group-companies.html" onclick="toggleMenu()">Group Companies</a></li>
+                                <li><a href="" onclick="togglePhoneDropdown(event)" style="cursor: pointer;display: flex;align-items: center;justify-content: space-between;margin-bottom: 12px;">Corporate Governance <i style="font-size: 17px;" class='bx bx-chevron-down'></i></a>
+                                    <ul class="phone-dropdown-menu">
+                                        <li><a href="./investor-relations/board-members.html" onclick="toggleMenu()">Board Members</a></li>
+                                        <li><a href="./investor-relations/board-committees.html" onclick="toggleMenu()">Board Committees</a></li>
+                                        <li><a href="./investor-relations/codes-and-policies.html" onclick="toggleMenu()">Codes & Policies</a></li>
+                                        <li><a href="./investor-relations/annual-returns.html" onclick="toggleMenu()">Annual Returns</a></li>
+                                        <li><a href="./investor-relations/grievance.html" onclick="toggleMenu()">Grievance</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="./beyond-business/csr.html" onclick="toggleMenu()">CSR <i class='bx bx-chevron-right'></i></a></li>
+                        <li><a href="./beyond-business/gallery.html" onclick="toggleMenu()">Gallery <i class='bx bx-chevron-right'></i></a></li>
+                        <li><a href="./career-at-mangal.html" onclick="toggleMenu()">Career <i class='bx bx-chevron-right'></i></a></li>
+                        <li><a href="./contact-us.html" onclick="toggleMenu()">Get In Touch <i class='bx bx-chevron-right'></i></a></li>
+                    </ul>
                 </div>          
-              
-              <!-- ---------------------------------------- -->
-              </nav>            
-          </div>
+                
+                <!-- ---------------------------------------- -->
+                
+              </nav>     
+        </div>
 
         <!-- ------------------------------------------------------------- -->
         
@@ -188,7 +173,6 @@
             <div class="contact-section-one">
                 <div class="contact-section-one-left">
                     <div>
-                        <span>. Contact</span>
                         <h2>
                             We are always ready <br>
                             to help you and answer <br>
@@ -196,47 +180,51 @@
                         </h2>
                     </div>
     
-                    <div class="contact-content">
+                    <div class="footer-contact">
                         <div>
                             <h4>Reach Out</h4>
                             <p>
-                                523 Sylvan Ave, 5th Floor <br>
-                                Mountain View, CA 94041USA
+                                <a href="mailto:support@mangals.com">
+                                    support@mangals.com
+                                </a>
                             </p>
                         </div>
                         <div>
-                            <h4>Contact</h4>
-                            <p>
-                                +91 9248745623 <br>
-                                +91 8324973473
-                            </p>
+                            <h4>Make a Call</h4>
+                            <a href="tel:+911414036113">
+                                <p>
+                                    +91-141-403-6113
+                                </p>
+                            </a>
                         </div>
                         <div>
                             <h4>Follow us</h4>
-                            
+                            <div class="footer-socials-logo">
+                                <i class='bx bxl-instagram'></i>
+                                <i class='bx bxl-facebook-circle'></i>
+                                <i class='bx bxl-linkedin-square'></i>
+                                <i class='bx bxl-youtube'></i>
+                            </div>
                         </div>
                         <div>
-                            <h4>Email</h4>
+                            <h4>HR Department</h4>
                             <p>
-                                Interested in working with us? <br>
-                                <a href="#">support@consultum.com</a>
+                                <a href="hr@mangals.com">hr@mangals.com</a>
                             </p>
                         </div>
                     </div>
-    
-                    <div>
-                        <h3 class="stroke-font">Since 1969</h3>
-                    </div>
+                    
                 </div>
                 <div class="contact-section-one-right">
                     <div class="contact-section">
                         <div class="contact-header">
                             <h2>Get in Touch</h2>
-                            <p>Arctic char, steelhead sprat sea lamprey grunion. Walleye poolfish sand goby butterfly ray stream.</p>
+                            <p>Share your thoughts, queries, or feedback with us through the form below, and let’s connect to bring ideas to life together!</p>
                         </div>
                         <form class="contact-form">
                             <input type="text" name="name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="text" name="subject" placeholder="Contact Number" required>
                             <input type="text" name="subject" placeholder="Subject" required>
                             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                             <button type="submit">Submit</button>
@@ -245,20 +233,40 @@
                 </div>
             </div>
     
-            <div class="contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3555.685614745619!2d75.77471071045179!3d26.97685345723474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db245d48bec49%3A0xbf8faf0994292a9!2sMangal%20Electrical%20Industries%20Private%20Limited!5e0!3m2!1sen!2sin!4v1731952603486!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-page-address-container">
+                <div class="contact-page-address-card">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.195361675936!2d75.78232898169017!3d26.99594299618645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db212f3e3aa45%3A0x162f87ad0faee3f4!2sRd%20Number%2014%2C%20Vishwakarma%20Industrial%20Area%2C%20Jaipur%2C%20Rajasthan%20302032!5e1!3m2!1sen!2sin!4v1739344610910!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div class="contact-page-address-card-text">
+                        <h3>CORPORATE ADDRESS</h3>
+                        <h4>C-61 (A), Road No. 1-C, VKI Area, 
+                            <br> Jaipur 302013, Rajasthan, India</h4>
+                    </div>
+                </div>
+                <div class="contact-page-address-card">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.195361675936!2d75.78232898169017!3d26.99594299618645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db212f3e3aa45%3A0x162f87ad0faee3f4!2sRd%20Number%2014%2C%20Vishwakarma%20Industrial%20Area%2C%20Jaipur%2C%20Rajasthan%20302032!5e1!3m2!1sen!2sin!4v1739344610910!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div class="contact-page-address-card-text"> 
+                        <h3>MANUFACTURING UNIT 1</h3>
+                        <h4>E-54, Road No. 5, VKI Area, 
+                            <br> Jaipur 302013, Rajasthan</h4>
+                    </div>
+                </div>
+                <div class="contact-page-address-card">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.195361675936!2d75.78232898169017!3d26.99594299618645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db212f3e3aa45%3A0x162f87ad0faee3f4!2sRd%20Number%2014%2C%20Vishwakarma%20Industrial%20Area%2C%20Jaipur%2C%20Rajasthan%20302032!5e1!3m2!1sen!2sin!4v1739344610910!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    <div class="contact-page-address-card-text">
+                        <h3>MANUFACTURING UNIT 2</h3>
+                        <h4>E-40 to E-46A, Shree Khatu Shyam Ji Industrial
+                            <br> Area, Reengus, Sikar, Rajasthan, India</h4>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- ------------------------------------------------------------- -->
 
         <div class="footer-top">
-            <div>
-                <h2>Let's Power up the World! Are your ready?</h2>
-            </div>
-            <div>
-                <button class="button-style-two">Get a Quote</button>
-            </div>
         </div>
         <footer>
             <div class="footer-main">
