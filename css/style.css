@@ -1938,7 +1938,7 @@ nav.scrolled #logo {
 
 .testimonial-section{
     height: 94vh;
-    background-image: url('../images/testimonial-bg-image.png');
+    background-image: url('../images/testimonial-bg-image.webp');
     background-size: 100% 120%;
     background-repeat: no-repeat;
     /* margin: 4rem 0; */
@@ -2378,7 +2378,7 @@ footer{
     z-index: 30;
 }
 footer .footer-section-one{
-    height: 100vh;
+    height: 105vh;
     background-image: url('../images/map-bg.png');
     background-size: 80%;
     background-position: center;
@@ -2416,6 +2416,11 @@ footer .footer-section-one{
 }
 .footer-contact div h4{
     font-weight: 600;
+    font-size: 16px;
+}
+.footer-contact div p b{
+    color: #b8b4b4;
+    text-decoration: underline;
 }
 .footer-contact div p{
     font-weight: 200;
