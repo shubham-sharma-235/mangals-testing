@@ -2546,6 +2546,7 @@ footer iframe{
   font-size: 14px;
       color: #d8d6d6;
   line-height: 28px;
+  width: 90%;
 }
 .footer-social-icon span {
   color: #fff;
@@ -2620,14 +2621,17 @@ footer iframe{
     position: absolute;
     right: 0;
     background: #00f382;
-    padding: 13px 20px;
-    border: 1px solid #00f382;
+    padding: 12px 12px;
+    border: none;
+    cursor: pointer;
     top: 0;
+}
+.subscribe-form button:hover{
+    background-color: #00f382a9;
 }
 .subscribe-form button i {
   color: #fff;
-  font-size: 22px;
-  transform: rotate(-6deg);
+  font-size: 24px;
 }
 .copyright-area{
   background: #18242c;
