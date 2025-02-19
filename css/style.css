@@ -1210,8 +1210,6 @@ nav.scrolled #logo {
     padding: 4rem;
     position: relative;
 }
-
-
 .steps-heading::before{
     content: '';
     position: absolute;
@@ -1259,7 +1257,7 @@ nav.scrolled #logo {
 }
 .steps-section{
     padding-top: 2rem;
-    height: 450vh;
+    height: 400vh;
     /* background: linear-gradient(#d5e2ead9,#cce6c7af); */
 }
 .card-stack-section{
@@ -1289,7 +1287,7 @@ nav.scrolled #logo {
 
 .card-container-2 .stack-card{
     margin: 14px 0;
-    height: 14vw;
+    height: 12vw;
     width: 34vw;
     background-color: #fff;
     margin-top: 30px;
@@ -1593,7 +1591,6 @@ nav.scrolled #logo {
     content: '';
     height: 90%;
     width: 40rem;
-    /* background-image: url('../images/leaves_stroke.svg'); */
     position: absolute;
     right: 0;
     filter: blur(1px);
@@ -1938,7 +1935,7 @@ nav.scrolled #logo {
 
 .testimonial-section{
     height: 94vh;
-    background-image: url('../images/testimonial-bg-image.webp');
+    background-image: url('../images/hero-bgs/hero-slider-two.webp');
     background-size: 100% 120%;
     background-repeat: no-repeat;
     /* margin: 4rem 0; */
@@ -2037,6 +2034,7 @@ nav.scrolled #logo {
 
 .quality-approval-section{
     height: 76vh;
+    background-color: #fff;
 }
 .scroll-container {
   position: relative;
@@ -2127,13 +2125,43 @@ nav.scrolled #logo {
 } */
 
 .map-container .ethiopia:hover{
-    fill: #007bff;
+    fill: #2289f8;
 }
 .map-container .egypt:hover{
-    fill: #007bff;
+    fill: #2289f8;
 }
 .map-container .usa:hover{
-    fill: #007bff;
+    fill: #2289f8;
+}
+.map-container .italy:hover{
+    fill: #2289f8;
+}
+.map-container .netherland:hover{
+    fill: #2289f8;
+}
+.map-container .iran:hover{
+    fill: #2289f8;
+}
+.map-container .kuwait:hover{
+    fill: #2289f8;
+}
+.map-container .uae:hover{
+    fill: #2289f8;
+}
+.map-container .nepal:hover{
+    fill: #2289f8;
+}
+.map-container .bangladesh:hover{
+    fill: #2289f8;
+}
+.map-container .sri-lanks:hover{
+    fill: #2289f8;
+}
+.map-container .thailand:hover{
+    fill: #2289f8;
+}
+.map-container .philippines:hover{
+    fill: #2289f8;
 }
 
 /* ------------------------- Faq's Section ----------------------------- */
