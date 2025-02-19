@@ -9,7 +9,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="../logo/flaticon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./logo/flaticon.svg" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/career-page.css" />
     <style>
@@ -202,7 +202,7 @@
               <td>Full Time</td>
               <td>Jaipur</td>
               <td>01</td>
-              <td class="apply-btn"><a href="#">Apply Now</a></td>
+              <td class="apply-btn"><a href="./contact-us.html">Apply Now</a></td>
             </tr>
             <tr>
               <td>Asst. General Manager – Purchase</td>
@@ -212,7 +212,7 @@
               <td>Full Time</td>
               <td>Jaipur</td>
               <td>01</td>
-              <td class="apply-btn"><a href="#">Apply Now</a></td>
+              <td class="apply-btn"><a href="./contact-us.html">Apply Now</a></td>
             </tr>
             <tr>
               <td>Sr. Manager / Manager – Accounts & Finance</td>
@@ -222,7 +222,7 @@
               <td>Full Time</td>
               <td>Jaipur</td>
               <td>02</td>
-              <td class="apply-btn"><a href="#">Apply Now</a></td>
+              <td class="apply-btn"><a href="./contact-us.html">Apply Now</a></td>
             </tr>
             <tr>
               <td>Head Operations – Production (CRGO Product Only)</td>
@@ -232,7 +232,7 @@
               <td>Full Time</td>
               <td>Reengus (Rajasthan)</td>
               <td>01</td>
-              <td class="apply-btn"><a href="#">Apply Now</a></td>
+              <td class="apply-btn"><a href="./contact-us.html">Apply Now</a></td>
             </tr>
             <tr>
               <td>Sr. Manager / Manager – Sales & Marketing (International)</td>
@@ -242,7 +242,7 @@
               <td>Full Time</td>
               <td>Jaipur</td>
               <td>02</td>
-              <td class="apply-btn"><a href="#">Apply Now</a></td>
+              <td class="apply-btn"><a href="./contact-us.html">Apply Now</a></td>
             </tr>
           </tbody>
         </table>
@@ -310,8 +310,6 @@
                       <div>
                           <h4>GST</h4>
                           <p>Rajasthan: 08AAFCM4722P1Z1</p>
-                          <p>Rajasthan (SEZ): 08AAFCM4722P2Z0</p>
-                          <p>Uttar Pradesh: 09AAFCM4722P1ZZ</p>
                       </div>
                       <div>
                           <h4>CIN</h4>
@@ -329,13 +327,15 @@
                           <h2>Get in Touch</h2>
                           <p>Share your thoughts, queries, or feedback with us through the form below, and let’s connect to bring ideas to life together!</p>
                       </div>
-                      <form class="contact-form">
-                          <input type="text" name="name" placeholder="Your Name" required>
-                          <input type="email" name="email" placeholder="Your Email" required>
-                          <input type="text" name="subject" placeholder="Subject" required>
-                          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                          <button type="submit">Submit</button>
-                      </form>
+                      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="40d85b9a-d706-484d-94f3-b48ef575abe1">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Contact Number" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
                   </div>
               </div>
           </div>
@@ -404,11 +404,12 @@
                                           <p>Get a quote now – our team will reach out to you shortly!</p>
                                       </div>
                                       <div class="subscribe-form">
-                                          <form action="#">
-                                              <input type="number" placeholder="Phone Number">
-                                              <button><i class='bx bx-chevron-right' ></i></button>
-                                          </form>
-                                      </div>
+                                        <form action="https://api.web3forms.com/submit" method="POST">
+                                            <input type="hidden" name="access_key" value="40d85b9a-d706-484d-94f3-b48ef575abe1">
+                                            <input type="number" name="number" placeholder="Phone Number">
+                                            <button type="submit"><i class='bx bx-chevron-right' ></i></button>
+                                        </form>
+                                    </div>
                                   </div>
                               </div>
                           </div>

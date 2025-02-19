@@ -40,6 +40,7 @@
     background-size: 135% 135%;
     background-position: center;
     background-image: url('../images/hero-bgs/gallery-hero-img.webp');
+    background: linear-gradient(20deg, #52b43e, #024e85);
 }
 .gallery-hero h1{
     font-size: 3vw;

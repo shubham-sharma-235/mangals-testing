@@ -71,7 +71,6 @@ body::-webkit-scrollbar-thumb {
 /* ------------------- Preloader container --------------------- */
 
 
-
 /* ------------------------------------------------------------- */
 
 #backToTop {
@@ -2040,7 +2039,7 @@ nav.scrolled #logo {
   position: relative;
   width: 100%;
   max-width: 80%;
-  height: 260px;
+  height: 300px;
   margin: 20px auto;
   overflow: hidden;
 }

@@ -218,7 +218,8 @@
                             <h2>Get in Touch</h2>
                             <p>Share your thoughts, queries, or feedback with us through the form below, and let’s connect to bring ideas to life together!</p>
                         </div>
-                        <form class="contact-form">
+                        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="40d85b9a-d706-484d-94f3-b48ef575abe1">
                             <input type="text" name="name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your Email" required>
                             <input type="text" name="subject" placeholder="Contact Number" required>
