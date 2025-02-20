@@ -1212,7 +1212,7 @@ nav.scrolled #logo {
 .steps-heading::before{
     content: '';
     position: absolute;
-    background-image: url('../images/leaves_stroke.svg');
+    /* background-image: url('../images/leaves_stroke.svg'); */
     top: -4rem;
     left: -16rem;
     height: 30vw;
