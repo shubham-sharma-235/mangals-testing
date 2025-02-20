@@ -2893,8 +2893,8 @@ footer iframe{
         margin-left: 0px;
     }
     nav.scrolled #logo {
-        height: 40px;
-        margin-left: -2px;
+        height: 80px;
+        margin-left: -14px;
     }
     .nav-menu-container{
         display: none;
@@ -3074,6 +3074,25 @@ footer iframe{
 }
 
 /* ------------------------------------------------ */
+
+@media(max-width:1040px){
+    
+    .special-head {
+        flex-direction: column;
+        padding: 4vw 8vw;
+    }
+    .special-head br{
+        display: none;
+    }
+    .special-head h2::after {
+        height: 2.6rem;
+        width: 2.6rem;
+        border-top-left-radius: 1.4rem;
+        border-bottom-right-radius: 1.4rem;
+    }
+    
+}
+
 
 @media(max-width:840px){
     .footer-top {
