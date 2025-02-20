@@ -568,11 +568,10 @@
 }
 
 
-.board-member-card:hover .board-member-ribbon {
-  height: 55vh; /* Expanded height to fit larger content */
+/* .board-member-card:hover .board-member-ribbon {
   transition: height 0.4s ease-in-out;
   background: rgba(255, 255, 255, 0.655);
-}
+} */
 
 .board-member-ribbon {
   display: flex;
@@ -597,10 +596,10 @@
   font-size: 12px;
 } */
 
-.board-member-card:hover .board-member-ribbon .hidden-content {
+/* .board-member-card:hover .board-member-ribbon .hidden-content {
   opacity: 1;
   transform: translateY(0);
-}
+} */
 
 @media(max-width:600px){
   .board-members-section {
