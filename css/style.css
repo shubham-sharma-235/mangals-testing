@@ -1205,8 +1205,8 @@ nav.scrolled #logo {
     align-items: start;
     margin-bottom: 4rem!important;
     width: 100%;
-    padding-left: 1rem;
     padding: 4rem;
+    padding-left: 2rem;
     position: relative;
 }
 .steps-heading::before{
@@ -2876,6 +2876,10 @@ footer iframe{
         height: 16vw;
         width: 16vw;
     } 
+    .steps-section {
+        padding-left: 1rem;
+        position: relative;
+    }
 }
 
 @media(max-width:1060px){
@@ -3075,7 +3079,7 @@ footer iframe{
 
 /* ------------------------------------------------ */
 
-@media(max-width:1040px){
+@media(max-width:1060px){
     
     .special-head {
         flex-direction: column;
@@ -3090,7 +3094,68 @@ footer iframe{
         border-top-left-radius: 1.4rem;
         border-bottom-right-radius: 1.4rem;
     }
-    
+    .special-head h2 {
+        font-size: 2.2vw;
+    }
+
+    .special-card-section img{
+        height: 2.6rem;
+    }
+    .special-card-section .special-card {
+        height: 25vw;
+        width: 20vw;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        margin: 0px 5px;
+    }
+
+    .what-we-do-section {
+        height: 76vh;
+    }
+    .what-we-do-left p {
+        width: 80%;
+        font-size: 1.4vw;
+    }
+
+    .steps-heading h2::after {
+        height: 2.8rem;
+        width: 2.8rem;
+        border-top-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        left: 10px;
+        top: 24px;
+        z-index: -1;
+    }
+    .steps-heading p {
+        font-size: 14px !important;
+        line-height: 24px;
+    }
+    .steps-section {
+        padding-left: 1rem;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+    }
+    .steps-section {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        height: 430vh;
+    }
+    .card-container-2 .stack-card h2 {
+        font-size: 4.4vw;
+        top: -14px;
+    }
+    .card-container-2 .stack-card {
+        height: 18vw;
+        width: 34vw;
+    }
+    .card-container-2 .stack-card h3 {
+        font-size: 2.2vw;
+    }
+    .card-container-2 .stack-card p {
+        font-size: 1.2vw;
+    }
 }
 
 
