@@ -1390,7 +1390,7 @@ nav.scrolled #logo {
     .steps-section{
         margin-top: 2rem;
         padding-top: 2rem;
-        height: 430vh;
+        height: 360vh;
     }
 }
 @media(max-width:1050px){
