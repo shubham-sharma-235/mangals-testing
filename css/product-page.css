@@ -195,6 +195,7 @@
 }
 .special-head p{
     font-weight: 400!important;
+    text-align: end;
 }
 .product-features .product-feature-head h2{
     font-size: 2.2vw;
@@ -243,7 +244,7 @@
     text-align: right;
 }
 .product-feature-main-content div p:nth-child(2){
-    width: 44%;
+    width: 40%;
 }
 .product-feature-main-content div b{
     font-size: 20px;
