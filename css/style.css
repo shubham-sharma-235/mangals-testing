@@ -2888,13 +2888,13 @@ footer iframe{
         font-size: 1.8rem;
     }
     .logo {
-        height: 30px;
+        height: 40px;
         margin-top: -14px;
         margin-left: 0px;
     }
     nav.scrolled #logo {
-        height: 55px;
-        margin-left: -8px;
+        height: 40px;
+        margin-left: -2px;
     }
     .nav-menu-container{
         display: none;
