@@ -497,6 +497,14 @@ aside p {
 
 /* -------------------------------------------------- */
 
+@media(min-width:1700px){
+    .what-we-do-right::before {
+        background-image: url(../images/leaves-white-stroke-group.png);
+        transform: scale(1);
+    }
+}
+
+
 @media(max-width:1300px){
     .about-hero {
         height: 70vh;

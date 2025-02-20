@@ -189,8 +189,8 @@ nav.hide {
   /* transition: height 01s ease, filter 0.3s ease; */
 }
 nav.scrolled #logo {
-  height: 80px; /* Smaller size when scrolled */
-  margin-left: 0px;
+  height: 45px; /* Smaller size when scrolled */
+  margin-left: 16px;
 }
 
 
