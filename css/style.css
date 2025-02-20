@@ -2709,6 +2709,13 @@ footer iframe{
 
 /* ------------------------------- */
 
+@media(min-width:1700px){
+    .what-we-do-right::before  {
+        background-image: url(../images/leaves-white-stroke-group.png);
+        transform: scale(1);
+    }
+}
+
 @media(max-width:1565px){
     .what-we-do-section {
         height: 100vh;
