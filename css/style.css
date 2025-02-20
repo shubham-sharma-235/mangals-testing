@@ -2738,6 +2738,10 @@ footer iframe{
         display: inline-block;
         margin-right: -4rem;
     }
+
+    .product-section::before {
+        left: -35.5rem;
+    }
 }
 
 @media(max-width:1350px){
@@ -2880,6 +2884,9 @@ footer iframe{
         padding-left: 1rem;
         position: relative;
     }
+    .product-section::before {
+        left: -24rem;
+    }
 }
 
 @media(max-width:1060px){
@@ -2920,6 +2927,16 @@ footer iframe{
       cursor: pointer;
     }
       
+    /* --------------------------------- */
+
+    .testimonial-section {
+        height: 88vh;
+    }
+    .testimonial-footer {
+        width: 38vw;
+        height: 8.7vh;
+    }
+
     /* --------------------------------- */
 
     .footer-contact {
@@ -3155,6 +3172,21 @@ footer iframe{
     }
     .card-container-2 .stack-card p {
         font-size: 1.2vw;
+    }
+
+    .product-section {
+        padding-bottom: 2rem;
+    }
+    .product-section::before {
+        left: -20rem;
+    }
+
+    .testimonial-container {
+        width: 38vw;
+        height: 60vh;
+    }
+    .impact-container {
+        margin: 0 3rem;
     }
 }
 
