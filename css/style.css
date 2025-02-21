@@ -288,6 +288,10 @@ nav.scrolled #logo {
 .dropdown a:nth-child(7) { transition-delay: 0.4s; }
 .dropdown a:nth-child(8) { transition-delay: 0.45s; }
 .dropdown a:nth-child(9) { transition-delay: 0.5s; }
+.dropdown a:nth-child(10) { transition-delay: 0.55s; }
+.dropdown a:nth-child(11) { transition-delay: 0.6s; }
+.dropdown a:nth-child(12) { transition-delay: 0.65s; }
+.dropdown a:nth-child(13) { transition-delay: 0.7s; }
 
 /* Apply opacity and transform only when dropdown is visible */
 .nav-menu-container li:hover .dropdown a {
