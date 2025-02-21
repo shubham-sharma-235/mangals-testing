@@ -10,12 +10,16 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- <div id="preloader">
-        <div class="leaf leaf-one"></div>
-        <div class="leaf leaf-two"></div>
-        <div class="leaf leaf-three"></div>
-        <div class="leaf leaf-four"></div>
-    </div> -->
+
+    <!-- Popup Container -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">×</span>
+            <a href="https://elecrama.com/" target="_blank">
+                <img src="./images/popup-image.png" alt="Popup Image">
+            </a>
+        </div>
+    </div>
 
     <button id="backToTop" onclick="scrollToTop()"><i class='bx bx-up-arrow-alt'></i></button>
       
@@ -696,7 +700,7 @@
                     <div class="product-card-content">
                         <h3>CRGO Slit Coils</h3>
                         <p>
-                            Essential for transformers <br> and power devices.
+                            Essential for transformers <br> and power devices
                         </p>
                     </div>
                 </a>
@@ -712,7 +716,7 @@
                     <div class="product-card-content">
                         <h3>CRGO Cut Lamination</h3>
                         <p>
-                            Minimizes core losses <br> in transformers.
+                            Minimizes core losses <br> in transformers
                         </p>
                     </div>
                 </a>
@@ -728,7 +732,7 @@
                     <div class="product-card-content">
                         <h3>CRGO Core Assembly</h3>
                         <p>
-                            Ensures exceptional performance <br> in transformers.
+                            Ensures exceptional performance <br> in transformers
                         </p>
                     </div>
                 </a>
@@ -743,7 +747,7 @@
                     <div class="product-card-content">
                         <h3>Core Coil Assembly</h3>
                         <p>
-                            CRGO Crafted from <br> high-grade steel.
+                            CRGO Crafted from <br> high-grade steel
                         </p>
                     </div>
                     <img src="./images/product-images/core-coil-assembly-slider-cover-image.webp" alt="">
@@ -758,7 +762,7 @@
                     <div class="product-card-content">
                         <h3>Amorphous Core</h3>
                         <p>
-                            Minimizes energy loss <br> with Metglas® metal.
+                            Minimizes energy loss <br> with Metglas® metal
                         </p>
                     </div>
                     <img src="./images/product-images/amorphous-core-slider-cover-image.webp" alt="">
@@ -774,7 +778,7 @@
                     <div class="product-card-content">
                         <h3>Wound Core</h3>
                         <p>
-                            Strong spiral-wound <br> transformer core design.
+                            Strong spiral-wound <br> transformer core design
                         </p>
                     </div>
                     <img src="./images/product-images/wound-core-slider-cover-img.webp" alt="">
@@ -789,7 +793,7 @@
                     <div class="product-card-content">
                         <h3>ICB</h3>
                         <p>
-                            ICBs with advanced <br> core technology.
+                            ICBs with advanced <br> core technology
                         </p>
                     </div>
                     <img src="./images/product-images/icb-slider-cover-img.webp" alt="">
@@ -1351,20 +1355,12 @@
 
                     <div class="footer-contact">
                         <div>
-                            <h4>Reach Out</h4>
-                            <p>
-                                <b>Registered Office Address</b> <br>
-                                C-61, C-61 (A&B), Road No. 1-C, <br>
-                                 V.K.I. Area, Jaipur, Rajasthan, <br>
-                                  IN-302013, Vishwakarma Industrial <br>
-                                   Area, Jaipur, Rajasthan – 302013 <br>
-                                   India
-                            </p>
-                        </div>
-                        <div>
                             <h4>Contact Us</h4>
                             <p>
                                 <a href="tel:+911414036113" style="color: aquamarine;">+91 141-403-6113</a>
+                            </p>
+                            <p>
+                                <a href="mailto:Info@mangals.com" style="color: aquamarine;">info@mangals.com</a>
                             </p>
                         </div>
                         <div>
@@ -1376,19 +1372,61 @@
                                 <a href="https://www.youtube.com/@mangalelectricalindustriesltd" target="_blank"><i class='bx bxl-youtube'></i></a>
                             </div>
                         </div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>
-                                <a href="mailto:Info@mangals.com" style="color: aquamarine;">info@mangals.com</a>
-                            </p>
-                        </div>
+
                         <div>
                             <h4>GST</h4>
                             <p>Rajasthan: 08AAFCM4722P1Z1</p>
+                            <p>Rajasthan (SEZ): 08AAFCM4722P2Z0</p>
+                            <p>Uttar Pradesh: 09AAFCM4722P1ZZ</p>
                         </div>
                         <div>
                             <h4>CIN</h4>
                             <p>U31909RJ2008PLC026255</p>
+                        </div>
+
+                        <div>
+                            <h4>Registered Office Address</h4>
+                            <p>
+                                C-61, C-61 (A&B), Road No. 1-C, <br>
+                                V.K.I. Area, Jaipur, Rajasthan, <br>
+                                IN-302013, Vishwakarma Industrial <br>
+                                Area, Jaipur, Rajasthan – 302013 <br>
+                                India
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Factory Address <span style="background-color: #ccc;color: #000;padding: 2px 6px;">Unit 1</span></h4>
+                            <p>
+                                C-61, C-61 (A&B), Road No. 1-C, <br>
+                                 V.K.I. Area, Jaipur 302 013, <br>
+                                 Rajasthan, India
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Factory Address <span style="background-color: #ccc;color: #000;padding: 2px 6px;">Unit 2</span></h4>
+                            <p>
+                                E-54, Road No.5, VKI Area, Jaipur <br>
+                                 302 013, Rajasthan, India
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Factory Address <span style="background-color: #ccc;color: #000;padding: 2px 6px;">Unit 3</span></h4>
+                            <p>
+                                E-54, Road No.5, VKI Area,<br>
+                                 Jaipur 302 013, Rajasthan, India
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Factory Address <span style="background-color: #ccc;color: #000;padding: 2px 6px;">Unit 4</span></h4>
+                            <p>
+                                E-54, Road No.5, VKI Area,<br> Jaipur 302 013, Rajasthan, India
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Factory Address <span style="background-color: #ccc;color: #000;padding: 2px 6px;">Unit 6</span></h4>
+                            <p>
+                                E-54, Road No.5, VKI Area,<br> Jaipur 302 013, Rajasthan, India
+                            </p>
                         </div>
                     </div>
 
@@ -1435,9 +1473,9 @@
                                         </div>
                                         <div class="footer-text">
                                             <p>
-                                                We are in the business of processing transformer components transformer <br>
+                                                We are in the business of processing transformer components  <br>
                                                 lamination, CRGO slit coils, amorphous cores, coil assemblies and core <br>
-                                                assemblies, wound core, toroidal core and oil immersed circuit breakers.  
+                                                assemblies, wound core, toroidal core and oil immersed circuit breakers. <br>
                                                 We also trade CRGO and CRNO coils, as well as amorphous ribbons.
                                             </p>
                                         </div>
@@ -1498,14 +1536,14 @@
                                         <p>Copyright &copy; 2025, All Right Reserved <a href="./index.html">Mangal</a></p>
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                                <!-- <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                                     <div class="footer-menu">
                                         <ul>
                                             <li><a href="./tnc/terms-and-conditions.html">Terms & Conditions</a></li>
-                                            <li><a href="./tnc/privacy-policies.html">Privacy Policies</a></li>
+                                            <li><a href="./tnc/privacy-policy.html">Privacy Policy</a></li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -1656,6 +1694,28 @@
           lastScrollY = currentScrollY;
         });
       });
+    </script>
+    <script>
+        const popup = document.getElementById("popup");
+        
+        setTimeout(() => {
+            popup.style.visibility = "visible";
+            popup.style.opacity = "1";
+        }, 3000);
+        
+        // Close popup function
+        function closePopup() {
+            popup.style.opacity = "0";
+            setTimeout(() => {
+                popup.style.visibility = "hidden";
+            }, 300);
+        }
+        
+        popup.addEventListener("click", (event) => {
+            if (event.target === popup) {
+                closePopup();
+            }
+        });
     </script>
 </body>
 </html>
