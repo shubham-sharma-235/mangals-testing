@@ -551,7 +551,7 @@ aside p {
 
     .mission-container, .vision-container, .values-container {
         flex-direction: column;
-        padding: 2rem 1rem;
+        padding: .2rem 1rem;
         position: relative;
     }
     .vision-right {

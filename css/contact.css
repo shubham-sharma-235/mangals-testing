@@ -171,5 +171,30 @@
     font-family: var(--montserrat-medium);
 }
 
-
 /* -------------------------------------------------- */
+
+
+@media(max-width: 500px){
+    .contact-hero {
+        background-size: 300%;
+    }
+    .contact-section-one{
+        flex-direction: column;
+        height: auto;
+    }
+    .contact-page-address-container{
+        flex-direction: column;
+    }
+    .contact-section {
+        width: 90vw;
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+}
+@media(max-width: 300px){
+    .contact-hero {
+        background-size: 400%;
+    }
+}
+
+

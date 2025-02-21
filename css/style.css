@@ -3490,8 +3490,8 @@ footer iframe{
         padding: 1.2rem;
     }
     .about-section-left img:nth-child(1){
-        border-top-right-radius: 6rem;
-        border-bottom-left-radius: 6rem;
+        border-top-right-radius: 5rem;
+        border-bottom-left-radius: 5rem;
         margin: 10px;
         width: 40vw;
         height: 40vw;
