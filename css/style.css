@@ -477,6 +477,12 @@ nav.scrolled #logo {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+.corp-governances:hover .investor-relation-dropdown{ 
+    color: #0056b3!important;
+    overflow-x: none;
+}
+
+ 
 .investor-relation-dropdown::-webkit-scrollbar {
   width: var(--sb-size);
 }
