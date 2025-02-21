@@ -3855,6 +3855,10 @@ footer iframe{
         background-size: 540%;
         padding: 1.6rem 1rem;
     }
+    .footer-section-one-left{
+        color: #fff;
+        width: 98%;
+    }
     .footer-section-one-left h2 {
         font-size: 6vw;
     }
