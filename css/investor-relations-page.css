@@ -690,6 +690,64 @@
 
 /* --------------------------------------------------------- */
 
+.companyinformation-container {
+  font-family: 'montserrat-medium';
+  max-width: 90%;
+  width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+.companyinformation-heading {
+  background-color: #012D4C;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+.companyinformation-text {
+  margin: 10px 0;
+  color: #012D4C;
+  opacity: 0.8;
+  word-wrap: break-word;
+}
+.company-bold {
+  font-weight: bold;
+  color: #012D4C;
+  opacity: 1;
+}
+a {
+  color: #012D4C;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .companyinformation-container {
+      width: 95%;
+      padding: 15px;
+  }
+  .companyinformation-heading {
+      font-size: 18px;
+      padding: 8px;
+  }
+  .companyinformation-text {
+      font-size: 14px;
+  }
+}
+@media(min-width:1600px){
+  .companyinformation-container {
+    margin-top: 2rem;
+    width: 1335px;
+  }
+  .companyinformation-text{
+    padding-top: 6px;
+  }
+}
+
+/* --------------------------------------------------------- */
+
 @media(max-width:700px){
   .ir-card:nth-child(1) {
     margin-top: 3rem;
