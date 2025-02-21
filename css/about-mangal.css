@@ -480,6 +480,10 @@ aside p {
 }
 .map-section{
     padding-bottom: 4rem;
+    background-color: #fff;
+}
+.footer-top {
+    margin-top: 0rem;
 }
 
 
