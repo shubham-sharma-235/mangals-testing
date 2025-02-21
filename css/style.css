@@ -1209,13 +1209,13 @@ nav.scrolled #logo {
     padding-left: 2rem;
     position: relative;
 }
-.steps-heading::before{
+.steps-heading::before {
     content: '';
     position: absolute;
-    /* background-image: url('../images/leaves_stroke.svg'); */
-    top: -4rem;
-    left: -16rem;
-    height: 30vw;
+    background-image: url(../images/leaf-stroke-new.svg);
+    top: -7rem;
+    left: -20rem;
+    height: 37vw;
     width: 40vw;
     z-index: 100;
     background-repeat: no-repeat;
@@ -3565,14 +3565,22 @@ footer iframe{
         left: 6px;
         top: 55px;
     }
+    .steps-heading h2::after {
+        height: 2.4rem;
+        width: 2.4rem;
+        border-top-left-radius: 1.4rem;
+        border-bottom-right-radius: 1.4rem;
+        left: 6px;
+        top: 15px;
+    }
     .steps-heading::before{
-        background-image: url('../images/leaves_stroke.svg');
-        top: -10rem;
-        left: -16rem;
-        height: 30rem;
+        background-image: url('../images/leaf-stroke-new.svg');
+        top: -7rem;
+        left: -15rem;
+        height: 32rem;
         width: 40rem;
         z-index: 100;
-        scale: .6;
+        scale: .7;
         transform: rotate(180deg);
         filter: opacity(10%);
     }
