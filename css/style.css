@@ -741,7 +741,6 @@ nav.scrolled #logo {
 }
 .special-head p:nth-child(1){
     margin-bottom: 2rem;
-    font-weight: 700;
 }
 .special-card-section{
     display: flex;
@@ -3334,14 +3333,14 @@ footer iframe{
         width: 92vw;
     }    
     .slide-heading {
-        font-size: 2rem;
+        font-size: 1.6rem;
         margin-bottom: 16px;
     }
     .slide-heading br{
         display: none;
     }
     .slide-paragraph {
-        font-size: 1rem;
+        font-size: .9rem;
         margin-bottom: 20px;
     }
     .slide-paragraph br{
@@ -3375,7 +3374,7 @@ footer iframe{
 
     .special-container{
         height: auto;
-        padding-top: 3rem;
+        padding-top: 4.5rem;
     }
     .special-head{
         display: flex;
@@ -3449,7 +3448,7 @@ footer iframe{
         overflow-y: none;
     }
     .what-we-do-left{
-        padding: 1rem 1rem;
+        padding: 1rem 1.4rem;
         padding-bottom: 0;
     }
     .what-we-do-left span{
@@ -3681,7 +3680,7 @@ footer iframe{
     /* ------ Quality approval Section --------- */
 
     .quality-approval-section {
-        height: 65vh;
+        height: 56vh;
     }
     .scroll-item {
         width: 44vw;
@@ -3744,7 +3743,7 @@ footer iframe{
 
     .testimonial-section {
         height: 68vh;
-        background-size: 100% 120%;
+        background-size: 380% 100%;
         margin-bottom: 6rem;
     }
     .testimonial-container {
