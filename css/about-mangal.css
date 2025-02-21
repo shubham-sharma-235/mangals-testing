@@ -481,18 +481,6 @@ aside p {
 .map-section{
     padding-bottom: 4rem;
 }
-.footer-top{
-    background-color: #CCDEEA;
-    margin-top: 0;
-    padding: 3rem 4rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
-    position: relative;
-    z-index: 30;
-}
-
 
 
 /* -------------------------------------------------- */
@@ -629,7 +617,7 @@ aside p {
     }
     .card {
         position: sticky;
-        top: 6.5rem;
+        top: 13.5rem;
         padding-top: calc(var(--index)* var(--card-top-offset));
     }
     .cards-head {
