@@ -339,7 +339,7 @@ nav.scrolled #logo {
 /* Sub-dropdown styles */
 .dropdown .sub-dropdown {
     position: absolute;
-    bottom: -10rem;
+    top: 9rem;
     left: 100%; /* Align to the right of the parent */
     background-color: #162128;
     display: flex;
