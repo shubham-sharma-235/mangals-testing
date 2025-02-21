@@ -2326,6 +2326,9 @@ nav.scrolled #logo {
     font-size: 1.2vw;
     color: #d2d0d0;
 }
+.contact-content a{
+    color: #fff;
+}
 .contact-content div{
     margin: 2rem;
 }
@@ -3581,7 +3584,7 @@ footer iframe{
         z-index: 100;
         scale: .7;
         transform: rotate(180deg);
-        filter: opacity(10%);
+        filter: opacity(14%);
     }
     .card-container-2 .stack-card {
         margin: 34px 0;
