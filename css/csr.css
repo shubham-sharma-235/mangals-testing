@@ -301,10 +301,17 @@
         border-top-left-radius: 12rem;
     }
     .csr-section-card {
-        width: 52vw;
+        width: 54vw;
         height: 13vh;
         z-index: 10;
         bottom: -1rem;
+        font-size: 3.8vw;
+    }
+    .csr-section-card-two {
+        font-size: 3.8vw;
+        width: 54vw;
+        height: 13vh;
+        margin-bottom: 2rem;
     }
 
     .csr-section-one-container {
