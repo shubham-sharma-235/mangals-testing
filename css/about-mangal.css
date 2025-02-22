@@ -496,11 +496,66 @@ aside p {
     }
 }
 
-
 @media(max-width:1300px){
     .about-hero {
         height: 70vh;
         background-size: 160%;
+    }
+}
+
+@media(max-width:1220px){
+    .mission-right img {
+        width: 34vw;
+        height: 72vh;
+        border-top-left-radius: 17rem;
+        border-bottom-right-radius: 17rem;
+    }
+    .mission-right::after {
+        width: 35vw;
+        height: 74vh;
+        border-bottom-right-radius: 16rem;
+        border-top-left-radius: 16rem;
+    }
+
+    .vision-left img {
+        width: 34vw;
+        height: 72vh;
+        border-top-right-radius: 17rem;
+        border-bottom-left-radius: 17rem;
+    }
+    .vision-left::after {
+        width: 35vw;
+        height: 74vh;
+        border-bottom-left-radius: 16rem;
+        border-top-right-radius: 16rem;
+    }
+}
+
+@media(max-width:960px){
+    .mission-right img {
+        width: 36vw;
+        height: 68vh;
+        border-top-left-radius: 15rem;
+        border-bottom-right-radius: 15rem;
+    }
+    .mission-right::after {
+        width: 37vw;
+        height: 70vh;
+        border-bottom-right-radius: 14rem;
+        border-top-left-radius: 14rem;
+    }
+
+    .vision-left img {
+        width: 36vw;
+        height: 68vh;
+        border-top-right-radius: 15rem;
+        border-bottom-left-radius: 15rem;
+    }
+    .vision-left::after {
+        width: 37vw;
+        height: 70vh;
+        border-bottom-left-radius: 14rem;
+        border-top-right-radius: 14rem;
     }
 }
 
@@ -536,7 +591,7 @@ aside p {
     }
 }
 
-@media(max-width:500px){
+@media(max-width:620px){
     .about-hero-content h1 {
         font-size: 8vw;
     }
