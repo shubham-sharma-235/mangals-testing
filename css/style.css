@@ -2644,7 +2644,13 @@ footer iframe{
   background-position: 100% 100%;
 }
 .footer-logo {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
+}
+.footer-logo p{
+    color: #fff;
+    margin-top: 12px;
+    font-size: 16px;
+    margin-bottom: -20px;
 }
 .footer-logo img {
     max-width: 140px;
@@ -2652,7 +2658,7 @@ footer iframe{
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-  color: #d8d6d6;
+  color: #bcbcbc;
   line-height: 28px;
 }
 .footer-social-icon span {
