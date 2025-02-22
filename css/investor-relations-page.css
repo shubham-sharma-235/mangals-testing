@@ -663,6 +663,10 @@
   .shareholding-pattern-container table {
       width: 100%;
   }
+  .shareholding-pattern-container{
+    margin: 1rem;
+    width: 90%;
+  }
 }
 
 /* --------------------------------------------------------- */

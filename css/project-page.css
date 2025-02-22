@@ -296,6 +296,9 @@
         flex-direction: column;
         margin: 1rem 1rem;
     }
+    .about-project-text{
+        width: 100%;
+    }
     .project-right-card-one {
         width: 92vw;
         padding: 1.6rem;

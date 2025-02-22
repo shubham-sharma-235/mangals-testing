@@ -3309,6 +3309,12 @@ footer iframe{
     }
 }
 
+@media(max-width:930px){
+    .product-card-container {
+        margin: 0 6rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media(max-width:840px){
     .footer-top {
