@@ -34,7 +34,7 @@
 .career-hero{
     height: 70vh;
     width: 100%;
-    background-color: #012D4C;
+    background: linear-gradient(20deg,#52b43e,#024e85);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -232,9 +232,6 @@ tr:hover {
 
 
 @media(max-width:600px){
-  .career-hero {
-      background-size: 200%;
-  }
   .career-hero-content {
       padding: 0 4vw;
   }
@@ -246,12 +243,8 @@ tr:hover {
       padding: 12px 0;
       font-size: 28px;
   }
-}
-
-@media(max-width:500px){
-  .career-hero {
-      height: 70vh;
-      background-size: 200%;
+  .career-page {
+    margin: 0px auto;
   }
 }
 

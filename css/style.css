@@ -3372,6 +3372,9 @@ footer iframe{
     .footer-contact {
         grid-template-columns: 1fr;
     }
+    .footer-contact br{
+        display: none;
+    }
     .footer-section-one-left h2 {
         font-size: 5vw;
     }
